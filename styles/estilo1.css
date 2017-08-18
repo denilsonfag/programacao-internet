@@ -1,0 +1,29 @@
+/* esta regra será aplicada a todos os parágrafos da página */
+p { 
+  color:blue;
+}
+
+/* esta regra será aplicada a todos os parágrafos que possuem o atributo 'title' */
+p[title]{
+  color:yellow;
+}
+
+/* esta regra será aplicada a todos os cabeçalhos h1, mas apenas quando o ponteiro do mouse estiver sobre o elemento (hover) */
+h1:hover{
+  color:lime;
+}
+
+/* esta regra será aplicada apenas ao elemento com id 'redfont' */
+#redfont { 
+  color:red;
+}
+
+/* esta regra será aplicada a todos os elementos da classe 'greenfont' */
+.greenfont { 
+  color:green;
+}
+
+/* aplicando regras a mais de um tipo de elemento */
+ol, ul {
+  color:teal;
+}
