@@ -3,14 +3,6 @@
     <head>
         <meta charset="utf-8">
         <title>Propriedade position</title>
-        <style>
-            div{
-                border: 1px solid blue;
-            }
-            img{
-                display: inline;
-            }
-        </style>
     </head>
     <body>
 
@@ -33,7 +25,7 @@
              style="position: relative"
         ><img src="../images/nature-mini.jpg" alt="Pôr do sol em um lago"
               style="position: relative; top:20px; left:-50px;
-             opacity: 0.6"
+              opacity: 0.5"
         >
         <span>
             Observe que este texto em um <code>span</code> começa a partir da posição
@@ -41,16 +33,36 @@
             <code>inline</code>.
         </span>
 
+        <p>
+            Um elemento com <code>position:fixed</code>, como a imagem no canto inferior
+            direito desta página, permanecerá no mesmo lugar em caso de rolagem da página,
+            em relação ao <em>viewport</em> (área visível da página).
+            Aceita as mesmas propriedades que <code>position:relative</code>.
+            Não ocupa espaço na sua posição original, o conteúdo não se adapta à sua presença
+            e não funciona bem em navegadores de dispositivos móveis.
+        </p>
+        <img src="../images/city.jpg" alt="Cidade com edifícios modernos"
+             style="position: fixed; bottom: 20px; right: 20px;
+             opacity: 0.5"
+        >
 
+        <p>
+            Um elemento com <code>position:absolute</code> tem um comportamento semelhante
+            ao <code>position:fixed</code>, só que ao invés de permanecer fixo em relação
+            ao <em>viewport</em>, o elemento mantém sua posição em relação ao elemento
+            <code>position:relative</code> em que estiver contido. Se não estiver contido
+            em nenhum elemento <code>position:relative</code>, o elemento com
+            <code>position:absolute</code> será posicionado em relação ao <code>body</code>.
+            No exemplo abaixo é utilizado uma <code>div</code> com
+            <code>position:relative</code> para envolver a imagem.
 
+        </p>
 
-    <div style="position: fixed">positon:fixed</div>
-    
-    <div style="position: relative; top: 21px;">
-      positon:relative
-      <div style="position: absolute; top: -10px; left:100px"> position: absolute </div>
-    </div>
-    
- 
+        <div style="position:relative; border: 3px solid; width: 200px; height: 200px">
+            <img src="../images/nature-mini.jpg" alt="Pôr do sol em um lago"
+                 style="position:absolute; top:20px; left:30px"
+            >
+        </div>
+
     </body>
 </html>
