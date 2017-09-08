@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Propriedade position</title>
+        <style>
+            div{
+                border: 1px solid blue;
+            }
+            img{
+                display: inline;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h3>Propriedade <code>position</code></h3>
+
+        <p>
+            <code>position:static</code> é o padrão de todos os elementos HTML e não
+            define nenhuma posição especial, como no elemento <code>img</code> abaixo:
+        </p>
+        <img src="../images/city.jpg" alt="Cidade com edifícios modernos">
+
+        <p>
+            Um elemento com <code>position:relative</code> pode ser deslocado de sua
+            posição original com a definição das propriedades <code>top, right, bottom
+            </code> e <code>left</code>, que podem inclusive assumir valores negativos.
+            O conteúdo da página não vai se ajustar à nova posição do elemento:
+        </p>
+
+        <img src="../images/city.jpg" alt="Cidade com edifícios modernos"
+             style="position: relative"
+        ><img src="../images/nature-mini.jpg" alt="Pôr do sol em um lago"
+              style="position: relative; top:20px; left:-50px;
+             opacity: 0.6"
+        >
+        <span>
+            Observe que este texto em um <code>span</code> começa a partir da posição
+            original da imagem. Lembrando que <code>img</code> é por padrão um elemento
+            <code>inline</code>.
+        </span>
+
+
+
+
+    <div style="position: fixed">positon:fixed</div>
+    
+    <div style="position: relative; top: 21px;">
+      positon:relative
+      <div style="position: absolute; top: -10px; left:100px"> position: absolute </div>
+    </div>
+    
+ 
+    </body>
+</html>

@@ -1,37 +1,21 @@
 @charset "UTF-8";
 
-
 body{
-  width:960px;
-  margin:15px auto;
+  width: 960px;
+  margin: 15px auto;
   text-align: justify;
   font-family: Arial, sans-serif;
 }
 
 header#page-header nav ul li, footer#page-footer nav ul li{
-  display: inline;
-  margin: 0 20px 0 0;
+	display: inline;
+	margin: 0 20px 0 0;	
 }
 
 section#posts{
-  float: left;
-  width: 74%;
+  width: 75%;
+  margin: 0 auto;
+  
+  
+  border: 1px solid; 
 }
-
-section#posts aside{
-  float: right;
-  width: 35%;
-  margin-left: 5%;
-  font-size: 125%;
-}
-
-section#sidebar{
-  float: right;
-  width: 25%;
-}
-
-footer#page-footer{
-  clear: both;
-  text-align: center;
-}
-*/

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Propriedade display</title>
+        <style>
+            div{
+                border: 1px solid blue;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h3>Propriedade <code>display</code></h3>
+
+        <p>
+            Um elemento com <code>display:block</code> inicia na próxima linha,
+            se estende até o limite da área vísivel à direita, e se adapta
+            ao redimensinamento da janela, como nas divs abaixo. O próximo
+            elemento da página é mostrado na próxima linha.
+        </p>
+        <div style="display:block">
+            Lorem ipsum.
+        </div>
+        <div style="display:block">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Vivamus nulla purus, luctus non tempor eget, aliquet et arcu.
+            Integer ipsum lectus, ultrices in orci quis, feugiat fermentum sem.
+            Sed luctus elementum odio, quis mattis urna lacinia non.
+        </div>
+
+        <p>
+            Elementos com <code>display:inline</code> ocupam apenas o espaço
+            necessário ao seu conteúdo. Se o próximo elemento da página
+            também estiver com <code>display:inline</code>, ele será exibido
+            na mesma linha, como nas divs abaixo:
+        </p>
+        <div style="display:inline">
+            div 1
+        </div>
+        <div style="display:inline">
+            div 2
+        </div>
+
+        <p>
+            Caso o conteúdo de um elemento com <code>display:inline</code>
+            ultrapasse as dimensões da área visível, a expansão ocorre
+            <strong>em linha</strong> e não <strong>em bloco</strong>, como
+            na div abaixo:
+        </p>
+        <div style="display:inline">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Vivamus nulla purus, luctus non tempor eget, aliquet et arcu.
+            Integer ipsum lectus, ultrices in orci quis, feugiat fermentum sem.
+            Sed luctus elementum odio, quis mattis urna lacinia non.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Vivamus nulla purus, luctus non tempor eget, aliquet et arcu.
+            Integer ipsum lectus, ultrices in orci quis, feugiat fermentum sem.
+            Sed luctus elementum odio, quis mattis urna lacinia non.
+        </div>
+
+    </body>
+</html>
