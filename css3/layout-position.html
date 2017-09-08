@@ -9,7 +9,7 @@
                 border: 1px solid;
             }
 
-            header, footer{
+            header, footer, #sidebar{
                 text-align: center;
             }
 
@@ -19,9 +19,17 @@
                 padding: 10px;
             }
 
-            header#page-header nav ul li, footer#page-footer nav ul li{
+            ul{
+                padding: 0;
+            }
+
+            #sidebar nav ul{
+                list-style: none;
+            }
+
+            #page-header nav ul li, #page-footer nav ul li{
                 display: inline;
-                margin: 0 20px 0 0;
+                margin: 0 10px 0 10px;
             }
 
             /* Layout: */
@@ -82,8 +90,8 @@
         <div class="container">
 
             <section id="sidebar">
+                <h2>Menu lateral</h2>
                 <nav>
-                    <h2>Menu lateral</h2>
                     <ul>
                         <li><a href="#">Link 1</a></li>
                         <li><a href="#">Link 2</a></li>
