@@ -13,11 +13,13 @@
 
         <h3>Propriedade <code>display</code></h3>
 
+        <h4>none</h4>
         <p>
             Um elemento com <code>display:none</code> não será exibido e não terá
             seu espaço reservado, como se não existisse.
         </p>
 
+        <h4>block</h4>
         <p>
             Um elemento com <code>display:block</code> inicia na próxima linha,
             se estende até o limite da área vísivel à direita, e se adapta
@@ -34,6 +36,7 @@
             Sed luctus elementum odio, quis mattis urna lacinia non.
         </div>
 
+        <h4>inline</h4>
         <p>
             Elementos com <code>display:inline</code> ocupam apenas o espaço
             necessário ao seu conteúdo. Se o próximo elemento da página
@@ -63,6 +66,25 @@
             Integer ipsum lectus, ultrices in orci quis, feugiat fermentum sem.
             Sed luctus elementum odio, quis mattis urna lacinia non.
         </div>
+
+        <h4>inline-block</h4>
+        <p>
+            Mesmo que seja definida a largura de elementos em bloco, eles não
+            se organizam na mesma linha, como mostrado abaixo:
+        </p>
+
+        <div style="width: 100px">div 1</div>
+        <div style="width: 100px">div 2</div>
+        <div style="width: 100px">div 3</div>
+
+        <p>
+            Para permitir que blocos se organizem na mesma linha, existe a
+            propriedade <code>display:inline-block</code>, como mostrado abaixo:
+        </p>
+
+        <div style="display: inline-block; width: 100px"> div 1
+        </div><div style="display: inline-block; width: 100px"> div 2
+        </div><div style="display: inline-block; width: 100px"> div 3</div>
 
     </body>
 </html>

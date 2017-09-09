@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Propriedade float</title>
+    </head>
+    <body>
+
+        <h3>Propriedade <code>float</code></h3>
+
+        <img src="../images/city.jpg" alt="Cidade com edifícios modernos"
+             style="float:left"
+        >
+
+        <p style="border: 1px solid">
+            Um elemento com a propriedade <code>float:left</code>, como a imagem ao lado
+            esquerdo, possibilita que o texto dos elementos ao seu redor se ajustem à sua
+            presença.
+        </p>
+
+        <img src="../images/nature-mini.jpg" alt="Pôr do sol em um lago"
+             style="float:right"
+        >
+
+        <p style="border: 1px solid">
+            A propriedade <code>float</code> também pode assumir o valor <code>right</code>,
+            com na imagem à direita.
+        </p>
+
+        <p style="border: 1px solid; clear: both;">
+            Para que um novo elemento, como este parágrafo, não se ajuste aos elementos com
+            <code>float</code> já carregadas, deve-se utilizar a propriedade <code>clear</code>,
+            que pode assumir os valores <code>left, right</code> ou <code>both</code>.
+        </p>
+
+        <div style="border: 1px solid">
+            <img src="../images/city.jpg" alt="Cidade com edifícios modernos"
+                 style="float:right"
+            >
+            <p>
+                O tamanho de um elemento não se ajusta ao tamanho de outro elemento com propriedade
+                <code>float</code> definido dentro dele, como neste exemplo.
+            </p>
+        </div>
+
+        <div style="border: 1px solid;
+            clear: right;
+            overflow: auto;"
+        >
+            <img src="../images/city.jpg" alt="Cidade com edifícios modernos"
+                 style="float:right"
+            >
+            <p>
+                Este problema é resolvido com a definição da propriedade <code>overflow: auto</code>
+                ao container, como aqui.
+            </p>
+        </div>
+
+
+    </body>
+</html>
