@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+p {
+    text-indent: 20px;
+}
+
+code {
+    font-weight: bold;
+}

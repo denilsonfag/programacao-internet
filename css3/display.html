@@ -3,88 +3,98 @@
     <head>
         <meta charset="utf-8">
         <title>Propriedade display</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../styles/main.css" >
         <style>
-            div{
-                border: 1px solid blue;
+            img {
+                display: block;
             }
         </style>
     </head>
     <body>
 
-        <h3>Propriedade <code>display</code></h3>
+        <header>
+            <h3>Propriedade <code>display</code></h3>
+        </header>
 
-        <h4>none</h4>
-        <p>
-            Um elemento com <code>display:none</code> não será exibido e não terá
-            seu espaço reservado, como se não existisse.
-        </p>
+        <article>
+            <p>
+                Todos os elementos HTML tem um valor padrão para a propriedade
+                <code>display</code>, que pode ser alterado. <code>inline</code>
+                e <code>block</code> são os valores mais comuns.
+            </p>
+            <p>
+                Elementos <code>inline</code> não podem conter elementos <code>block</code>.
+                Elementos <code>block</code> podem conter elementos <code>block</code> e/ou
+                <code>inline</code>.
+            </p>
 
-        <h4>block</h4>
-        <p>
-            Um elemento com <code>display:block</code> inicia na próxima linha,
-            se estende até o limite da área vísivel à direita, e se adapta
-            ao redimensinamento da janela, como nas divs abaixo. O próximo
-            elemento da página é mostrado na próxima linha.
-        </p>
-        <div style="display:block">
-            Lorem ipsum.
-        </div>
-        <div style="display:block">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Vivamus nulla purus, luctus non tempor eget, aliquet et arcu.
-            Integer ipsum lectus, ultrices in orci quis, feugiat fermentum sem.
-            Sed luctus elementum odio, quis mattis urna lacinia non.
-        </div>
+            <h4>none</h4>
+            <p>
+                Um elemento com <code>display:none</code> não será exibido e não terá
+                seu espaço reservado, como se não existisse.
+            </p>
 
-        <h4>inline</h4>
-        <p>
-            Elementos com <code>display:inline</code> ocupam apenas o espaço
-            necessário ao seu conteúdo. Se o próximo elemento da página
-            também estiver com <code>display:inline</code>, ele será exibido
-            na mesma linha, como nas divs abaixo:
-        </p>
-        <div style="display:inline">
-            div 1
-        </div>
-        <div style="display:inline">
-            div 2
-        </div>
+            <h4>inline</h4>
+            <p>
+                Elementos com <code>display:inline</code> ocupam apenas o espaço
+                necessário ao seu conteúdo, permitindo que outros elementos sejam
+                exibidos ao seu lado. Não permitem a definição da largura e da altura.
+                Exemplo do posicionamento de elementos <code>span</code>,
+                que são <code>inline</code> por padrão (redimensione a janela para
+                verificar como os elementos se ajustam):
+            </p>
 
-        <p>
-            Caso o conteúdo de um elemento com <code>display:inline</code>
-            ultrapasse as dimensões da área visível, a expansão ocorre
-            <strong>em linha</strong> e não <strong>em bloco</strong>, como
-            na div abaixo:
-        </p>
-        <div style="display:inline">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Vivamus nulla purus, luctus non tempor eget, aliquet et arcu.
-            Integer ipsum lectus, ultrices in orci quis, feugiat fermentum sem.
-            Sed luctus elementum odio, quis mattis urna lacinia non.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Vivamus nulla purus, luctus non tempor eget, aliquet et arcu.
-            Integer ipsum lectus, ultrices in orci quis, feugiat fermentum sem.
-            Sed luctus elementum odio, quis mattis urna lacinia non.
-        </div>
+            <span style="border: 2px solid blue">span1 - Lorem ipsum dolor sit amet.</span>
+            <span style="border: 2px solid blue">span2 - Lorem ipsum dolor sit amet.</span>
+            <span style="border: 2px solid blue">span3 - Lorem ipsum dolor sit amet.</span>
+            <span style="border: 2px solid blue">span4 - Lorem ipsum dolor sit amet.</span>
 
-        <h4>inline-block</h4>
-        <p>
-            Mesmo que seja definida a largura de elementos em bloco, eles não
-            se organizam na mesma linha, como mostrado abaixo:
-        </p>
+            <h4>block</h4>
+            <p>
+                Elementos com <code>display:block</code> ocupam toda a linha em que estão
+                inseridos, não permitindo a exibição de outros elementos ao seu lado.
+                Permitem a definição da largura e da altura do bloco. Exemplo do posicionamento
+                de elementos <code>div</code>, que são <code>block</code> por padrão
+                (redimensione a janela para verificar como o texto de ajusta dentro dos
+                blocos):
+            </p>
 
-        <div style="width: 100px">div 1</div>
-        <div style="width: 100px">div 2</div>
-        <div style="width: 100px">div 3</div>
+            <div style="border: 2px solid blue">div1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <div style="border: 2px solid blue">div2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 
-        <p>
-            Para permitir que blocos se organizem na mesma linha, existe a
-            propriedade <code>display:inline-block</code>, como mostrado abaixo:
-        </p>
+            <p>
+                Inserindo imagens ao invés de texto dentro de elementos <code>div</code>:
+            </p>
 
-        <div style="display: inline-block; width: 100px"> div 1
-        </div><div style="display: inline-block; width: 100px"> div 2
-        </div><div style="display: inline-block; width: 100px"> div 3</div>
+            <div style="border: 2px solid blue"><img src="../images/nature-mini.jpg"/></div>
+            <div style="border: 2px solid blue"><img src="../images/city.jpg"/></div>
+
+            <h4>inline-block</h4>
+
+            <p>
+                Possui características dos dois métodos de exibição anteriores.
+                Devido à forma como os blocos se ajustam, pode ser utilizado
+                para criação de <em>layouts</em> responsivos.
+                Os elementos <code>div</code> abaixo foram configurados com
+                <code>display:inline-block</code>:
+            </p>
+
+            <div style="display: inline-block; border: 2px solid blue">div1 - Lorem ipsum dolor sit amet.</div>
+            <div style="display: inline-block; border: 2px solid blue">div2 - Lorem ipsum dolor sit amet.</div>
+            <div style="display: inline-block; border: 2px solid blue">div3 - Lorem ipsum dolor sit amet.</div>
+            <div style="display: inline-block; border: 2px solid blue">div4 - Lorem ipsum dolor sit amet.</div>
+
+            <p>
+                Utilizando imagens:
+            </p>
+
+            <div style="display: inline-block; border: 2px solid blue"><img src="../images/nature-mini.jpg"/></div>
+            <div style="display: inline-block; border: 2px solid blue"><img src="../images/city.jpg"/></div>
+            <div style="display: inline-block; border: 2px solid blue"><img src="../images/gota.jpg"/></div>
+            <div style="display: inline-block; border: 2px solid blue"><img src="../images/bobina.jpg"/></div>
+
+        </article>
 
     </body>
 </html>
