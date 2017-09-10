@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Blog de exemplo</title>
+        <meta name="viewport" content="width=device-width">
         <style>
 
             body, header, section, article, aside, footer{
@@ -41,6 +42,7 @@
             body{
                 max-width: 960px;
                 margin: auto;
+                box-sizing: content-box;  /* manter o espaço exato do body para dimensionar os elementos internos */
             }
 
             #sidebar{
@@ -49,16 +51,23 @@
             }
 
             #posts{
-                margin-left: 150px;
+                float: right;
+                max-width: 810px;
             }
 
             #posts aside{
                 float: right;
-                width: 20%;
+                max-width: 160px;
             }
 
             #article-body{
-                margin-right: 20%;
+                border: 1px solid;
+                float: left;
+                max-width: 646px;
+            }
+
+            footer{
+                clear: both;
             }
 
         </style>
@@ -67,7 +76,7 @@
     <body>
   
         <header id="page-header">
-            <h1>Blog de exemplo</h1>
+            <h1>Layout com float</h1>
             <nav>
                 <ul>
                     <li><a href="#">Link 1</a></li>
