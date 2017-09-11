@@ -14,16 +14,18 @@
 
             #interface{
                 position: relative;
+                padding: 0;           /* se != 0, interfere nas dimensões em porcentagem */
             }
 
             #sidebar{
                 position: absolute;
-                width: 150px;
+                width: 20%;
+                min-width: 60px;
             }
 
             #posts{
                 position: static;     /* default */
-                margin-left: 150px;
+                margin-left: 20%;
             }
 
             .article-container{
@@ -32,14 +34,14 @@
 
             .article-body{
                 position: static;     /* default */
-                margin-right: 150px;
-                min-width: 150px;
+                margin-right: 30%;
             }
 
             .article-container aside{
                 position: absolute;
                 right: 0;
-                width: 150px;
+                width: 30%;
+                min-width: 60px;
             }
 
         </style>
@@ -62,7 +64,7 @@
             </header>
 
             <section id="sidebar">
-                <h2>Barra lateral</h2>
+                <h2>Barra late&shy;ral</h2>
                 <nav>
                     <ul>
                         <li><a href="#">Link 1</a></li>
@@ -83,7 +85,7 @@
                     </header>
 
                     <aside>
-                        <p>Informações adicionais do post 1, normalmente posicionadas como uma barra lateral.</p>
+                        <p>Infor&shy;mações adici&shy;onais do post 1, normal&shy;mente posi&shy;ciona&shy;das como uma barra lateral.</p>
                     </aside>
 
                     <div class="article-body">
@@ -117,7 +119,7 @@
                     </header>
 
                     <aside>
-                        <p>Informações adicionais do post 2, normalmente posicionadas como uma barra lateral.</p>
+                        <p>Infor&shy;mações adici&shy;onais do post 1, normal&shy;mente posi&shy;ciona&shy;das como uma barra lateral.</p>
                     </aside>
 
                     <div class="article-body">
