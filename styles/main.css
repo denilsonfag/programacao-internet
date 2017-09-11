@@ -5,7 +5,9 @@
 }
 
 p {
+    text-align: justify;
     text-indent: 20px;
+    padding: 10px;
 }
 
 code {
