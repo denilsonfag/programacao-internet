@@ -18,7 +18,7 @@
                 height: 0;
             }
 
-            #vert-align-inline-block:before {
+            #vert-align-inline-block:before {  /* para aplicar alinhamento vertical em inline-blocks */
                 content: "";
                 display: inline-block;
                 vertical-align: middle;
@@ -29,121 +29,123 @@
     </head>
     <body>
 
-        <header>
-            <h3>Propriedade <code>display</code></h3>
-        </header>
+        <div id="interface">
 
-        <article>
-            <p>
-                Todos os elementos HTML tem um valor padrão para a propriedade
-                <code>display</code>, que pode ser alterado. <code>inline</code>
-                e <code>block</code> são os valores mais comuns.
-            </p>
-            <p>
-                Elementos <code>inline</code> não podem conter elementos <code>block</code>.
-                Elementos <code>block</code> podem conter elementos <code>block</code> e/ou
-                <code>inline</code>.
-            </p>
+            <header>
+                <h3>Propriedade <code>display</code></h3>
+            </header>
 
-            <h4>none</h4>
-            <p>
-                Um elemento com <code>display:none</code> não será exibido e não terá
-                seu espaço reservado, como se não existisse.
-            </p>
+            <article>
+                <p>
+                    Todos os elementos HTML tem um valor padrão para a propriedade
+                    <code>display</code>, que pode ser alterado. <code>inline</code>
+                    e <code>block</code> são os valores mais comuns.
+                </p>
+                <p>
+                    Elementos <code>inline</code> não podem conter elementos <code>block</code>.
+                    Elementos <code>block</code> podem conter elementos <code>block</code> e/ou
+                    <code>inline</code>.
+                </p>
 
-            <h4>inline</h4>
-            <p>
-                Elementos com <code>display:inline</code> ocupam apenas o espaço
-                necessário ao seu conteúdo, permitindo que outros elementos sejam
-                exibidos ao seu lado. Não permitem a definição da largura e da altura.
-                Exemplo do posicionamento de elementos <code>span</code>,
-                que são <code>inline</code> por padrão (redimensione a janela para
-                verificar como os elementos se ajustam):
-            </p>
+                <h4>none</h4>
+                <p>
+                    Um elemento com <code>display:none</code> não será exibido e não terá
+                    seu espaço reservado, como se não existisse.
+                </p>
 
-            <span style="border: 2px solid blue">span1 - Lorem ipsum dolor sit amet.</span>
-            <span style="border: 2px solid blue">span2 - Lorem ipsum dolor sit amet.</span>
-            <span style="border: 2px solid blue">span3 - Lorem ipsum dolor sit amet.</span>
-            <span style="border: 2px solid blue">span4 - Lorem ipsum dolor sit amet.</span>
+                <h4>inline</h4>
+                <p>
+                    Elementos com <code>display:inline</code> ocupam apenas o espaço
+                    necessário ao seu conteúdo, permitindo que outros elementos sejam
+                    exibidos ao seu lado. Não permitem a definição da largura e da altura.
+                    Exemplo do posicionamento de elementos <code>span</code>,
+                    que são <code>inline</code> por padrão (redimensione a janela para
+                    verificar como os elementos se ajustam):
+                </p>
 
-            <h4>block</h4>
-            <p>
-                Elementos com <code>display:block</code> ocupam toda a linha em que estão
-                inseridos, não permitindo a exibição de outros elementos ao seu lado.
-                Permitem a definição da largura e da altura do bloco. Exemplo do posicionamento
-                de elementos <code>div</code>, que são <code>block</code> por padrão
-                (redimensione a janela para verificar como o texto de ajusta dentro dos
-                blocos):
-            </p>
+                <span style="border: 2px solid blue">span1 - Lorem ipsum dolor sit amet.</span>
+                <span style="border: 2px solid blue">span2 - Lorem ipsum dolor sit amet.</span>
+                <span style="border: 2px solid blue">span3 - Lorem ipsum dolor sit amet.</span>
+                <span style="border: 2px solid blue">span4 - Lorem ipsum dolor sit amet.</span>
 
-            <div style="border: 2px solid blue">div1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-            <div style="border: 2px solid blue">div2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <h4>block</h4>
+                <p>
+                    Elementos com <code>display:block</code> ocupam toda a linha em que estão
+                    inseridos, não permitindo a exibição de outros elementos ao seu lado.
+                    Permitem a definição da largura e da altura do bloco. Exemplo do posicionamento
+                    de elementos <code>div</code>, que são <code>block</code> por padrão
+                    (redimensione a janela para verificar como o texto de ajusta dentro dos
+                    blocos):
+                </p>
 
-            <p>
-                Inserindo imagens ao invés de texto dentro de elementos <code>div</code>:
-            </p>
+                <div style="border: 2px solid blue">div1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div style="border: 2px solid blue">div2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 
-            <div style="border: 2px solid blue"><img src="../images/nature-mini.jpg"/></div>
-            <div style="border: 2px solid blue"><img src="../images/city.jpg"/></div>
+                <p>
+                    Inserindo imagens ao invés de texto dentro de elementos <code>div</code>:
+                </p>
 
-            <h4>inline-block</h4>
+                <div style="border: 2px solid blue"><img src="../images/nature-mini.jpg"/></div>
+                <div style="border: 2px solid blue"><img src="../images/city.jpg"/></div>
 
-            <p>
-                Possui características dos dois métodos de exibição anteriores.
-                Devido à forma como os blocos se ajustam, pode ser utilizado
-                para criação de <em>layouts</em> responsivos.
-                Os elementos <code>div</code> abaixo foram configurados com
-                <code>display:inline-block</code>:
-            </p>
+                <h4>inline-block</h4>
 
-            <div style="display: inline-block; border: 2px solid blue">div1 - Lorem ipsum dolor sit amet.</div>
-            <div style="display: inline-block; border: 2px solid blue">div2 - Lorem ipsum dolor sit amet.</div>
-            <div style="display: inline-block; border: 2px solid blue">div3 - Lorem ipsum dolor sit amet.</div>
-            <div style="display: inline-block; border: 2px solid blue">div4 - Lorem ipsum dolor sit amet.</div>
+                <p>
+                    Possui características dos dois métodos de exibição anteriores.
+                    Devido à forma como os blocos se ajustam, pode ser utilizado
+                    para criação de <em>layouts</em> responsivos.
+                    Os elementos <code>div</code> abaixo foram configurados com
+                    <code>display:inline-block</code>:
+                </p>
 
-            <p>
-                Utilizando imagens:
-            </p>
+                <div style="display: inline-block; border: 2px solid blue">div1 - Lorem ipsum dolor sit amet.</div>
+                <div style="display: inline-block; border: 2px solid blue">div2 - Lorem ipsum dolor sit amet.</div>
+                <div style="display: inline-block; border: 2px solid blue">div3 - Lorem ipsum dolor sit amet.</div>
+                <div style="display: inline-block; border: 2px solid blue">div4 - Lorem ipsum dolor sit amet.</div>
 
-            <div style="display: inline-block; border: 2px solid blue"><img src="../images/nature-mini.jpg"/></div>
-            <div style="display: inline-block; border: 2px solid blue"><img src="../images/city.jpg"/></div>
-            <div style="display: inline-block; border: 2px solid blue"><img src="../images/gota.jpg"/></div>
-            <div style="display: inline-block; border: 2px solid blue"><img src="../images/bobina.jpg"/></div>
+                <p>
+                    Utilizando imagens:
+                </p>
 
-            <p>
-                Os elementos <code>inline-block</code> são considerados palavras. Para alinhá-los deve ser
-                utilizada a propriedade <code>text-align</code> sobre um elemento container:
-            </p>
-
-            <div style="text-align: center; border: 2px solid red">
                 <div style="display: inline-block; border: 2px solid blue"><img src="../images/nature-mini.jpg"/></div>
                 <div style="display: inline-block; border: 2px solid blue"><img src="../images/city.jpg"/></div>
                 <div style="display: inline-block; border: 2px solid blue"><img src="../images/gota.jpg"/></div>
                 <div style="display: inline-block; border: 2px solid blue"><img src="../images/bobina.jpg"/></div>
-            </div>
 
-            <p>
-                Para justificar os elementos é necessária incluir um pseudo elemento (verifique o estilo no
-                <code>head</code>):
-            </p>
+                <p>
+                    Os elementos <code>inline-block</code> são considerados palavras. Para alinhá-los deve ser
+                    utilizada a propriedade <code>text-align</code> sobre um elemento container:
+                </p>
 
-            <div id="just-inline-block" style="text-align: justify; border: 2px solid red">
-                <div style="display: inline-block; border: 2px solid blue"><img src="../images/nature-mini.jpg"/></div>
-                <div style="display: inline-block; border: 2px solid blue"><img src="../images/city.jpg"/></div>
-                <div style="display: inline-block; border: 2px solid blue"><img src="../images/gota.jpg"/></div>
-                <div style="display: inline-block; border: 2px solid blue"><img src="../images/bobina.jpg"/></div>
-            </div>
+                <div style="text-align: center; border: 2px solid red">
+                    <div style="display: inline-block; border: 2px solid blue"><img src="../images/nature-mini.jpg"/></div>
+                    <div style="display: inline-block; border: 2px solid blue"><img src="../images/city.jpg"/></div>
+                    <div style="display: inline-block; border: 2px solid blue"><img src="../images/gota.jpg"/></div>
+                    <div style="display: inline-block; border: 2px solid blue"><img src="../images/bobina.jpg"/></div>
+                </div>
 
-            <p>
-                Para centralizar verticalmente também é necessário utilizar um pseudo-elemento:
-            </p>
+                <p>
+                    Para justificar os elementos é necessária incluir um pseudo elemento (verifique o estilo no
+                    <code>head</code>):
+                </p>
 
-            <div id="vert-align-inline-block" style=" height:300px; text-align: center; border: 2px solid red">
-                <div style="display: inline-block; vertical-align: middle; border: 2px solid blue"><img src="../images/nature-menor.jpg"/></div>
-                <div style="display: inline-block; vertical-align: middle; border: 2px solid blue"><img src="../images/city.jpg"/></div>
-            </div>
+                <div id="just-inline-block" style="text-align: justify; border: 2px solid red">
+                    <div style="display: inline-block; border: 2px solid blue"><img src="../images/nature-mini.jpg"/></div>
+                    <div style="display: inline-block; border: 2px solid blue"><img src="../images/city.jpg"/></div>
+                    <div style="display: inline-block; border: 2px solid blue"><img src="../images/gota.jpg"/></div>
+                    <div style="display: inline-block; border: 2px solid blue"><img src="../images/bobina.jpg"/></div>
+                </div>
 
-        </article>
+                <p>
+                    Para centralizar verticalmente também é necessário utilizar um pseudo-elemento:
+                </p>
 
+                <div id="vert-align-inline-block" style=" height:300px; text-align: center; border: 2px solid red">
+                    <div style="display: inline-block; vertical-align: middle; border: 2px solid blue"><img src="../images/nature-menor.jpg"/></div>
+                    <div style="display: inline-block; vertical-align: middle; border: 2px solid blue"><img src="../images/city.jpg"/></div>
+                </div>
+
+            </article>
+        </div>
     </body>
 </html>

@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Propriedade box-sizing</title>
+        <link rel="stylesheet" href="../styles/main.css" >
 	
     	<style>
 	        img {
@@ -24,27 +25,28 @@
     </head>
     <body>
 
-        <h3>Propriedade <code>box-sizing</code></h3>
-    
-        <figure>
-	        <img src="../images/nature-mini.jpg"/>
-        </figure>
-    
-        <p>
-            As propriedades <code>margin</code> e <code>padding</code> alteram o espaço ocupado por um elemento de bloco na página:
-        </p>
-	
-	    <figure class="border-padding">
-	        <img src="../images/nature-mini.jpg"/>
-        </figure>
-    
-        <p>
-            Definindo a regra <code>box-sizing:border-box</code> para o elemento, o tamanho do bloco é ajustado automaticamente:
-        </p>
+        <div id="interface">
+            <h3>Propriedade <code>box-sizing</code></h3>
 
-    	<figure class="border-padding" style="box-sizing: border-box;">
-	        <img src="../images/nature-mini.jpg"/>
-        </figure>
+            <figure>
+                <img src="../images/nature-mini.jpg"/>
+            </figure>
 
+            <p>
+                As propriedades <code>margin</code> e <code>padding</code> alteram o espaço ocupado por um elemento de bloco na página:
+            </p>
+
+            <figure class="border-padding">
+                <img src="../images/nature-mini.jpg"/>
+            </figure>
+
+            <p>
+                Definindo a regra <code>box-sizing:border-box</code> para o elemento, o tamanho do bloco é ajustado automaticamente:
+            </p>
+
+            <figure class="border-padding" style="box-sizing: border-box;">
+                <img src="../images/nature-mini.jpg"/>
+            </figure>
+        </div>
     </body>
 </html>

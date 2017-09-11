@@ -4,12 +4,24 @@
     font-family: Arial, sans-serif;
 }
 
+body {
+    background-color: #dddddd;
+}
+
 p {
     text-align: justify;
     text-indent: 20px;
-    padding: 10px;
+    padding: 0 10px 0 10px;
 }
 
 code {
     font-weight: bold;
+}
+
+#interface {
+    max-width: 960px;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
 }
