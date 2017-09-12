@@ -4,68 +4,39 @@
         <meta charset="utf-8">
         <title>Blog de exemplo</title>
         <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../styles/main.css" >
+        <link rel="stylesheet" href="../styles/layouts.css" >
+
         <style>
 
-            body, header, section, article, aside, footer{
+            header, section, aside, footer, .article-body {
                 border: 1px solid;
             }
 
-            #posts aside, .article-body{
-                text-align: justify;
-                text-indent: 20px;
-                padding: 10px;
-            }
-
-            header, footer, #sidebar{
-                text-align: center;
-            }
-
-            ul{
-                padding: 0;
-            }
-
-            #sidebar nav ul{
-                list-style: none;
-            }
-
-            #page-header nav ul li, #page-footer nav ul li{
+            #sidebar nav ul li{
                 display: inline;
-                margin: 0 10px 0 10px;
-            }
-
-            /* Layout: */
-
-            *{
-                box-sizing: border-box;
-            }
-
-            body{
-                max-width: 960px;
-                margin: auto;
             }
 
             @media screen and (min-width:600px) {  /* verificando tamanho da tela de exibição */
 
                 #sidebar{
                     float: left;
-                    width: 25%;      /* largura do menu em porcentagem */
+                    width: 25%;
                 }
                 #posts{
                     margin-left: 25%;
                 }
 
-                #posts aside{
+                .article-aside{
                     float: right;
                     width: 20%;
                 }
                 .article-body{
                     margin-right: 20%;
                 }
-            }
 
-            @media screen and (max-width:599px) {
                 #sidebar nav ul li{
-                    display: inline;
+                    display: block;
                 }
             }
 
@@ -73,82 +44,124 @@
     </head>
 
     <body>
-  
-        <header id="page-header">
-            <h1>Layout com float e media query</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <section id="sidebar">
-            <h2>Menu lateral</h2>
-            <nav>
-                <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                </ul>
-            </nav>
-        </section>
+        <div id="interface">
 
-        <section id="posts">
+            <header id="page-header">
+                <h1>Layout com float e media query</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-            <article>
+            <section id="sidebar">
+                <h2>Barra late&shy;ral</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                    </ul>
+                </nav>
+            </section>
 
-                <header>
-                    <h2>Post 1</h2>
-                    <h3>Subtítulo do post 1</h3>
-                </header>
+            <section id="posts">
 
-                <aside>
-                    <p>Informações adicionais do post 1, normalmente posicionadas como uma barra lateral.</p>
-                </aside>
+                <article class="article-container">
 
-                <div class="article-body">
-                    <p >
-                        O primeiro parágrafo do post 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Duis ullamcorper ultrices tortor a rutrum. In tincidunt accumsan magna at tempor.
-                        Donec orci mi, dignissim eu augue quis, vestibulum aliquet nulla.
-                        Duis bibendum sed nisl vel ultrices. Morbi vitae accumsan leo.
-                        Vestibulum sapien purus, porttitor eget risus vestibulum, consectetur hendrerit tortor.
-                        Vivamus diam risus, facilisis in mollis non, iaculis in nisi.
-                    </p>
-                    <p>
-                        O segundo parágrafo do post 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Duis ullamcorper ultrices tortor a rutrum. In tincidunt accumsan magna at tempor.
-                        Donec orci mi, dignissim eu augue quis, vestibulum aliquet nulla.
-                        Duis bibendum sed nisl vel ultrices. Morbi vitae accumsan leo.
-                        Vestibulum sapien purus, porttitor eget risus vestibulum, consectetur hendrerit tortor.
-                        Vivamus diam risus, facilisis in mollis non, iaculis in nisi.
-                    </p>
-                </div>
+                    <header>
+                        <h2>Post 1</h2>
+                        <h3>Subtítulo do post 1</h3>
+                    </header>
 
-                <footer>
-                    <p>Rodapé do post 1.</p>
-                </footer>
+                    <aside class="article-aside">
+                        <p>
+                            Infor&shy;mações adici&shy;onais do post 1, normal&shy;mente posi&shy;ciona&shy;das
+                            como uma barra lateral.
+                        </p>
+                    </aside>
 
-            </article>
+                    <div class="article-body">
+                        <p>
+                            O primeiro parágrafo do post 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Duis ullamcorper ultrices tortor a rutrum. In tincidunt accumsan magna at tempor.
+                            Donec orci mi, dignissim eu augue quis, vestibulum aliquet nulla.
+                            Duis bibendum sed nisl vel ultrices. Morbi vitae accumsan leo.
+                            Vestibulum sapien purus, porttitor eget risus vestibulum, consectetur hendrerit tortor.
+                            Vivamus diam risus, facilisis in mollis non, iaculis in nisi.
+                        </p>
+                        <p>
+                            O segundo parágrafo do post 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Duis ullamcorper ultrices tortor a rutrum. In tincidunt accumsan magna at tempor.
+                            Donec orci mi, dignissim eu augue quis, vestibulum aliquet nulla.
+                            Duis bibendum sed nisl vel ultrices. Morbi vitae accumsan leo.
+                            Vestibulum sapien purus, porttitor eget risus vestibulum, consectetur hendrerit tortor.
+                            Vivamus diam risus, facilisis in mollis non, iaculis in nisi.
+                        </p>
+                    </div>
 
-        </section>
+                    <footer class="article-footer">
+                        <p>Rodapé do post 1.</p>
+                    </footer>
+                </article>
 
-        <footer id="page-footer">
-            <p>&copy; 2017 IFSC</p>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Termos de serviço</a></li>
-                    <li><a href="#">Privacidade</a></li>
-                </ul>
-            </nav>
-        </footer>
-      
-  </body>
+                <article class="article-container">
+                    <header>
+                        <h2>Post 2</h2>
+                        <h3>Subtítulo do post 2</h3>
+                    </header>
+
+                    <aside class="article-aside">
+                        <p>
+                            Infor&shy;mações adici&shy;onais do post 1, normal&shy;mente posi&shy;ciona&shy;das
+                            como uma barra lateral.
+                        </p>
+                    </aside>
+
+                    <div class="article-body">
+                        <p>
+                            O primeiro parágrafo do post 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Duis ullamcorper ultrices tortor a rutrum. In tincidunt accumsan magna at tempor.
+                            Donec orci mi, dignissim eu augue quis, vestibulum aliquet nulla.
+                            Duis bibendum sed nisl vel ultrices. Morbi vitae accumsan leo.
+                            Vestibulum sapien purus, porttitor eget risus vestibulum, consectetur hendrerit tortor.
+                            Vivamus diam risus, facilisis in mollis non, iaculis in nisi.
+                        </p>
+                        <p>
+                            O segundo parágrafo do post 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Duis ullamcorper ultrices tortor a rutrum. In tincidunt accumsan magna at tempor.
+                            Donec orci mi, dignissim eu augue quis, vestibulum aliquet nulla.
+                            Duis bibendum sed nisl vel ultrices. Morbi vitae accumsan leo.
+                            Vestibulum sapien purus, porttitor eget risus vestibulum, consectetur hendrerit tortor.
+                            Vivamus diam risus, facilisis in mollis non, iaculis in nisi.
+                        </p>
+                    </div>
+
+                    <footer class="article-footer">
+                        <p>Rodapé do post 1.</p>
+                    </footer>
+                </article>
+
+            </section>
+
+            <footer id="page-footer">
+                <p>&copy; 2017 IFSC</p>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Termos de serviço</a></li>
+                        <li><a href="#">Privacidade</a></li>
+                    </ul>
+                </nav>
+            </footer>
+
+        </div>
+    </body>
 </html>

@@ -21,12 +21,19 @@
                 flex: 1 100%;
             }
 
+            #sidebar nav ul li{
+                display: inline;
+            }
+
             @media all and (min-width: 600px) {
                 #sidebar {
                     flex: 1;
                 }
                 #posts {
                     flex: 4;
+                }
+                #sidebar nav ul li{
+                    display: block;
                 }
             }
 
