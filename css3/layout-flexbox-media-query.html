@@ -21,23 +21,27 @@
                 flex: 1 100%;
             }
 
-            #sidebar {
-                flex: 1;
-            }
-            #posts {
-                flex: 4;
+            @media all and (min-width: 600px) {
+                #sidebar {
+                    flex: 1;
+                }
+                #posts {
+                    flex: 4;
+                }
             }
 
-            .article-aside {
-                flex: 1;
-                order: 2;
-            }
-            .article-body {
-                flex: 4;
-                order: 1;
-            }
-            .article-footer {
-                order:3;
+            @media all and (min-width: 800px) {
+                .article-aside {
+                    flex: 1;
+                    order: 2;
+                }
+                .article-body {
+                    flex: 4;
+                    order: 1;
+                }
+                .article-footer {
+                    order:3;
+                }
             }
 
         </style>
@@ -48,7 +52,7 @@
     <div id="interface">
 
         <header id="page-header">
-            <h1>Layout com flexbox</h1>
+            <h1>Layout com flexbox e media query</h1>
             <nav>
                 <ul>
                     <li><a href="#">Link 1</a></li>
