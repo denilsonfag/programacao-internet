@@ -4,75 +4,58 @@
         <meta charset="utf-8">
         <title>Blog de exemplo</title>
         <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../styles/main.css" >
+        <link rel="stylesheet" href="../styles/layouts.css" >
+
         <style>
 
-            body, header, section, article, aside, footer, #article-body{
+            header, section, aside, footer, .article-body {
                 border: 1px solid;
             }
-
-            #posts aside, #article-body{
-                text-align: justify;
-                text-indent: 20px;
-                padding: 10px;
-            }
-
-            header, footer, #sidebar{
-                text-align: center;
-            }
-
-            ul{
-                padding: 0;
-            }
-
-            #sidebar nav ul{
-                list-style: none;
-            }
-
-            #page-header nav ul li, #page-footer nav ul li{
-                display: inline;
-                margin: 0 10px 0 10px;
-            }
-
-            /* Layout: */
 
             * {
                 box-sizing: border-box;
             }
 
-            body{
-                max-width: 960px;
-                margin: auto;
-                box-sizing: content-box;  /* manter o espaço exato do body para dimensionar os elementos internos */
-                text-align: center;  /* centraliza os elementos inline-block */
+            #interface {
+                text-align: center;    /* centraliza os elementos inline-block */
             }
 
-            #sidebar{
+            #sidebar {
                 display: inline-block;
                 vertical-align: top;
-                width: 150px;
+                width: 188px;
             }
 
-            #posts{
+            #posts {
                 display: inline-block;
-                max-width: 810px;
+                max-width: 752px;
                 text-align: center;
+                direction: rtl;
             }
 
-            #posts aside{
+            .article-aside {
                 display: inline-block;
-                width: 160px;
+                width: 250px;
                 vertical-align:top;
+                direction: ltr;
             }
-            #article-body{
+            .article-body {
                 display: inline-block;
-                max-width: 646px;          /* descontando as bordas por causa do border-box */
+                max-width: 500px;
+                direction: ltr;
+            }
+            .article-footer {
+                direction: ltr;
             }
 
         </style>
     </head>
 
     <body>
-  
+
+    <div id="interface">
+
         <header id="page-header">
             <h1>Layout com inline-block</h1>
             <nav>
@@ -86,7 +69,7 @@
         </header>
 
         <section id="sidebar">
-            <h2>Menu lateral</h2>
+            <h2>Barra late&shy;ral</h2>
             <nav>
                 <ul>
                     <li><a href="#">Link 1</a></li>
@@ -95,17 +78,26 @@
                     <li><a href="#">Link 4</a></li>
                 </ul>
             </nav>
-        </section><section id="posts">  <!-- não pode haver espaço em branco entre as sections -->
+        </section><!-- Comentário para evitar o problema dos espaços em branco entre os elementos inline-block
 
-            <article>
+     --><section id="posts">
+
+            <article class="article-container">
 
                 <header>
                     <h2>Post 1</h2>
                     <h3>Subtítulo do post 1</h3>
                 </header>
 
-                <div id="article-body">
-                    <p >
+                <aside class="article-aside">
+                    <p>
+                        Infor&shy;mações adici&shy;onais do post 1, normal&shy;mente posi&shy;ciona&shy;das
+                        como uma barra lateral.
+                    </p>
+                </aside><!-- Comentário para evitar o problema dos espaços em branco entre os elementos inline-block
+
+             --><div class="article-body">
+                    <p>
                         O primeiro parágrafo do post 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Duis ullamcorper ultrices tortor a rutrum. In tincidunt accumsan magna at tempor.
                         Donec orci mi, dignissim eu augue quis, vestibulum aliquet nulla.
@@ -121,14 +113,48 @@
                         Vestibulum sapien purus, porttitor eget risus vestibulum, consectetur hendrerit tortor.
                         Vivamus diam risus, facilisis in mollis non, iaculis in nisi.
                     </p>
-                </div><aside>    <!-- não pode haver espaço em branco entre os elementos -->
-                    <p>Informações adicionais do post 1, normalmente posicionadas como uma barra lateral.</p>
-                </aside>
+                </div>
 
-                <footer>
+                <footer class="article-footer">
                     <p>Rodapé do post 1.</p>
                 </footer>
+            </article>
 
+            <article class="article-container">
+                <header>
+                    <h2>Post 2</h2>
+                    <h3>Subtítulo do post 2</h3>
+                </header>
+
+                <aside class="article-aside">
+                    <p>
+                        Infor&shy;mações adici&shy;onais do post 1, normal&shy;mente posi&shy;ciona&shy;das
+                        como uma barra lateral.
+                    </p>
+                </aside><!-- Comentário para evitar o problema dos espaços em branco entre os elementos inline-block
+
+             --><div class="article-body">
+                    <p>
+                        O primeiro parágrafo do post 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Duis ullamcorper ultrices tortor a rutrum. In tincidunt accumsan magna at tempor.
+                        Donec orci mi, dignissim eu augue quis, vestibulum aliquet nulla.
+                        Duis bibendum sed nisl vel ultrices. Morbi vitae accumsan leo.
+                        Vestibulum sapien purus, porttitor eget risus vestibulum, consectetur hendrerit tortor.
+                        Vivamus diam risus, facilisis in mollis non, iaculis in nisi.
+                    </p>
+                    <p>
+                        O segundo parágrafo do post 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Duis ullamcorper ultrices tortor a rutrum. In tincidunt accumsan magna at tempor.
+                        Donec orci mi, dignissim eu augue quis, vestibulum aliquet nulla.
+                        Duis bibendum sed nisl vel ultrices. Morbi vitae accumsan leo.
+                        Vestibulum sapien purus, porttitor eget risus vestibulum, consectetur hendrerit tortor.
+                        Vivamus diam risus, facilisis in mollis non, iaculis in nisi.
+                    </p>
+                </div>
+
+                <footer class="article-footer">
+                    <p>Rodapé do post 1.</p>
+                </footer>
             </article>
 
         </section>
@@ -144,6 +170,7 @@
                 </ul>
             </nav>
         </footer>
-      
-  </body>
+
+    </div>
+    </body>
 </html>
