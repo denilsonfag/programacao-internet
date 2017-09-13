@@ -5,34 +5,56 @@
     <title>Programação para Internet</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="styles/main.css" >
+    <style>
+        #side-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        /* Layout: */
+        #interface {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        #page-header {
+            flex: 1 100%;
+        }
+
+        #side-menu {
+            flex: 1;
+        }
+
+        #page-article {
+            flex: 4;
+        }
+    </style>
 </head>
 <body>
 
     <div id="interface">
 
-        <h1>Programação para Internet</h1>
+        <header id="page-header">
+            <h1>Programação para Internet</h1>
+        </header>
 
-        <h2>HTML 5</h2>
-        <nav>
+        <nav id="side-menu">
+            <h2>HTML 5</h2>
             <ul>
                 <li><a href="html5/estrut-basica.html">Estrutura básica de um documento HTML 5</a></li>
                 <li><a href="html5/elementos-comuns.html">Elementos comuns</a></li>
                 <li><a href="html5/listas.html">Listas</a></li>
                 <li><a href="html5/estrut-semantica.html">Estrutura semântica de um documento HTML 5</a></li>
             </ul>
-        </nav>
 
-        <h2>CSS 3</h2>
-        <nav>
+            <h2>CSS 3</h2>
             <ul>
                 <li><a href="css3/seletores.html">Seletores</a></li>
                 <li><a href="css3/formatacao-texto.html">Formatação de texto</a></li>
                 <li><a href="css3/formatacao-imagem.html">Formatação de imagem</a></li>
             </ul>
-        </nav>
 
-        <h3>Layout</h3>
-        <nav>
+            <h3>Layout</h3>
             <ul>
                 <li><a href="css3/display.html">Propriedade display</a></li>
                 <li><a href="css3/box-sizing.html">Propriedade box-sizing</a></li>
@@ -45,7 +67,13 @@
                 <li><a href="css3/layout-flexbox.html">Layout com flexbox</a></li>
                 <li><a href="css3/layout-flexbox-media-query.html">Layout com flexbox e media query</a></li>
             </ul>
+
         </nav>
+
+        <article id="page-article">
+            <h2>Artigo principal</h2>
+        </article>
+
     </div>
 </body>
 </html>
