@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Propriedade position</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../styles/main.css" >
+    </head>
+    <body>
+
+        <div id="interface">
+            <h3>Propriedade <code>position</code></h3>
+
+            <p>
+                <code>position:static</code> é o padrão de todos os elementos HTML e não
+                define nenhuma posição especial, como no elemento <code>img</code> abaixo:
+            </p>
+            <img src="../images/city.jpg" alt="Cidade com edifícios modernos">
+
+            <p>
+                Um elemento com <code>position:relative</code> pode ser deslocado de sua
+                posição original com a definição das propriedades <code>top, right, bottom
+                </code> e <code>left</code>, que podem inclusive assumir valores negativos.
+                O conteúdo da página não vai se ajustar à nova posição do elemento:
+            </p>
+
+            <img src="../images/city.jpg" alt="Cidade com edifícios modernos"
+                 style="position: relative"
+            ><img src="../images/nature-mini.jpg" alt="Pôr do sol em um lago"
+                  style="position: relative; top:20px; left:-50px;
+                  opacity: 0.5"
+            >
+            <span>
+                Observe que este texto em um <code>span</code> começa a partir da posição
+                original da imagem. Lembrando que <code>img</code> é por padrão um elemento
+                <code>inline</code>.
+            </span>
+
+            <p>
+                Um elemento com <code>position:fixed</code>, como a imagem no canto inferior
+                direito desta página, permanecerá no mesmo lugar em caso de rolagem da página,
+                em relação ao <em>viewport</em> (área visível da página).
+                Aceita as mesmas propriedades que <code>position:relative</code>.
+                Não ocupa espaço na sua posição original, o conteúdo não se adapta à sua presença
+                e não funciona bem em navegadores de dispositivos móveis.
+            </p>
+            <img src="../images/city.jpg" alt="Cidade com edifícios modernos"
+                 style="position: fixed; bottom: 20px; right: 20px;
+                 opacity: 0.5"
+            >
+
+            <p>
+                Um elemento com <code>position:absolute</code> tem um comportamento semelhante
+                ao <code>position:fixed</code>, só que ao invés de permanecer fixo em relação
+                ao <em>viewport</em>, o elemento mantém sua posição em relação ao elemento
+                <code>position:relative</code> em que estiver contido. Se não estiver contido
+                em nenhum elemento <code>position:relative</code>, o elemento com
+                <code>position:absolute</code> será posicionado em relação ao <code>body</code>.
+                No exemplo abaixo é utilizado uma <code>div</code> com
+                <code>position:relative</code> para envolver a imagem.
+
+            </p>
+
+            <div style="position:relative; border: 3px solid; width: 200px; height: 200px">
+                <img src="../images/nature-mini.jpg" alt="Pôr do sol em um lago"
+                     style="position:absolute; top:20px; left:30px"
+                >
+            </div>
+
+        </div>
+    </body>
+</html>

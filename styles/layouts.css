@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+header, footer, #sidebar, footer p {
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+}
+
+#sidebar nav ul {
+    list-style: none;
+}
+
+#page-header nav ul li, #page-footer nav ul li {
+    display: inline;
+    margin: 0 10px 0 10px;
+}

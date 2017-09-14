@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Blog de exemplo</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../styles/main.css" >
+        <link rel="stylesheet" href="../styles/layouts.css" >
+        <style>
+
+            header, section, aside, footer, .article-body {
+                border: 1px solid;
+            }
+
+            #interface, .article-container{
+                display: flex;
+                flex-flow: row wrap;
+            }
+
+            #interface > *, .article-container > * {     /* regra aplicada a todos os subelementos dos seletores  */
+                flex: 1 100%;
+            }
+
+            #sidebar nav ul li{
+                display: inline;
+            }
+
+            @media all and (min-width: 600px) {
+                #sidebar {
+                    flex: 1;
+                }
+                #posts {
+                    flex: 4;
+                }
+                #sidebar nav ul li{
+                    display: block;
+                }
+            }
+
+            @media all and (min-width: 800px) {
+                .article-aside {
+                    flex: 1;
+                    order: 2;
+                }
+                .article-body {
+                    flex: 4;
+                    order: 1;
+                }
+                .article-footer {
+                    order:3;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+    <div id="interface">
+
+        <header id="page-header">
+            <h1>Layout com flexbox e media query</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="sidebar">
+            <h2>Barra late&shy;ral</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="posts">
+
+        <article class="article-container">
+            <header>
+                <h2>Post 1</h2>
+                <h3>Subtítulo do post 1</h3>
+            </header>
+
+            <aside class="article-aside">
+                <p>
+                    Infor&shy;mações adici&shy;onais do post 1, normal&shy;mente posi&shy;ciona&shy;das
+                    como uma barra lateral.
+                </p>
+            </aside>
+
+            <div class="article-body">
+                <p>
+                    O primeiro parágrafo do post 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis ullamcorper ultrices tortor a rutrum. In tincidunt accumsan magna at tempor.
+                    Donec orci mi, dignissim eu augue quis, vestibulum aliquet nulla.
+                    Duis bibendum sed nisl vel ultrices. Morbi vitae accumsan leo.
+                    Vestibulum sapien purus, porttitor eget risus vestibulum, consectetur hendrerit tortor.
+                    Vivamus diam risus, facilisis in mollis non, iaculis in nisi.
+                </p>
+                <p>
+                    O segundo parágrafo do post 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis ullamcorper ultrices tortor a rutrum. In tincidunt accumsan magna at tempor.
+                    Donec orci mi, dignissim eu augue quis, vestibulum aliquet nulla.
+                    Duis bibendum sed nisl vel ultrices. Morbi vitae accumsan leo.
+                    Vestibulum sapien purus, porttitor eget risus vestibulum, consectetur hendrerit tortor.
+                    Vivamus diam risus, facilisis in mollis non, iaculis in nisi.
+                </p>
+            </div>
+
+            <footer class="article-footer">
+                <p>Rodapé do post 1.</p>
+            </footer>
+        </article>
+
+        <article class="article-container">
+            <header>
+                <h2>Post 2</h2>
+                <h3>Subtítulo do post 2</h3>
+            </header>
+
+            <aside class="article-aside">
+                <p>
+                    Infor&shy;mações adici&shy;onais do post 1, normal&shy;mente posi&shy;ciona&shy;das
+                    como uma barra lateral.
+                </p>
+            </aside>
+
+            <div class="article-body">
+                <p>
+                    O primeiro parágrafo do post 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis ullamcorper ultrices tortor a rutrum. In tincidunt accumsan magna at tempor.
+                    Donec orci mi, dignissim eu augue quis, vestibulum aliquet nulla.
+                    Duis bibendum sed nisl vel ultrices. Morbi vitae accumsan leo.
+                    Vestibulum sapien purus, porttitor eget risus vestibulum, consectetur hendrerit tortor.
+                    Vivamus diam risus, facilisis in mollis non, iaculis in nisi.
+                </p>
+                <p>
+                    O segundo parágrafo do post 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis ullamcorper ultrices tortor a rutrum. In tincidunt accumsan magna at tempor.
+                    Donec orci mi, dignissim eu augue quis, vestibulum aliquet nulla.
+                    Duis bibendum sed nisl vel ultrices. Morbi vitae accumsan leo.
+                    Vestibulum sapien purus, porttitor eget risus vestibulum, consectetur hendrerit tortor.
+                    Vivamus diam risus, facilisis in mollis non, iaculis in nisi.
+                </p>
+            </div>
+
+            <footer class="article-footer">
+                <p>Rodapé do post 1.</p>
+            </footer>
+        </article>
+
+    </section>
+
+        <footer id="page-footer">
+            <p>&copy; 2017 IFSC</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Termos de serviço</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+    </div>
+    </body>
+</html>
