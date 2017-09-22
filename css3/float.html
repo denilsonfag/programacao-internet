@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Propriedade float</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../styles/main.css" >
+
+        <style>
+            #container{
+                border: 1px solid;
+                overflow: auto;
+            }
+
+            .bloco{
+                float: left;
+                width: 200px;
+                height: 200px;
+                border: 1px solid;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <div id="interface">
+
+            <h3>Propriedade <code>float</code></h3>
+
+            <img src="../images/city.jpg" alt="Cidade com edifícios modernos"
+                 style="float:left"
+            >
+
+            <p style="border: 1px solid">
+                Um elemento com a propriedade <code>float:left</code>, como a imagem ao lado
+                esquerdo, possibilita que o texto dos elementos ao seu redor se ajustem à sua
+                presença.
+            </p>
+
+            <img src="../images/nature-mini.jpg" alt="Pôr do sol em um lago"
+                 style="float:right"
+            >
+
+            <p style="border: 1px solid">
+                A propriedade <code>float</code> também pode assumir o valor <code>right</code>,
+                com na imagem à direita.
+            </p>
+
+            <p style="border: 1px solid; clear: both;">
+                Para que um novo elemento, como este parágrafo, não se ajuste aos elementos com
+                <code>float</code> já carregadas, deve-se utilizar a propriedade <code>clear</code>,
+                que pode assumir os valores <code>left, right</code> ou <code>both</code>.
+            </p>
+
+            <div style="border: 1px solid">
+                <img src="../images/city.jpg" alt="Cidade com edifícios modernos"
+                     style="float:right"
+                >
+                <p>
+                    O tamanho de um elemento não se ajusta ao tamanho de outro elemento com propriedade
+                    <code>float</code> definido dentro dele, como neste exemplo.
+                </p>
+            </div>
+
+            <div style="border: 1px solid;
+                clear: right;
+                overflow: auto;"
+            >
+                <img src="../images/city.jpg" alt="Cidade com edifícios modernos"
+                     style="float:right"
+                >
+                <p>
+                    Este problema é resolvido com a definição da propriedade <code>overflow: auto</code>
+                    ao container, como aqui.
+                </p>
+            </div>
+
+            <p>
+                Blocos com a propriedade <code>float</code> podem ser utilizados para criação de layouts
+                responsivos, como no exemplo abaixo:
+            </p>
+
+            <div id="container">
+
+                <div class="bloco">
+                    <p> Este é um parágrafo dentro de um bloco posicionado com <code>float:left</code>. (1)</p>
+                </div>
+                <div class="bloco">
+                    <p> Este é um parágrafo dentro de um bloco posicionado com <code>float:left</code>. (2)</p>
+                </div>
+                <div class="bloco">
+                    <p> Este é um parágrafo dentro de um bloco posicionado com <code>float:left</code>. (3)</p>
+                </div>
+                <div class="bloco">
+                    <p> Este é um parágrafo dentro de um bloco posicionado com <code>float:left</code>. (4)</p>
+                </div>
+                <div class="bloco">
+                    <p> Este é um parágrafo dentro de um bloco posicionado com <code>float:left</code>. (5)</p>
+                </div>
+                <div class="bloco">
+                    <p> Este é um parágrafo dentro de um bloco posicionado com <code>float:left</code>. (6)</p>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
