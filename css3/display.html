@@ -3,39 +3,32 @@
     <head>
         <meta charset="utf-8">
         <title>Propriedade display</title>
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../styles/main.css" >
         <style>
-
             img {
                 display: block;
             }
-
             #just-inline-block:after {  /* para aplicar justify em inline-blocks */
                 content: "";
                 display: inline-block;
                 width: 100%;
                 height: 0;
             }
-
             #vert-align-inline-block:before {  /* para aplicar alinhamento vertical em inline-blocks */
                 content: "";
                 display: inline-block;
                 vertical-align: middle;
                 height: 100%;
             }
-
         </style>
     </head>
     <body>
-
         <div id="interface">
-
-            <header>
-                <h3>Propriedade <code>display</code></h3>
-            </header>
-
             <article>
+                <header>
+                    <h3>Propriedade <code>display</code></h3>
+                </header>
                 <p>
                     Todos os elementos HTML tem um valor padrão para a propriedade
                     <code>display</code>, que pode ser alterado. <code>inline</code>
@@ -144,7 +137,6 @@
                     <div style="display: inline-block; vertical-align: middle; border: 2px solid blue"><img src="../images/nature-menor.jpg"/></div>
                     <div style="display: inline-block; vertical-align: middle; border: 2px solid blue"><img src="../images/city.jpg"/></div>
                 </div>
-
             </article>
         </div>
     </body>
