@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Funcionamento básico</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/main.css" >
+    </head>
+    <body>
+        <div id="interface">
+            <article>
+                <header>
+                    <h2>Git</h2>
+                    <h3>Funcionamento básico</h3>
+                </header>
+                <p> O Git permite o controle de versões de repositórios. </p>
+                <p> Um repositório é o diretório onde estão os arquivos e pastas de um projeto. </p>
+                <p> Para gravar uma versão do repositório, deve ser executado um <strong>commit</strong>. </p>
+                <p> Para executar commits, o git deve ser iniciado no repositório. Para isso, no diretório
+                    raiz do projeto, em um sistema com o Git instalado, execute: <code>git init</code>.
+                    Neste ponto foi criada uma pasta oculta com o nome .git que armazena os arquivos do versionamento.
+                <p> Arquivos e pastas em um repositório podem estar: </p>
+                <ol>
+                    <li>Inalterados desde o último commit.</li>
+                    <li>Alterados desde o último commit e prontos para serem commitados (<strong>stageds</strong>).</li>
+                    <li>Alterados desde o último commit (<strong>untrackteds</strong>).</li>
+                </ol>
+                <figure>
+                    <img src="images/git-basico.png" alt="Esquema básico do Git"/>
+                </figure>
+                <p> Como ainda não foi realizado nenhum <code>commit</code>, nenhuma versão do projeto ainda foi salva.
+                    Isso pode ser verificado executando: <code>git status</code> </p>
+                <figure>
+                    <img src="images/init.png" alt="Comandos init e status"/>
+                </figure>
+                <p> Todo o conteúdo do repositório é apresentado em vermelho e descrito como <strong>untrackted</strong>.
+                    Para preparar todo o conteúdo para um <code>commit</code>, execute: <code>git add *</code></p>
+                <figure>
+                    <img src="images/add.png" alt="Comando add"/>
+                </figure>
+                <p> Agora o conteúdo é apresentado em verde e descrito como <strong>alterações a serem commitadas</strong>.
+                    Para realizar o primeiro commit, execute: <code>git commit -m "Mensagem do primeiro commit"</code>.
+                    A mensagem é obrigatória e deve descrever a principal alteração no projeto do commit.</p>
+                <figure>
+                    <img src="images/commit.png" alt="Comando commit"/>
+                </figure>
+                <p> Para ver todos os commits que já foram realizados em um repositório, execute: <code>git log</code> </p>
+            </article>
+        </div>
+    </body>
+</html>
