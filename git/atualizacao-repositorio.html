@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Atualização do repositório original</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/main.css" >
+    </head>
+    <body>
+        <div id="interface">
+            <article>
+                <header>
+                    <h3>Passos para atualização do repositório original</h3>
+                </header>
+                <ol>
+                    <li>Crie a sua conta no Github.</li>
+                    <li>Realize um <code>fork</code> do repositório principal, em
+                        <a href="https://github.com/denilsonfag/programacao-internet" target="_blank">https://github.com/denilsonfag/programacao-internet</a>,
+                        o que vai criar uma cópia do repositório na sua conta.</li>
+                    <li>Utilizando um ambiente de linha de comando, escolha um local no sistema de arquivos onde vai baixar
+                        uma cópia do repositório na sua máquina</li>
+                    <li>Execute a cópia com o comando:
+                        <p><code>git clone https://github.com/<strong>nome-da-sua-conta</strong>/programacao-internet.git</code></p></li>
+                    <li>Caso você já tenha realizado os passos acima anteriormente, é necessário atualizar o seu repositório
+                        com as alterações do repositório principal. Para isso:
+                        <ol>
+                            <li>Configure o repositório principal como um dos remotos do seu repositório local. Para isso, execute:
+                                <p><code>git remote add upstream https://github.com/denilsonfag/programacao-internet.git</code></p></li>
+                            <li>Baixe as alterações: <code>git fetch upstream</code></li>
+                            <li>Mescle as alterações com o seu repositório local: <code>git merge upstream/master</code></li>
+                            <li>Atualize o repositório na sua conta do Github: <code>git push</code></li>
+                        </ol>
+                    </li>
+                    <li>Realize as alterações necessárias e realize seus commits. Ver <a href="func-basico.html">Funcionamento básico</a>.</li>
+                    <li>Atualize o repositório na sua conta do Github: <code>git push</code></li>
+                    <li>Na sua conta do Github, solicite o <code>pull request</code></li>
+                </ol>
+            </article>
+        </div>
+    </body>
+</html>

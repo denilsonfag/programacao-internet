@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Iframes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <style>
+    #interface{
+      font-size: 20px;
+    }
+
+    #subtitulo{
+    	text-align: center;
+    	color: #757150;
+    }
+
+    h1{
+      text-align: center;
+    }
+
+    li{
+    	text-indent: 20px;
+    }
+
+    .join-inline{
+      display: inline;
+    }
+
+    .centro{
+      text-align: center;
+    }
+
+    /* Imagens */
+
+    .imagem{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+    }
+
+    /* Iframes */
+
+    .iframes{
+      width: 100%;
+      height: 340px;
+      border: none;
+    }
+
+    .celular1{
+      width: 360px;
+      height: 640px;
+      border: none;
+    }
+
+    .celular2{
+      width: 444px;
+      height: 400px;
+      border: none;
+    }
+
+    /* Tabelas */
+
+    table{
+      text-align: left;
+    	width: 100%;
+      padding: 5px;
+    }
+
+    td, th{
+      padding: 5px;
+    }
+
+    th{
+    	background-color: #999999;
+    }
+
+    .tabela{
+      border-collapse: collapse;
+      border-top: 1px solid #dddddd;
+      border-left: 1px solid #dddddd;
+      border-right: 1px solid #dddddd;
+    }
+
+    .legenda{
+      text-align: center;
+      width: 50%;
+      font-weight: bold;
+    }
+
+    .tabela-tr:hover{
+    	background-color:#dddddd;
+    }
+
+    .tabela-th{
+      border-bottom: 1px solid #dddddd;
+      width: 80%;
+    }
+
+    .tabela-td{
+      border-bottom: 1px solid #dddddd;
+    }
+
+    .codigo{
+      background-color: #272822;
+    }
+
+    /* Códigos */
+
+    .caractere{
+      color: #ffffff;
+    }
+
+    .tag{
+      color: #f90056;
+    }
+
+    .atributo{
+      color: #95dd07;
+    }
+
+    .texto{
+      color: #e6d95c;
+    }
+
+    .comentario{
+    	color: #757150;
+    }
+
+    .estilo{
+      color: #66d9ef;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="interface">
+
+    <header id="page-header">
+        <h1>A tag &lt;<code class="tag">iframe</code>&gt;</h1>
+    </header>
+
+    <h4 id="subtitulo">
+      Reproduzindo um website ou mídia dentro de um website através de um link.
+    </h4>
+    
+    <hr>
+    
+    <section>
+      <article>
+        <h2>Sintaxe</h2>
+        <p>A sintaxe principal é definida por:</p>    
+        <table class="codigo">
+          <tr>
+            <td>
+              <code class="caractere">&lt;</code><code class="tag">iframe </code>
+              <code class="atributo">src</code><code class="caractere">=</code><code class="texto">"URL"</code><code class="caractere">&gt;</code>
+              <code class="caractere">&lt;/</code><code class="tag">iframe</code><code class="caractere">&gt;</code>
+            </td>
+          </tr>
+        </table>
+        <p>
+        	Pode-se colocar tags internas a ela, geralmente para avisar o usuário caso o navegador não suporte a tag &lt;iframe&gt;, pois somente será exibido caso isto ocorra. Exemplo:
+        </p>
+        <table class="codigo">
+          <tr>
+            <td>
+              <code class="caractere">&lt;</code><code class="tag">iframe </code>
+              <code class="atributo">src</code><code class="caractere">=</code><code class="texto">"iframe.html"</code><code class="caractere">&gt;</code>
+            </td>
+          </tr>
+          <tr>
+          	<td>
+              <code class="caractere">&nbsp;&nbsp;&lt;</code><code class="tag">p</code><code class="caractere">&gt;</code>
+              <code class="caractere">Este navegador não suporta a tag &lt;iframe&gt;.</code>
+              <code class="caractere">&lt;/</code><code class="tag">p</code><code class="caractere">&gt;</code>
+          	</td>
+          </tr>
+          <tr>
+          	<td>
+              <code class="caractere">&lt;/</code><code class="tag">iframe</code><code class="caractere">&gt;</code>
+          	</td>
+          </tr>
+        </table>
+        <p>
+          Por padrão, o iframe é exibido com bordas. Elas podem ser removidas através do css. Exemplo:
+        </p>
+        <table class="codigo">
+          <tr>
+            <td>
+              <code class="caractere">&lt;</code><code class="tag">style</code><code class="caractere">&gt;</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code class="tag">&nbsp;&nbsp;iframe</code>
+              <code class="caractere">{</code>
+              <code class="estilo">border</code><code class="caractere">:</code>
+              <code class="estilo">none</code><code class="caractere">;</code>
+              <code class="caractere">}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code class="caractere">&lt;/</code><code class="tag">style</code><code class="caractere">&gt;</code>
+            </td>
+          </tr>
+        </table>
+        
+        <iframe class="iframes" src="#">
+        	<p>Este navegador não suporta a tag &lt;iframe&gt;.</p>
+        </iframe>
+
+        <p>Todos os navegadores atuais e atualizados da imagem abaixo suportam a tag. Entre os atributos, somente o srcdoc não é suportado pelo navegador Internet Explorer / Edge (<a href="https://www.w3schools.com/TAGs/att_iframe_srcdoc.asp">w3school.com</a>).</p>
+
+        <a href="http://1.bp.blogspot.com/-8IfBfM07ZH4/UDwMlZxVpTI/AAAAAAAAATk/bLsReLpaufI/s1600/39654109014123727.jpg"><img class="imagem" src="http://1.bp.blogspot.com/-8IfBfM07ZH4/UDwMlZxVpTI/AAAAAAAAATk/bLsReLpaufI/s1600/39654109014123727.jpg"></a>
+      </article>
+    
+      <hr>
+
+      <article>
+        <h2>Atributos suportados no HTML 5</h2>
+        <p>São suportados os seguintes atributos:</p>
+
+        <article>
+          <h3>src</h3>
+          <p>
+          	Especifica uma URL absoluta ou relativa. Faz parte da sintaxe básica da tag &lt;iframe&gt;. Exemplos:
+          </p>
+          <table class="codigo">
+            <tr>
+              <td>
+                <code class="caractere">&lt;</code><code class="tag">iframe </code>
+                <code class="atributo">src</code><code class="caractere">=</code><code class="texto">"../images/html-logo.png"</code><code class="caractere">&gt;</code>
+                <code class="caractere">&lt;/</code><code class="tag">iframe</code><code class="caractere">&gt;</code>
+                <code class="comentario">&lt;!-- URL absoluta --&gt;</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code class="caractere">&lt;</code><code class="tag">iframe </code>
+                <code class="atributo">src</code><code class="caractere">=</code><code class="texto">"https://www.w3schools.com/TAGs/tag_iframe.asp"</code><code class="caractere">&gt;</code>
+                <code class="caractere">&lt;/</code><code class="tag">iframe</code><code class="caractere">&gt;</code>
+                <code class="comentario">&lt;!-- URL relativa --&gt;</code>
+              </td>
+            </tr>
+          </table>
+        </article>
+        <article>
+          <h3>srcdoc</h3>
+          <p>
+            É um atributo novo no HTML 5. Especifica um conteúdo HTML para ser exibido no frame. Se o navgador suportar esta tag e houver o atributo src, ele substituirá o conteúdo do mesmo. Do contrário, será exibido o conteúdo do atributo src. O site w3schools.com recomenda ser usado com o atributo sandbox. Exemplos:
+          </p>
+          <table class="codigo">
+            <tr>
+              <td>
+                <code class="caractere">&lt;</code><code class="tag">iframe </code>
+                <code class="atributo">srcdoc</code><code class="caractere">=</code><code class="texto">"&lt;h1&gt;Hello, world!&lt;/h1&gt;"</code><code class="caractere">&gt;</code>
+                <code class="caractere">&lt;/</code><code class="tag">iframe</code><code class="caractere">&gt;</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code class="caractere">&lt;</code><code class="tag">iframe </code>
+                <code class="atributo">srcdoc</code><code class="caractere">=</code>
+                <code class="texto">"&lt;h1&gt;Hello, world!&lt;/h1&gt;"</code>
+                <code class="atributo">src</code><code class="caractere">=</code><code class="texto">"../images/html-logo.png"</code><code class="caractere">&gt;</code>
+                <code class="caractere">&lt;/</code><code class="tag">iframe</code><code class="caractere">&gt;</code>
+              </td>
+            </tr>
+          </table>
+
+          <iframe class="iframes" srcdoc="
+            <h1 style=&quot;text-align: center;&quot;>Hello, world!</h1>
+            <h2 style=&quot;text-align: center;&quot;>Hello, world!</h2>
+            <h3 style=&quot;text-align: center;&quot;>Hello, world!</h3>
+            <h4 style=&quot;text-align: center;&quot;>Hello, world!</h4>
+            <h5 style=&quot;text-align: center;&quot;>Hello, world!</h5>
+            <h6 style=&quot;text-align: center;&quot;>Hello, world!</h6>
+            <p style=&quot;text-align: center;&quot;>Hello, world!</p>"
+          ></iframe>
+        </article>
+        <article>
+          <h3>name</h3>
+          <p>
+          	Especifica o nome de um &lt;iframe&gt;. O valor do atributo nome pode ser utilizado no atributo target. Exemplo:
+          </p>
+          <table class="codigo">
+            <tr>
+              <td>
+                <code class="caractere">&lt;</code><code class="tag">iframe </code>
+                <code class="atributo">src</code><code class="caractere">=</code><code class="texto">"../images/nature-mini.jpg"</code>
+                <code class="atributo">name</code><code class="caractere">=</code><code class="texto">"iframe"</code><code class="caractere">&gt;</code>
+                <code class="caractere">&lt;/</code><code class="tag">iframe</code><code class="caractere">&gt;</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code class="caractere">&lt;</code><code class="tag">p</code><code class="caractere">&gt;</code>
+                <code class="caractere">&lt;</code><code class="tag">a </code>
+                <code class="atributo">href</code><code class="caractere">=</code><code class="texto">"../images/nature-menor.jpg"</code>
+                <code class="atributo">target</code><code class="caractere">=</code><code class="texto">"iframe"</code><code class="caractere">&gt;</code>
+                <code class="caractere">Ampliar</code>
+                <code class="caractere">&lt;/</code><code class="tag">a</code><code class="caractere">&gt;</code>
+                <code class="caractere">&lt;/</code><code class="tag">p</code><code class="caractere">&gt;</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code class="caractere">&lt;</code><code class="tag">p</code><code class="caractere">&gt;</code>
+                <code class="caractere">&lt;</code><code class="tag">a </code>
+                <code class="atributo">href</code><code class="caractere">=</code><code class="texto">"../images/nature-mini.jpg"</code>
+                <code class="atributo">target</code><code class="caractere">=</code><code class="texto">"iframe"</code><code class="caractere">&gt;</code>
+                <code class="caractere">Reduzir</code>
+                <code class="caractere">&lt;/</code><code class="tag">a</code><code class="caractere">&gt;</code>
+                <code class="caractere">&lt;/</code><code class="tag">p</code><code class="caractere">&gt;</code>
+              </td>
+            </tr>
+          </table>
+
+          <iframe class="iframes" src="page.html"></iframe>
+        </article>
+        <article>
+          <h3>sandbox</h3>
+          <p>
+          	Outro atributo novo no HTML 5. Especifica um conjunto extra de permissões para o conteúdo de um &lt;iframe&gt;, tais como bloqueio e desativação de:
+          </p>
+          <li>APIs;</li>
+          <li>Formulários;</li>
+          <li>Plugins;</li>
+          <li>Recursos automáticos (áudio, vídeo ou foco);</li>
+          <li>Redirecionamento; e</li>
+          <li>Scripts.</li>
+          <p>
+          	Os valores para o atributo são pré definidos, sendo eles:
+          </p>
+        	<table class="tabela">
+        		<tr>
+        			<th>Valor</th>
+        			<th class="tabela-th">Definição</th>
+        		</tr>
+        		<tr class="tabela-tr">
+        			<td class="tabela-td">(Sem valor)</td>
+        			<td class="tabela-td">Aplica todas as restrições.</td>
+        		</tr>
+        		<tr class="tabela-tr">
+        			<td class="tabela-td">allow-forms</td>
+        			<td class="tabela-td">Reabilita envio de formulários.</td>
+        		</tr>
+        		<tr class="tabela-tr">
+        			<td class="tabela-td">allow-pointer-lock</td>
+        			<td class="tabela-td">Reabilita APIs.</td>
+        		</tr>
+        		<tr class="tabela-tr">
+        			<td class="tabela-td">allow-popups</td>
+        			<td class="tabela-td">Reabilita popups.</td>
+        		</tr>
+        		<tr class="tabela-tr">
+        			<td class="tabela-td">allow-same-origin</td>
+        			<td class="tabela-td">Permite que o conteúdo do iframe seja tratado como sendo da mesma origem.</td>
+        		</tr>
+        		<tr class="tabela-tr">
+        			<td class="tabela-td">allow-scripts</td>
+        			<td class="tabela-td">Reabilita scripts.</td>
+        		</tr>
+        		<tr class="tabela-tr">
+        			<td class="tabela-td">allow-top-navigation</td>
+        			<td class="tabela-td">Permite que o conteúdo do iframe navegue no contexto de navegação de nível superior do usuário.</td>
+        		</tr>
+        	</table>
+
+          <p>
+          	Exemplos:
+          </p>
+          <table class="codigo">
+            <tr>
+              <td>
+                <code class="caractere">&lt;</code><code class="tag">iframe </code>
+                <code class="atributo">src</code><code class="caractere">=</code><code class="texto">"calculadora-js.html" </code>
+                <code class="tag">sandbox</code><code class="caractere">&gt;</code>
+                <code class="caractere">&lt;/</code><code class="tag">iframe</code><code class="caractere">&gt;</code>
+                <code class="comentario">&lt;!-- Aplica todas as restrições --&gt;</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code class="caractere">&lt;</code><code class="tag">iframe </code>
+                <code class="atributo">src</code><code class="caractere">=</code><code class="texto">"calculadora-js.html" </code>
+                <code class="atributo">sandbox</code><code class="caractere">=</code><code class="texto">"allow-scripts"</code><code class="caractere">&gt;</code>
+                <code class="caractere">&lt;/</code><code class="tag">iframe</code><code class="caractere">&gt;</code>
+                <code class="comentario">&lt;!-- Reabilita scripts --&gt;</code>
+              </td>
+            </tr>
+          </table>
+
+          <table>
+            <tr>
+              <td class="legenda">sandbox</td>
+              <td class="legenda">sandbox="allow-scripts"</td>
+            </tr>
+          </table>
+
+          <div class="join-inline">
+            <iframe class="celular2" src="calculadora-js.html" sandbox></iframe>
+            <iframe class="celular2" src="calculadora-js.html" sandbox="allow-scripts"></iframe>
+          </div>
+        </article>
+        <article>
+          <h3>height</h3>
+          <p>
+          	Especifica a dimensão vertical de um &lt;iframe&gt; em pixels. Exemplo:
+          </p>
+          <table class="codigo">
+            <tr>
+              <td>
+                <code class="caractere">&lt;</code><code class="tag">iframe </code>
+                <code class="atributo">src</code><code class="caractere">=</code><code class="texto">"../index.html"</code>
+                <code class="atributo">height</code><code class="caractere">=</code><code class="texto">"640"</code><code class="caractere">&gt;</code>
+                <code class="caractere">&lt;/</code><code class="tag">iframe</code><code class="caractere">&gt;</code>
+              </td>
+            </tr>
+          </table>
+        </article>
+        <article>
+          <h3>width</h3>
+          <p>
+          	Especifica a dimensão horizontal de um &lt;iframe&gt; em pixels. Exemplo:
+          </p>
+          <table class="codigo">
+            <tr>
+              <td>
+                <code class="caractere">&lt;</code><code class="tag">iframe </code>
+                <code class="atributo">src</code><code class="caractere">=</code><code class="texto">"../index.html"</code>
+                <code class="atributo">width</code><code class="caractere">=</code><code class="texto">"360"</code><code class="caractere">&gt;</code>
+                <code class="caractere">&lt;/</code><code class="tag">iframe</code><code class="caractere">&gt;</code>
+              </td>
+            </tr>
+          </table>
+
+          <iframe class="celular1" src="../../index.html"></iframe>
+        </article>
+      </article>
+      
+      <hr>
+      
+      <article>
+        <h2>Atributos não suportados no HTML 5</h2>
+
+        <p>Há vários atributos que não são mais suportados, porém ainda são utilizados. São eles:</p>
+
+        <table class="tabela">
+          <tr>
+            <th>Valor</th>
+            <th class="tabela-th">Definição</th>
+          </tr>
+          <tr class="tabela-tr">
+            <td class="tabela-td">align</td>
+            <td class="tabela-td">Especifica o alinhamento de um frame.</td>
+          </tr>
+          <tr class="tabela-tr">
+            <td class="tabela-td">frameborder</td>
+            <td class="tabela-td">Especifica exibição ou não de uma borda em volta do frame.</td>
+          </tr>
+          <tr class="tabela-tr">
+            <td class="tabela-td">longdesc</td>
+            <td class="tabela-td">Especifica uma página que contém uma longa descrição do conteúdo de um frame.</td>
+          </tr>
+          <tr class="tabela-tr">
+            <td class="tabela-td">marginheight</td>
+            <td class="tabela-td">Especifica as margens de cima e de baixo de um frame.</td>
+          </tr>
+          <tr class="tabela-tr">
+            <td class="tabela-td">marginwidth</td>
+            <td class="tabela-td">Especifica as margens da esquerda e da direita de um frame.</td>
+          </tr>
+          <tr class="tabela-tr">
+            <td class="tabela-td">scrolling</td>
+            <td class="tabela-td">Especifica exibição ou não de uma barra de rolagem.</td>
+          </tr>
+        </table>
+      </article>
+    </section>
+
+    <footer>
+      <p class="centro">Fontes:</p>
+      <p class="centro"><a href="https://www.w3schools.com/"><img class="imagem" src="http://mostlywebsites.net/wp-content/uploads/w3schools-logo.jpg"></a></p>
+      <p class="centro"><a href="https://www.w3schools.com/TAGs/tag_iframe.asp">HTML &lt;iframe&gt; Tag</a></p>
+      <p class="centro"><a href="https://www.w3schools.com/html/html_iframe.asp">HTML Iframes</a></p>
+    </footer>
+  </div>
+</body>
+</html>

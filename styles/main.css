@@ -11,11 +11,13 @@ body {
 p {
     text-align: justify;
     text-indent: 20px;
+    margin: 10px 0 10px 0;
     padding: 0 10px 0 10px;
 }
 
 code {
     font-weight: bold;
+    font-family: Consolas, "monospace";
 }
 
 #interface {

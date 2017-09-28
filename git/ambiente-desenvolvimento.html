@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Ambiente de desenvolvimento</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/main.css" >
+    </head>
+    <body>
+        <div id="interface">
+            <article>
+                <header>
+                    <h2>Git</h2>
+                    <h3>Repositórios remotos</h3>
+                </header>
+
+                <p>O Git permite que um repositório local seja copiado em máquinas remotas, que atuam como servidores.
+                Uma das formas de trabalhar com repositórios remotos é:</p>
+                <ol>
+                    <li>Criar um repositório na máquina remota com <code>git init</code></li>
+                    <li>Copiar o repositório remoto na máquina local com <code>git clone</code></li>
+                    <li>Realizar os commits no repositório local e atualizar o repositório remoto com <code>git push</code></li>
+                    <li>Atualizar o repositório local com alterações no repositório remoto usando <code>git pull</code></li>
+                </ol>
+
+                <figure>
+                    <img src="images/remoto.png" alt="Esquema repositório remoto"/>
+                </figure>
+
+                <h3>Github</h3>
+                <p> Github é uma plataforma para compartilhamento de repositórios Git.</p>
+                <p> Para realizar alterações em um repositório compartilhado no Github, um desenvolvedor dever realizar
+                    um <code>fork</code> desse repositório, o que vai criar uma cópia do repositório em sua própria
+                    conta na plataforma. </p>
+                <p> Para atualizar o repositório original com as suas alterações, o desenvolvedor deve solicitar um
+                    <code>pull request</code>.</p>
+                <figure>
+                    <img src="images/github.png" alt="Esquema Github"/>
+                </figure>
+                <p> Para atualizar a sua cópia com possíveis alterações no repositório original, é preciso definir
+                    o repositório original como um remoto do seu repositório local. Para isto, execute: </p>
+                <p><code>git remote add upstream endereco_repositorio_original</code></p>
+                <p>Quando quiser atualizar, execute <code>git fetch upstream</code>, para baixar as atualizações para
+                   seu repositório local, e <code>git merge upstream/master</code>, para mesclar as alterações no seu
+                   repositório local. Para atualizar a sua cópia no Github, execute <code>git push</code>.</p>
+                <figure>
+                    <img src="images/github2.png" alt="Esquema para atualizar repositório local"/>
+                </figure>
+
+            </article>
+        </div>
+    </body>
+</html>
