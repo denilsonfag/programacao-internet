@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Pseudo classes e pseudo elementos.</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../styles/main.css">
+	<style type="text/css">
+		
+		header {
+			text-align: center;
+		}
+
+		#lista1 li:first-child {
+			color: green;
+		}
+
+		#lista1 li:last-child {
+			color: yellow;
+		}
+
+		#lista2 li:nth-child(2n) {
+			color: red;
+		}
+		#lista2 li:nth-child(2n+1) {
+			color: blue;
+		}
+		#lista3 li:nth-child(1) {
+			color: blue;
+		}
+		#lista3 li:nth-child(2) {
+			color: red;
+		}
+		#lista3 li:nth-child(3) {
+			color: green;
+		}
+		#lista3 li:nth-child(4) {
+			color: yellow;
+		}
+		#lista3 li:nth-child(5) {
+			color: grey;
+		}
+		#lista3 li:nth-child(6) {
+			color: brown;
+		}
+		#lista3 li:nth-child(7) {
+			color: pink;
+		}
+		a:hover {
+			background-color: red;
+		}
+		p.paragrafo1:first-letter {
+			font-size: 200%;
+		}
+		p.paragrafo2:first-line {
+			 font-family: fantasy;
+			 font-size: 150%;
+			 color: green;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	
+<article id="interface">
+
+	<header><h1>Pseudo Classe e Pseudo Elemento</h1></header>
+
+	<hr>
+	<section>
+		<p><h3>Pseudo Classe:</h3></p>
+		<p><b>Definição:</b> é uma classe CSS pré-definida.</p>
+
+		<p>Existe duas classes pré-definidas para formatar o primeiro e o último elementos de uma lista.<br>
+		São elas: first-child e last-child.<br>
+		Vamos aplicar a formatação no primeiro e no último elementos na seguinte lista:<br>
+
+		<ul id="lista1">
+			<li>Domingo</li>
+			<li>Segunda-Feira</li>
+			<li>Terça-Feira</li>
+			<li>Quarta-Feira</li>
+			<li>Quinta-Feira</li>
+			<li>Sexta-Feira</li>
+			<li>Sábado</li>
+		</ul>
+
+
+		</p>
+
+		<p>Vimos que ficou muito fácil formatar o primeiro e o último elementos da lista usando o first-child e o last-child.<br>
+		</p>
+
+		<p>Há uma outra pseudo-classe para formatar elementos de uma lista, a nth-child. Com ela, é possível formatar não apenas o primeiro e o último elementos, mas todos passando o índice do elemento.<br>
+		O nth-child pode receber expressões aritméticas por parâmetro.<br>
+		Vamos formatar os elementos pares e os elementos ímpares da seguinte lista: <br>
+
+		<ul id="lista2">
+			<li>Domingo</li>
+			<li>Segunda-Feira</li>
+			<li>Terça-Feira</li>
+			<li>Quarta-Feira</li>
+			<li>Quinta-Feira</li>
+			<li>Sexta-Feira</li>
+			<li>Sábado</li>
+		</ul>
+		</p>
+
+		<p>Agora, vamos formatar as linhas de um elemento passando o índice.<br>
+
+		<ul id="lista3">
+			<li>Domingo</li>
+			<li>Segunda-Feira</li>
+			<li>Terça-Feira</li>
+			<li>Quarta-Feira</li>
+			<li>Quinta-Feira</li>
+			<li>Sexta-Feira</li>
+			<li>Sábado</li>
+		</ul>
+		</p>
+		
+		</section>
+
+		<section>
+
+		<hr>
+			<p><h3>Pseudo Classe de estado:</h3></p>
+				
+			<p><b>Definição:</b> É uma pseudo classe que representa estados de elemento, ou seja, o que ele vai fazer se ocorrer determinado evento do usuário.<br>
+			</p>
+
+			<ul>
+				<li>Hover : ´É uma pseudo-classe de estado que seleciona o link no momento em que passamos o mouse por cima dele.</li>
+			</ul>
+
+			<p><a id="link2" href="www.ifsc.edu.br">www.ifsc.edu.br</a></p>
+
+			<p>Existem outras pseudo-classes de estado, entretanto, não serão mencionadas nessa página.</p>
+	</section>
+
+	<section>
+
+	<hr>
+		<p><h3>Pseudo Elemento:</h3></p>
+		
+		<p>Definição: São elementos que não existem no documento mas podem ser selecionados pelo CSS.</p>
+
+		
+		<p class="paragrafo1">O first-letter é um pseudo-elemento que altera apenas a primeira letra de um conteúdo.<br>
+		</p>
+		<p class="paragrafo2">O first-line permite que você selecione a primeira linha de um texto muito grande.O first-line permite que você selecione a primeira linha de um texto muito grande.O first-line permite que você selecione a primeira linha de um texto muito grande.O first-line permite que você selecione a primeira linha de um texto muito grande.O first-line permite que você selecione a primeira linha de um texto muito grande.O first-line permite que você selecione a primeira linha de um texto muito grande.O first-line permite que você selecione a primeira linha de um texto muito grande.O first-line permite que você selecione a primeira linha de um texto muito grande.O first-line permite que você selecione a primeira linha de um texto muito grande.O first-line permite que você selecione a primeira linha de um texto muito grande.O first-line permite que você selecione a primeira linha de um texto muito grande.</p>
+
+		
+		
+	</section>
+
+	</article>
+</body>
+</html>
