@@ -47,8 +47,13 @@
         }
         #side-menu ul li{
             display: inline;
-            padding: 1px;
+            padding: 0px;
         }
+        #side-menu ul{
+           list-style-type: none;
+
+        }
+
 
          @media all and (min-width: 800px) {
 
@@ -56,7 +61,7 @@
                  flex: 1;
              }
              article#artigo{
-                 flex: 3;
+                 flex: 4;
              }
 
 
