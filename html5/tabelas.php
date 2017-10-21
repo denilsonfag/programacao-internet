@@ -40,12 +40,14 @@
             flex-flow: row wrap;
 
         }
+
         #interface > * {
             flex: 1 100%;
 
         }
-        #side-menu nav ul li{
+        #side-menu ul li{
             display: inline;
+            padding: 1px;
         }
 
          @media all and (min-width: 800px) {
@@ -57,8 +59,10 @@
                  flex: 3;
              }
 
-        #side-menu nav ul li{
+
+        #side-menu  ul li{
             display: list-item;
+            padding: 2px
         }
         }
     </style>
