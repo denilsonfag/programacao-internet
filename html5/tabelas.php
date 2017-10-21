@@ -47,11 +47,12 @@
         }
         #side-menu ul li{
             display: inline;
-            padding: 0px;
+            padding: 5px;
+
         }
         #side-menu ul{
            list-style-type: none;
-
+            padding:0;
         }
 
 
@@ -67,7 +68,7 @@
 
         #side-menu  ul li{
             display: list-item;
-            padding: 2px
+            padding: 5px;
         }
         }
     </style>
@@ -268,7 +269,8 @@
                 </tr>
             </table>
 
-            <footer id="page-footer">
+            </article>
+             <footer id="page-footer">
                 <?php include '../page-footer.html'; ?>
             </footer>
     </div>
