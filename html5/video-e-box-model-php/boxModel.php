@@ -1,14 +1,14 @@
-<!DOCTYPE HTML>
-
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 
 <head>
-	
-	<title>CSS E HTML</title>
-	<meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css" >
+    <title>Programação para Internet</title>
 
     <style>
-
+    
         @import url('https://fonts.googleapis.com/css?family=Raleway');
         
         p {
@@ -89,19 +89,27 @@
     </style>
 
 </head>
+<body>
+    <div id="interface">
+        <header id="page-header">
+            <?php include 'page-header.html'; ?>
+        </header>
 
-<body >
+        <nav id="side-menu">
+            <?php include 'side-menu.html'; ?>
+        </nav>
 
-    <div class="voltar">
+        <article>
+            <div class="voltar">
     <p><a href="index.html">Página inicial!</a></p>
     </div>
 
-	<div class="titulo">
-	<h1>Box Model com CSS<br/>Aprendendo o funcionamento dos elementos em HTML</h1>
-	</div>
+    <div class="titulo">
+    <h1>Box Model com CSS<br/>Aprendendo o funcionamento dos elementos em HTML</h1>
+    </div>
 
-	<div class="corpo">
-	<p>
+    <div class="corpo">
+    <p>
     O <strong>Box Model</strong> é basicamente composto por 4 elementos, são eles:<br/>
     </p>
     <p><a href="#conteudo">Conteúdo (content)</a><br/></p>
@@ -181,9 +189,13 @@
 
     
     
-	</div>
+    </div>
 
+        </article>
 
+        <footer id="page-footer">
+            <?php include 'page-footer.html'; ?>
+        </footer>
+    </div>
 </body>
-
 </html>
