@@ -13,16 +13,21 @@
             <?php include 'page-header.html'; ?>
         </header>
 
+        <nav id="side-menu">
+            <ul>
+                <li><a href="html5/html-main.php">HTML 5</a></li>
+                <li><a href="css3/css-main.php">CSS 3</a></li>
+            </ul>
+
+            <?php include 'side-menu.html'; ?>
+
+        </nav>
+
         <article>
             <br/>
-            <p class="pcenter"><a href="html5/html-main.php">HTML 5</a> </p>
-            <p class="pcenter"><a href="css3/css-main.php">CSS 3</a> </p>
-            <br>
+            <p>Este site reúne conteúdo sobre Programação para Internet.</p>
+            <br/>
         </article>
-
-        <nav id="side-menu">
-            <?php include 'side-menu.html'; ?>
-        </nav>
 
         <footer id="page-footer">
             <?php include 'page-footer.html'; ?>
