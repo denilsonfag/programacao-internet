@@ -4,7 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="../images/favicon.png">
-  <link rel="stylesheet" href="../styles/main.css" >
+  <link rel="stylesheet" href="../styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Mandali" rel="stylesheet">
   <title>Seletores</title>
   <style>
     *{
@@ -22,6 +24,14 @@
 
     footer[class="pcenter"] a{
       display: block;
+    }
+
+    #page-header *, #page-footer *{
+      font-family: 'Mandali', sans-serif;
+    }
+
+    #side-menu *, #artigo *:not(code){
+      font-family: 'Muli', sans-serif;
     }
 
     #interface{
