@@ -27,3 +27,15 @@ code {
     padding: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,.5);
 }
+
+#page-header, .pcenter {
+    text-align: center;
+}
+#page-footer > * {
+    text-align: center;
+}
+
+#page-footer nav ul li {
+    display: inline;
+    margin: 0 10px 0 10px;
+}
