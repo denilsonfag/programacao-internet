@@ -136,7 +136,7 @@ Data: 27/10/2017 - 21:44
         echo "O valor de teste é: $teste<br>";
 ?>
 
-   <p>Geralmente o comando echo é muito mais utilizado que o comando print</p>
+   <p>Geralmente o comando echo é mais utilizado que o comando print</p>
 
 
     </div>
