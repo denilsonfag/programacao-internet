@@ -3,11 +3,17 @@
 <html lang="pt-br">         
   <head>                    
     <meta charset="utf-8">  
+    
     <link href="../styles/blog.css" rel="stylesheet" type="text/css">
     <title>Conteúdo Links </title>
     <style>
+    @import url('https://fonts.googleapis.com/css?family=Averia+Sans+Libre');
+
+    body{
+        font-family: 'Averia Sans Libre';
+    }
         #interface {
-          font-family: Roboto, Trebuchet, sans-serif;
+          
           background-color:#212121;
           color: white;
           padding: 30px;  
@@ -38,12 +44,16 @@
           background-color: transparent;
           text-decoration: underline;
       }
+      #home{
+
+      }
     </style>
   </head>
 
   <body> 
   	<div id="interface">
   	  <h1>Vamos aprender sobre links?</h1> 
+      <a id="home" href="../index.php">Voltar ao Início</a>
 	  	<h2>Links</h2>
 	  	<p>Os links são encontrados em quase todas as páginas da web. Quando um usuário clica em um link ele é redirecionado a uma nova página. Curiosidade: porque a tag <code>&lt;a&gt;</code> se chama 'a' e nao <code>&lt;link&gt;</code>? Resposta no fim da página.</p>  
 
@@ -65,7 +75,7 @@
       <h2>Utilizar uma imagem como link</h2>
       <p>Podemos utilizar imagens para representar links adicionando a tag <code>&lt;img /&gt;</code></p>
       <a href="https://www.google.com">
-        <img src="save.png" alt="Google" style="width:43px;height:43px;border:0"/>
+        <img src="../images/save.png" alt="Google" style="border:0"/>
       </a>
 
       <h2>Saltar para um lugar na página</h2>
