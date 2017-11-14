@@ -37,6 +37,23 @@
                 border:-1px solid #000;
                 background:#000;
             }
+
+            #sidebar nav ul li{
+                display: inline;
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                width: 200px;
+            }
+
+            @media all and (min-width: 600px) {
+                #sidebar {
+                    flex: 1;
+                }
+                #sidebar nav ul li{
+                    display: block;
+                }
+            }
     
         </style>
 
@@ -52,6 +69,15 @@
             <?php include 'side-menu.html'; ?>
         </nav>
 
+    <section id="sidebar">
+      <nav>
+        <ul>  
+          <li><a href="codigo.html" style="color:white">Aprenda a colocar um video no seu código HTML!</a><br/></li>
+          <li><a href="paginaVideo.html" style="color:white">Assita um vídeo de exemplo!</a><br/></li>
+        </ul>
+      </nav>
+    </section>
+
         <article>
 
             <div class="circulo">
@@ -61,10 +87,6 @@
             </div>
 
             <h1 style="color:white">Incluindo vídeo em HTML</h1>
-        
-            <p><h2><a href="codigo.html" style="color:white">Aprenda a colocar um video no seu código HTML!</a></h2></p>
-        
-            <p><h2><a href="paginaVideo.html" style="color:white">Assita um vídeo de exemplo!</a></h2></p>
             
         </article>
 

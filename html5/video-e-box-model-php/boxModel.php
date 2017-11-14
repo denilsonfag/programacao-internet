@@ -25,17 +25,23 @@
         }
 
         .corpo {
-            border: 25px;
-            padding: 25px;
             margin: auto;
             height: 100px;
             width: 50%;
             
         }
 
-        .titulo{
+        .corpomenu {
             border: 25px;
-            padding: 90px;
+            padding: 25px;
+            margin: left    ;
+            height: 100px;
+            width: 50%;
+            
+        }
+
+        .titulo{
+            padding: 150px;
             margin: auto;
             height: 100px;
             width: 50%;
@@ -43,8 +49,7 @@
 
         .voltar{
             width: 300px;
-            border: 25px;
-            padding: 25px;
+            border: 25px;   
             margin: 10px;
             height: 100px;
         }
@@ -86,6 +91,23 @@
             color: white;
         }
 
+            #sidebar nav ul li{
+                display: inline;
+                border: 2px solid #561c1c;
+                border-radius: 10px;
+                padding: 10px;
+                width: 200px;
+            }
+
+            @media all and (min-width: 600px) {
+                #sidebar {
+                    flex: 1;
+                }
+                #sidebar nav ul li{
+                    display: block;
+                }
+            }
+
     </style>
 
 </head>
@@ -102,21 +124,25 @@
         <article>
             <div class="voltar">
     <p><a href="index.html">Página inicial!</a></p>
+
+    <section id="sidebar">
+      <nav>
+        <ul>  
+          <li><a href="#conteudo">Conteúdo (content)</a><br/></li>
+          <li><a href="#margens">Margens (margin)</a><br/></li>
+          <li><a href="#bordas">Bordas (border)</a><br/></li>
+          <li><a href="#espacamento">Espaçamento (padding)</a><br/></li>
+        </ul>
+      </nav>
+    </section>
     </div>
 
+    
     <div class="titulo">
     <h1>Box Model com CSS<br/>Aprendendo o funcionamento dos elementos em HTML</h1>
     </div>
 
     <div class="corpo">
-    <p>
-    O <strong>Box Model</strong> é basicamente composto por 4 elementos, são eles:<br/>
-    </p>
-    <p><a href="#conteudo">Conteúdo (content)</a><br/></p>
-    <p><a href="#margens">Margens (margin)</a><br/></p>
-    <p><a href="#bordas">Bordas (border)</a><br/></p>
-    <p><a href="#espacamento">Espaçamento (padding)</a><br/></p>
-
     <figure class="img">
         <img src="../../images/box-model.png" alt="Box Model" title="Exemplo de Box Model" width="783" height="300" />
         <figcaption>Exemplo de Box Model</figcaption>
