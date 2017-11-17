@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/main.css" >
-    <title>MANIPULAÇÃO DE FORMAS PHP</title>
+    <title>MANIPULAÇÃO DE FORMULARIO PHP</title>
 </head>
 <body>
     <div id="interface">
@@ -36,13 +36,14 @@
                 <html>
                     <body>
 
+                    <div id = implements>
                     <form action="welcome.php" method="post">
                     Name: <input type="text" name="name"><br></br>
                     E-mail: <input type="text" name="email"><br>
                     </br>
                     <input type="submit">
                     </form>
-
+                    </div>
                     </body>
                 </html></br></br></br>
 
@@ -88,6 +89,172 @@
 
             &lt;/body&gt;</br>
             &lt;/html&gt;</br>
+            </div>
+
+
+            <h5>
+            </br></br>   
+            E podendo ser exibido dessa maneira!
+
+            </h5>
+
+            <div id = code>
+            </br>
+                    &lt;html>
+                    &lt;body&gt;</br>
+
+                    &lt;Welcome <?php echo $_GET["name"]; ?&gt;<br>
+                    &lt;Your email address is: <?php echo $_GET["email"]; &gt;?></br>
+
+                    &lt;/body&gt;</br>
+                    &lt;/html&gt;</br>
+            </div>
+
+
+            <div id = implements>
+            </br></br></br>
+                     <html>
+                    <body>
+
+                    Welcome <?php echo $_GET["name"]; ?><br>
+                    Your email address is: <?php echo $_GET["email"]; ?>
+
+                    </body>
+                    </html> 
+                    </div>
+
+
+
+
+            <h5>
+
+            PHP VALIDAÇÃO DE FORMULÁRIOS.
+
+            <h1>Text Fields</h1>
+
+            <form action="welcome.php" method="post"></br>
+                    Name: <input type="text" name="name"></br>
+                     E-mail: <input type="text" name="email"></br>
+                     Website: <input type="text" name="website"></br>
+                     Comment: <textarea name="comment" rows="5" cols="40"></textarea> 
+                    </br>
+                    
+                    </form>
+
+               
+
+            </br></br>
+            Codigo exemplo! </h5>
+            </br>
+            <div id = code>
+            </br>
+                    &lt;html></br>
+                    &lt;body&gt;</br>
+            ;Name: &lt;input type="text" name="name"&gt;</br>
+            E-mail: &lt;input type="text" name="email"&gt;</br>
+            Website: &lt;input type="text" name="website"&gt;</br>
+            Comment: &lt;textarea name="comment" rows="5" cols="40">&lt;/textarea&gt;</br>
+            </div>
+
+
+
+
+            <h1>
+
+            Botões Rádio
+            </h1>
+
+             <form action="welcome.php" method="post"></br>
+                    Genero
+                    <input type="radio" name="genero" value="feminino">Feminino
+                    <input type="radio" name="genero" value="masculino">Masculino
+                    </br>
+                    
+                    </form>
+
+               
+
+            </br></br>
+            Codigo exemplo! </h5>
+            </br>
+            <div id = code>
+            </br>
+                    &lt;html></br>
+                    &lt;body&gt;</br>
+            Genero</br>
+                    &lt;input type="radio" name="genero" value="feminino"&gt;Feminino</br>
+                    &lt;input type="radio" name="genero" value="masculino"&gt;Masculino
+                    </br>
+                    
+                    </form>
+            </div>
+
+
+           <h1>PHP - Mantenha os valores no formulário</h1>
+
+
+                    Name: <input type="text" name="name" value="<?php echo $name;?>"></br>
+
+                    E-mail: <input type="text" name="email" value="<?php echo $email;?>"></br>
+
+                    Website: <input type="text" name="website" value="<?php echo $website;?>"></br>
+
+                    Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea></br>
+
+                    Gender:
+                    <input type="radio" name="gender"
+                    <?php if (isset($gender) && $gender=="female") echo "checked";?>
+                    value="female">Female
+                    <input type="radio" name="gender"
+                    <?php if (isset($gender) && $gender=="male") echo "checked";?>
+                    value="male">Male
+                    
+                    
+
+               
+
+            </br></br>
+            Codigo exemplo! </h5>
+            </br>
+            <div id = code>
+            </br>
+                    &lt;html></br>
+                    &lt;body&gt;</br>
+            Name: &lt;input type="text" name="name" value="<?php echo $name;?>"&gt;</br>
+
+                    E-mail: &lt;input type="text" name="email" value="<?php echo $email;?>"&gt;</br>
+
+                    Website: &lt;input type="text" name="website" value="<?php echo $website;?>"&gt;</br>
+
+                    Comment: &lt;textarea name="comment" rows="5" cols="40"><?php echo $comment;?&gt; &lt;/textarea&gt;</br>
+
+                    Gender:
+                    &lt;input type="radio" name="gender"&gt;
+                    &lt;?php if (isset($gender) && $gender=="female") echo "checked";?&gt;
+                    value="female">Female&gt;
+                    &lt;input type="radio" name="gender"&gt;
+                    &lt;?php if (isset($gender) && $gender=="male") echo "checked";&gt;?>
+                    value="male">Male
+                    </br>
+                    
+                    </form>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+           
+
+
+
+
 
 
         </article>
