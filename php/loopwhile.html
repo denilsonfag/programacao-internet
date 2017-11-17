@@ -2,8 +2,10 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <title>While loop's</title>
+        <title>Botões/Buttons</title>
         <link href="../styles/main.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+
         <style>
             #interface {
                 font-family: 'PT Sans Narrow', sans-serif;
@@ -23,112 +25,127 @@
                 padding:1px;
                 /* Styles in here affect the text of the codebox */
                 font-size: 1.0em;
-                font-family: "Century Schoolbook L", sans-serif;
+                font-family: 'PT Sans Narrow', sans-serif;
                 color:black;
                 align: left;
                 /* You could also put all sorts of styling here, like different font, color, underline, etc. for the code. */
             }
             body{
                 background-color: whitesmoke;
-                font-family: "Century Schoolbook L", sans-serif;
             }
             .p1{
-                text-align: center
-            }
-            h1{
-                font-size: 1.5em;
                 text-align: center;
             }
+            h1 {
+                text-align: left;
+                font-size: 3.5em;
+            }
             h2{
-                border:1px solid black;
-                border-color: crimson;
-                color: crimson;
+                font-size: 2.0em;
+                color: #2369dc;
+                text-align: left;
             }
             h3{
                 font-size: 1.0em;
             }
+            .button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+            }
+            .button2 {background-color: #008CBA;} /* Blue */
+            .button3 {background-color: #f44336;} /* Red */
+            .button4 {background-color: #e7e7e7; color: black;} /* Gray */
+            .button5 {background-color: #555555;} /* Black */
+            .button6 {padding: 10px 24px;}
+            .button7 {padding: 12px 28px;}
+            .button8 {padding: 14px 40px;}
+            .button9 {padding: 32px 16px;}
+            .button10 {padding: 16px;}
         </style>
     </head>
 
+
     <body>
-            <div id="interface">
-                <header id="page-header">  <!-- tag que representa um cabeçalho -->
-                    <h1>Loop While</h1>
-                </header>
-                <h2>- O que é !?</h2>
-                <p>O loop while executa um bloco de código enquanto uma condição específica for verdadeira<p>
-                <section id="posts">    <!-- tag que representa uma seção lógica do documento -->
+    <div id="interface">
+    <!-- Cabeçalho da página -->
+        <header id="page-header">  <!-- tag que representa um cabeçalho -->
+            <h1>While loop</h1>
+        </header>
+        <p>O loop while executa um bloco de código enquanto uma condição específica for verdadeira</p>
 
-                <article>
-                    <header>
-                        <h2>
-                            - Syntax
-                        </h2>
-                    </header>
-                    <p>
-                        Para utilizarmos o while precisamos usar a seguinte sintaxe:
-                    </p>
-                    <code>
-                        while(condição) {
-                        <br><p>código que será executado;</p><br>
-                        }
-                    </code>
-                </article>
-                <article>
-                    <header>
-                        <h2>
-                            - Exemplo
-                        </h2>
-                    </header>
-                    <code>
-                        &lt;?php<br>
-                        $x = 1;<br>
+        <!-- Primeiro post do blog -->
+            <hr/>
+            <h2>While</h2>
+            <p>
+                Para utilizarmos o while precisamos usar a seguinte sintaxe:
+            </p>
+            <code>
+                while(condição) {
+                <br><p>código que será executado;</p><br>
+                }
+            </code>
+            <br/>
+            <h3>
+                Exemplo:
+            </h3>
+            <code>
+                &lt;?php<br>
+                $x = 1;<br>
 
-                        while ($x <= 5) {
-                        <p>O valor da variável é:</p>
-                        <p>$x++;</p>
-                        }<br>
-                        ?>
-                    </code>
-                    <p>
-                        A saída desse exemplo é a seguinte:
-                    </p>
-                    <code>
-                        O Valor da variável é: 1<br>
-                        O Valor da variável é: 2<br>
-                        O Valor da variável é: 3<br>
-                        O Valor da variável é: 4<br>
-                        O Valor da variável é: 5<br>
-                    </code>
-                </article>
-                <article>
-                    <header>
-                        <h1>
-                            Do While
-                        </h1>
-                    </header>
-                    <p>
-                        O do...while sempre executa o bloco de código pelo menos uma vez, então após a primeira execução ele verificará a condição, se for verdadeira repetirá o loop.
-                    </p>
-                    <code>
-                        &lt;?php<br>
-                        $x = 6;<br>
+                while ($x <= 5) {
+                <p>O valor da variável é:</p>
+                <p>$x++;</p>
+                }<br>
+                ?>
+            </code>
+            <h3>
+                A saída desse exemplo é a seguinte:
+            </h3>
+            <code>
+                O Valor da variável é: 1<br>
+                O Valor da variável é: 2<br>
+                O Valor da variável é: 3<br>
+                O Valor da variável é: 4<br>
+                O Valor da variável é: 5<br>
+            </code>
+        <br/>
+    <hr/>
 
-                        do {
-                        <p>O valor da variável é:</p>
-                        <p>$x++;</p>
-                        } while ($x <= 5)<br>
-                        ?>
-                    </code>
-                    <p>
-                        A saída desse exemplo é a seguinte:
-                    </p>
-                    <code>
-                        O Valor da variável é: 6<br>
+    <!-- Segundo post do blog -->
+        <h2>
+            Do...While
+        </h2>
+        <p>
+            O do...while sempre executa o bloco de código pelo menos uma vez, então após a primeira execução ele verificará a condição, se for verdadeira repetirá o loop.
+        </p>
+        <h3>
+            Exemplo:
+        </h3>
+        <code>
+            &lt;?php<br>
+            $x = 6;<br>
 
-                    </code>
-                </article>
-            </div>
-            <p class="p1">Trabalho de programação para internet</p>
+            do {
+            <p>O valor da variável é:</p>
+            <p>$x++;</p>
+            } while ($x <= 5)<br>
+            ?>
+        </code>
+        <h3>
+            A saída desse exemplo é a seguinte:
+        </h3>
+        <code>
+            O Valor da variável é: 6<br>
+        </code>
+    <br/>
+    <hr/>
+    </div>
+    <p class="p1">Trabalho de programação para internet</p>
     </body>
 </html>
