@@ -1,11 +1,10 @@
-<!DOCTYPE HTML>
-
-<html>
-
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-	
-	<title>CSS E HTML</title>
-	<meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css" >
+    <title>CSS E HTML</title>
 
     <style>
 
@@ -37,16 +36,8 @@
             border: 25px;
             padding: 90px;
             margin: auto;
-            height: 100px;
+            height: 50px;
             width: 50%;
-        }
-
-        .voltar{
-            width: 300px;
-            border: 25px;
-            padding: 25px;
-            margin: 10px;
-            height: 100px;
         }
 
         body{
@@ -55,7 +46,7 @@
         }
 
         a:hover {
-            color: white;
+            color: black;
         }
 
         a:active {
@@ -69,23 +60,32 @@
     </style>
 
 </head>
+<body>
+    <div id="interface">
+        <header id="page-header">
+            <?php include 'page-header.html'; ?>
+        </header>
 
-<body >
+        <nav id="side-menu">
+            <?php include 'side-menu.html'; ?>
+        </nav>
 
-    <div class="voltar">
-    <p><a href="index.html">Página inicial!</a></p>
+        <article>
+                
+                <div class="titulo">
+                    <h1>Aprendendo CSS</h1>
+                </div>
+
+                <div class="corpo">
+                    <p><a href="boxModel.html">Box model</a></p>
+
+                </div>
+
+        </article>
+
+        <footer id="page-footer">
+            <?php include 'page-footer.html'; ?>
+        </footer>
     </div>
-
-	<div class="titulo">
-	<h1>Comprimento com CSS</h1>
-	</div>
-
-	<div class="corpo">
-	<p>AAAAA</p>
-	</div>
-
-    
-
 </body>
-
 </html>
