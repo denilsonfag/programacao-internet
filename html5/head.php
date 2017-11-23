@@ -1,20 +1,41 @@
-<!-- Pagina Desenvolvida por Aldir Cerutti Junior em 22/09/2017
---!>
-
-
-<!DOCTYPE html>             <!-- Definindo a versão do HTML do documento-->
+<!DOCTYPE html>
 <html lang="pt-br">
-<!-- Definindo a linguagem do documento HTML (motores de busca)-->
-
 <head>
-    <link rel="stylesheet" href="../styles/main.css">
-    <!-- Iniciando a área de meta dados da página -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <!-- Definindo o conjunto de caracteres deste arquivo HTML -->
-    <title>Elemento Head</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css" >
+    <title>HTML 5</title>
+</head>
 
-    <style>
+<style>
+
+     #interface{
+         display: flex;
+         flex-flow: row wrap;
+     }
+     #interface > * {
+         border: 1px solid;
+         flex: 1 100%;
+
+     }
+
+     @media all and (min-width: 800px){
+         #side-menu{
+
+             flex: 1;
+             order: 1;
+         }
+         #artigo{
+
+             flex: 4;
+             order: 3;
+
+         }
+         #page-footer{
+             order: 3;
+         }
+
+     }
         h1 {
             text-align: center;
             font-size: 20px;
@@ -35,12 +56,14 @@
     </style>
 
 
-</head>
+<body>
+    <div id="interface">
+        <header id="page-header">
+            <?php include '../page-header.html'; ?>
+        </header>
 
-
-    <body>
-        <!-- Iniciando a área do conteúdo da página -->
-        <h1>
+        <article id = "artigo">
+            <h1>
             <b>HTML5 - Elementos header e hgroup</b>
         </h1>
         <p class="p1">O elemento header é um bloco de conteúdo que pode conter um ou mais elementos h1 até, h6, campo de busca, elementos de navegação, um logo ou banner, uma introdução, um pequeno prefácio ou um índice em formato de lista. Normalmente trabalha como um agregador do conteúdo do cabeçalho de um documento ou de uma seção. Dentro dele é possível inserir um elemento hgroup que tem como função agrupar dois ou mais elementos h1 até, h6 organizando-os em uma hierarquia de títulos e subtítulos.</p>
@@ -110,14 +133,15 @@
             O elemento HTML Base (&lt;base>) especifica o endereço (URL) utilizada por todos os enderços relativos contidos dentro de um documento.
         </p>
 
+        </article>
 
-    </body>
+        <nav id="side-menu">
+            <?php include 'side-menu-h.html'; ?>
+        </nav>
 
-
-
-
-
-<p> Fonte disponivel
-    <a href="http://flatschart.com/html5/header.html">aqui</a> - Todos os direitos reservados ®</p>
-
+        <footer id="page-footer">
+            <?php include '../page-footer.html'; ?>
+        </footer>
+    </div>
+</body>
 </html>

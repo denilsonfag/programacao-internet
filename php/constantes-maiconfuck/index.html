@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<meta charset="utf-8">
+	<title>Constantes</title>
+</head>
+<body>
+	<h1>PHP 5 Constantes</h1>
+
+	<p>Constantes são como variáveis, exceto que, uma vez que são definidas, elas não podem ser alteradas ou indefinidas.</p>
+
+	<p>Uma constante é um identificador (nome) para um valor simples. O valor não pode ser alterado durante o script.
+
+	Um nome de constante válido começa com uma letra ou um sublinhado (nenhum sinal de $ antes do nome constante).
+
+	Nota: Ao contrário das variáveis, as constantes são automaticamente globais em todo o script.</p>
+
+	<h2>Criar uma constante PHP</h2>
+
+	<p>Para criar uma constante, use a função define().</p>
+
+	<h3>Sintaxe</h3>
+
+	<div id="estilo"><i>define(name, value, case-insensitive)</i></div>
+
+	<h3>Parâmetros</h3>
+	<ul>
+		<li>name: Especifica o nome da constante</li>
+		<li>value: Especifica o valor da constante</li>
+		<li>case-insensitive: especifica se o nome constante deve ser sensível a maiúsculas e minúsculas</li>
+	</ul>
+
+	<p>O exemplo abaixo cria uma constante com um nome sensível a maiúsculas e minúsculas:</p>
+
+	<pre class="estilo">
+		&lt;?php 
+		define("GREETING", "Welcome to W3Schools.com!");
+		echo GREETING;
+		?&gt;
+	</pre>
+
+	<p>O exemplo abaixo cria uma constante com um nome não sensível a maiúsculas e minúsculas:</p>
+
+	<pre class="estilo">
+		&lt;?php
+		define("GREETING", "Welcome to W3Schools.com!", true);
+		echo greeting;
+		?&gt;
+	</pre>
+
+	<h2>Constantes são globais</h2>
+
+	<p>Constantes são automaticamente globais e podem ser usadas em todo o script.</p>
+	<p>O exemplo abaixo usa uma constante dentro de uma função, mesmo que seja definida fora da função:</p>
+
+	<pre class="estilo">
+		&lt;?php
+		define("GREETING", "Welcome to W3Schools.com!");
+		function myTest() {
+    	echo GREETING;
+		}
+		myTest();
+		?&gt;
+	</pre>
+
+</body>
+</html>
