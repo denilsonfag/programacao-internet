@@ -1,14 +1,14 @@
-<!DOCTYPE HTML>
-
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 
 <head>
-	
-	<title>CSS E HTML</title>
-	<meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css" >
+    <title>Programação para Internet</title>
 
     <style>
-
+    
         @import url('https://fonts.googleapis.com/css?family=Raleway');
         
         p {
@@ -25,17 +25,23 @@
         }
 
         .corpo {
-            border: 25px;
-            padding: 25px;
             margin: auto;
             height: 100px;
             width: 50%;
             
         }
 
-        .titulo{
+        .corpomenu {
             border: 25px;
-            padding: 90px;
+            padding: 25px;
+            margin: left    ;
+            height: 100px;
+            width: 50%;
+            
+        }
+
+        .titulo{
+            padding: 150px;
             margin: auto;
             height: 100px;
             width: 50%;
@@ -43,8 +49,7 @@
 
         .voltar{
             width: 300px;
-            border: 25px;
-            padding: 25px;
+            border: 25px;   
             margin: 10px;
             height: 100px;
         }
@@ -86,29 +91,58 @@
             color: white;
         }
 
+            #sidebar nav ul li{
+                display: inline;
+                border: 2px solid #561c1c;
+                border-radius: 10px;
+                padding: 10px;
+                width: 200px;
+            }
+
+            @media all and (min-width: 600px) {
+                #sidebar {
+                    flex: 1;
+                }
+                #sidebar nav ul li{
+                    display: block;
+                }
+            }
+
     </style>
 
 </head>
+<body>
+    <div id="interface">
+        <header id="page-header">
+            <?php include 'page-header.html'; ?>
+        </header>
 
-<body >
+        <nav id="side-menu">
+            <?php include 'side-menu.html'; ?>
+        </nav>
 
-    <div class="voltar">
+        <article>
+            <div class="voltar">
     <p><a href="index.html">Página inicial!</a></p>
+
+    <section id="sidebar">
+      <nav>
+        <ul>  
+          <li><a href="#conteudo">Conteúdo (content)</a><br/></li>
+          <li><a href="#margens">Margens (margin)</a><br/></li>
+          <li><a href="#bordas">Bordas (border)</a><br/></li>
+          <li><a href="#espacamento">Espaçamento (padding)</a><br/></li>
+        </ul>
+      </nav>
+    </section>
     </div>
 
-	<div class="titulo">
-	<h1>Box Model com CSS<br/>Aprendendo o funcionamento dos elementos em HTML</h1>
-	</div>
+    
+    <div class="titulo">
+    <h1>Box Model com CSS<br/>Aprendendo o funcionamento dos elementos em HTML</h1>
+    </div>
 
-	<div class="corpo">
-	<p>
-    O <strong>Box Model</strong> é basicamente composto por 4 elementos, são eles:<br/>
-    </p>
-    <p><a href="#conteudo">Conteúdo (content)</a><br/></p>
-    <p><a href="#margens">Margens (margin)</a><br/></p>
-    <p><a href="#bordas">Bordas (border)</a><br/></p>
-    <p><a href="#espacamento">Espaçamento (padding)</a><br/></p>
-
+    <div class="corpo">
     <figure class="img">
         <img src="../../images/box-model.png" alt="Box Model" title="Exemplo de Box Model" width="783" height="300" />
         <figcaption>Exemplo de Box Model</figcaption>
@@ -181,9 +215,13 @@
 
     
     
-	</div>
+    </div>
 
+        </article>
 
+        <footer id="page-footer">
+            <?php include 'page-footer.html'; ?>
+        </footer>
+    </div>
 </body>
-
 </html>
