@@ -15,7 +15,7 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".../styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css">
     <title>Tabelas</title>
     <style>
         * {
@@ -120,14 +120,14 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
     </nav>
 
 
-    <div id="interface">
-        <header id="page-header">
+   <div id="interface">
+   <!--       <header id="page-header">
             <?php include '../page-header.html'; ?>
         </header>
 
         <nav id="side-menu">
             <?php include '../html5/side-menu-h.html'; ?>
-        </nav>
+        </nav> -->
 
         <article id="artigo">
             <h1 class="laranja">Tabelas em HTML</h1>

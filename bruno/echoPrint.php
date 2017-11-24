@@ -32,14 +32,12 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
             line-height: 20px;
         }
 
-        h1,
-        h2 {
-
+        div h1,
+        div h2 {
             text-align: center;
             background-color: #e88d1e;
             color: white;
             padding: 4px;
-            text-shadow: 3px 3px 3px rgba(0,0,0,.2)
         }
 
         h3{
@@ -177,7 +175,9 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
 
    <p>Geralmente o comando echo é mais utilizado que o comando print</p>
 
-
+<footer id="page-footer">
+            <?php include '../page-footer.html'; ?>
+        </footer>
     </div>
 
 

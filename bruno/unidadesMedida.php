@@ -15,7 +15,7 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".../styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css">
     <title>Tabelas</title>
     <style>
         * {
@@ -82,7 +82,7 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    </head>
 <body>
 
    <nav class="navbar navbar-inverse">
@@ -110,13 +110,6 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
     </nav>
 
     <div id="interface">
-        <header id="page-header">
-            <?php include '../page-header.html'; ?>
-        </header>
-
-        <nav id="side-menu">
-            <?php include '../css3/side-menu-c.html'; ?>
-        </nav>
 
         <article id="artigo">
             <h1 class="laranja">Unidades de Medida em CSS</h1>
