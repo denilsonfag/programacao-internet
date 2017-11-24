@@ -6,14 +6,6 @@ $confirmaSenha = MD5($_POST['confirmaSenha']);
 
 //clausulas guardas
 
-if($senha == "" || $senha == null){
-    echo"<script language='javascript' type='text/javascript'>alert('O campo Senha/Confirmar Senha é obrigatório');window.location.href='novo-usuario.php';</script>";
-    die();
-    }
-if($login == "" || $login == null){
-    echo"<script language='javascript' type='text/javascript'>alert('O campo login deve ser preenchido');window.location.href='novo-usuario.php';</script>";
-    die();
-    }
 
 if($senha != $confirmaSenha){
     echo"<script language='javascript' type='text/javascript'>alert('As senhas não conferem');window.location.href='novo-usuario.php';</script>";
