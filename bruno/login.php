@@ -18,6 +18,11 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     //sucesso
+    session_start();
+    $_SESSION['login'] = $login;
+    $_SESSION['senha'] = $senha;
+    header('location:tabelas.php');
+
 }else{
    echo"<script language='javascript' type='text/javascript'>alert('Usuario ou Senha Incorreto!');window.location.href='index.php';</script>";
 }

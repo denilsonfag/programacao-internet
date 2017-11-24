@@ -2,7 +2,7 @@
 
 $login = $_POST['login'];
 $senha = MD5($_POST['senha']);
-$confirmaSenha = MD5($ _POST['confirmaSenha']);
+$confirmaSenha = MD5($_POST['confirmaSenha']);
 $connect = mysqli_connect('localhost','bruno','12345');
 $db = mysqli_select_db($connect,'bruno');
 $query_select = "SELECT login FROM usuarios WHERE login = '$login'";

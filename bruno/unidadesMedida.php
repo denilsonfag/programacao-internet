@@ -1,10 +1,21 @@
+<?php
+session_start();
+if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == true))
+{
+	unset($_SESSION['login']);
+	unset($_SESSION['senha']);
+	header('location:index.php');
+	}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href=".../styles/main.css">
     <title>Tabelas</title>
     <style>
         * {
@@ -68,16 +79,43 @@
         }
 
     </style>
-</head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <body>
+
+   <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Programação WEB</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Unidades de Medida</a></li>
+                <li><a href="tabelas.php">Tabelas</a></li>
+                <li><a href="echoPrint.php">Echo e Print</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-user"></span>
+          <?php
+        $user = $_SESSION['login'];
+	       echo "Bem vindo $user";
+          ?>
+          </a>
+                </li>
+                <li><a href="logout.php?token='.md5(session_id()).'"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div id="interface">
         <header id="page-header">
             <?php include '../page-header.html'; ?>
         </header>
 
         <nav id="side-menu">
-            <?php include 'side-menu-c.html'; ?>
+            <?php include '../css3/side-menu-c.html'; ?>
         </nav>
 
         <article id="artigo">

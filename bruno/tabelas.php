@@ -1,10 +1,21 @@
+<?php
+session_start();
+if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == true))
+{
+	unset($_SESSION['login']);
+	unset($_SESSION['senha']);
+	header('location:index.php');
+	}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href=".../styles/main.css">
     <title>Tabelas</title>
     <style>
         * {
@@ -35,53 +46,87 @@
             border: 1px solid black;
         }
 
-        #interface{
+        #interface {
             display: flex;
             flex-flow: row wrap;
 
         }
 
-        #interface > * {
+        #interface>* {
             flex: 1 100%;
 
         }
-        #side-menu ul li{
+
+        #side-menu ul li {
             display: inline;
             padding: 5px;
 
         }
-        #side-menu ul{
-           list-style-type: none;
-            padding:0;
+
+        #side-menu ul {
+            list-style-type: none;
+            padding: 0;
         }
 
 
-         @media all and (min-width: 800px) {
+        @media all and (min-width: 800px) {
 
-             #side-menu {
-                 flex: 1;
-             }
-             article#artigo{
-                 flex: 4;
-             }
+            #side-menu {
+                flex: 1;
+            }
+            article#artigo {
+                flex: 4;
+            }
 
 
-        #side-menu  ul li{
-            display: list-item;
-            padding: 5px;
+            #side-menu ul li {
+                display: list-item;
+                padding: 5px;
+            }
         }
-        }
+
     </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 </head>
 
 <body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#" >Programação WEB</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="unidadesMedida.php">Unidades de Medida</a></li>
+                <li class="active"><a href="#">Tabelas</a></li>
+                <li><a href="echoPrint.php">Echo e Print</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-user"></span>
+          <?php
+        $user = $_SESSION['login'];
+	       echo "Bem vindo $user";
+          ?>
+          </a>
+                </li>
+                <li><a href="logout.php?token='.md5(session_id()).'"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
     <div id="interface">
         <header id="page-header">
             <?php include '../page-header.html'; ?>
         </header>
 
         <nav id="side-menu">
-            <?php include 'side-menu-h.html'; ?>
+            <?php include '../html5/side-menu-h.html'; ?>
         </nav>
 
         <article id="artigo">
@@ -269,10 +314,10 @@
                 </tr>
             </table>
 
-            </article>
-             <footer id="page-footer">
-                <?php include '../page-footer.html'; ?>
-            </footer>
+        </article>
+        <footer id="page-footer">
+            <?php include '../page-footer.html'; ?>
+        </footer>
     </div>
 </body>
 
