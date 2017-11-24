@@ -34,7 +34,7 @@ if($senha != $confirmaSenha){
         $query = "INSERT INTO usuarios (login,senha) VALUES ('$login','$senha')";
         $busca = mysqli_query($connect, $query);
 
-        if($insert){
+        if($busca){
           echo"<script language='javascript' type='text/javascript'>alert('Usuário cadastrado com sucesso!');window.location.href='index.php'</script>";
         }else{
           echo"<script language='javascript' type='text/javascript'>alert('Não foi possível cadastrar esse usuário');window.location.href='novo-usuario.php'</script>";
