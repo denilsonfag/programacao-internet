@@ -103,8 +103,8 @@
                     &lt;html>
                     &lt;body&gt;</br>
 
-                    &lt;Welcome <?php echo $_GET["name"]; ?&gt;<br>
-                    &lt;Your email address is: <?php echo $_GET["email"]; &gt;?></br>
+                    &lt;Welcome <?php echo $_GET["name"]; ?>&gt;<br>
+                    &lt;Your email address is: <?php echo $_GET["email"]; ?> &gt;</br>
 
                     &lt;/body&gt;</br>
                     &lt;/html&gt;</br>
@@ -226,7 +226,9 @@
 
                     Website: &lt;input type="text" name="website" value="<?php echo $website;?>"&gt;</br>
 
-                    Comment: &lt;textarea name="comment" rows="5" cols="40"><?php echo $comment;?&gt; &lt;/textarea&gt;</br>
+                    Comment: &lt;textarea name="comment" rows="5" cols="40">
+
+                <?php echo $comment;?>&gt; &lt;/textarea&gt;</br>
 
                     Gender:
                     &lt;input type="radio" name="gender"&gt;
