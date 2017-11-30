@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, "Times New Roman";
+}
+#interface h1{
+    font-size: 28px;
+    text-align: center;
+    color: black;
+
+}
+#interface .code{
+    border: 1px solid #000;
+    background-color: whitesmoke;
+    padding: 10px;
+
+}
+#interface .code .titleCode{
+    border: 1px solid #000;
+    background-color: whitesmoke;
+    padding: 20px;
+
+}
+
+
+#interface table {
+    border: black 1px solid;
+}
+#interface table tr td{
+    border: black 1px solid;
+}
