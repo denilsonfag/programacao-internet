@@ -86,6 +86,7 @@
     <p><b>Nota:</b> Se a duração não for especificada, o efeito não será aplicado</p>
 
     O exemplo a seguir mostra um elemento de 100px * 100px vermelho < div>. O elemento < div> também especificou um efeito de transição para a propriedade de largura, com uma duração de 2 segundos:
+
     <div class="code">
         <span class="codeTitle">Exemplo</span>
         <br>
@@ -97,6 +98,8 @@
         transition: width 2s; <br>
         } <br>
     </div>
+
+    
 
     <p>O efeito de transição terá início quando a propriedade CSS especificado (largura) altera o valor.
 
@@ -112,14 +115,21 @@
     <p>Observe que quando passamos o cursor do mouse sobre a div, aumenta o tamanho gradualmente, e quando tiramos o mcursor
     do mouse dele, volta, gradualmente, ao tamanho padrão</p>
 
+    <div id ="exemplo1">
+        
+    </div>
     <h2>Alterar vários valores de propriedade</h2>
     <div class="code">
         <span class="codeTitle">Exemplo</span>
         <br>
         div {<br>
         -webkit-transition: width 2s, height 4s; /* Safari */<br>
-        transition: width 2s, height 4s;<br>
+        tra nsition: width 2s, height 4s;<br>
         }<br>
+    </div>
+    <br>
+    <div id ="exemplo2">
+        
     </div>
 
     <h2>Especifique a curva de  velocidade da transição</h2>
@@ -143,6 +153,26 @@
     #div3 {transition-timing-function: ease-in;}<br>
     #div4 {transition-timing-function: ease-out;}<br>
     #div5 {transition-timing-function: ease-in-out;}<br>
+    </div>
+    <br>
+    <div id ="exemplo3">
+        
+    </div>
+    <br>
+    <div id ="exemplo4">
+        
+    </div>
+    <br>
+    <div id ="exemplo5">
+        
+    </div>
+    <br>
+    <div id ="exemplo6">
+        
+    </div>
+    <br>
+    <div id ="exemplo7">
+        
     </div>
 
     <h2>Retardar o efeito de transição</h2>
@@ -203,23 +233,23 @@
         </tr>
         <tr>
             <td>transition</td>
-            <td>A shorthand property for setting the four transition properties into a single property</td>
+            <td>Uma curta propriedade para um unico efeito</td>
         </tr>
         <tr>
             <td>transition-delay</td>
-            <td>Specifies a delay (in seconds) for the transition effect</td>
+            <td>Especifica um delay (em seconds) para o efeito de transição</td>
         </tr>
         <tr>
             <td>transition-duration</td>
-            <td>Specifies how many seconds or milliseconds a transition effect takes to complete</td>
+            <td>Especifica quantos segundos ou milisigundos levará para a realização do efeito de transição</td>
         </tr>
         <tr>
             <td>transition-property</td>
-            <td>Specifies the name of the CSS property the transition effect is for</td>
+            <td>Especifica o nome da propriedade CSS que a transition afetará</td>
         </tr>
         <tr>
             <td>transition-timing-function</td>
-            <td>Specifies the speed curve of the transition effect</td>
+            <td>Especifica a curva de velocidade da transição</td>
         </tr>
     </table>
 </div>
