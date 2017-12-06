@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css" >
+    <link rel="stylesheet" href="css/main.css" >
     <title>HTML 5</title>
     <style>
         
@@ -82,10 +82,23 @@
             <?php include '../page-header.html'; ?>
         </header>
         <nav id="side-menu">
-            <?php include 'side-menu-h.html'; ?>
+            <?php include '../side-menu-h.html'; ?>
         </nav>
+       
         <article id = "artigo">
-            <h1>FORMATACOES DE TEXTO</h1>
+            <table border="0" width="100%" align="center">
+            <tr>
+                <td align="right">
+                    <a href="canvas.php">Canvas</a> |
+                    <a href="EstruturasCondicionais.php">Estruturas Condicionais</a> |
+                    <a href="arquivos.php">Home</a> |
+                    <a href="logout.php">Sair</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <h1>FORMATACOES DE TEXTO</h1>
 
             <h2>Alteracao de Cores</h2>
 
@@ -139,6 +152,13 @@
             <h2>Hifenizacao</h2>
                 <p>Esta funcao insere automaticamente os hifens no texto, usando o "hyphens: auto;"</p>
         </article>
+                </td>
+                
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><h4>Todos os direitos reservados</h4></td>
+            </tr>
+        </table>
 
         <footer id="page-footer">
             <?php include '../page-footer.html'; ?>

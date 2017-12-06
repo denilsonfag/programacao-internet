@@ -31,10 +31,23 @@
             <?php include '../page-header.html'; ?>
         </header>
         <nav id="side-menu">
-            <?php include 'side-menu-h.html'; ?>
+            <?php include '../side-menu-h.html'; ?>
         </nav>
         <article id = "artigo">
-            <h1>CANVAS</h1>
+            <table border="0" width="100%" align="center">
+            
+            <tr>             
+                <td align="right">
+                    <a href="formatacao-texto.php">Formatações de Texto</a> |
+                    <a href="EstruturasCondicionais.php">Estruturas Condicionais</a> |
+                    <a href="arquivos.php">Home</a> |
+                    <a href="logout.php">Sair</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <h1>CANVAS</h1>
 
             <h2>O que é?</h2>
             <p>Adicionado ao HTML5, o elemento HTML canvas é um elemento que pode ser usado para desenhar gráficos via código (nomalmente JavaScript). Por exemplo, ele pode ser usado para desenhar gráficos, fazer composição de fotos, criar animações ou até mesmo fazer processamento ou renderização de vídeo em tempo real.</p>
@@ -51,6 +64,8 @@
             <p>Diferente do SVG , o canvas suporta somente formas primitivas: retangulos. Por exemplo:</p>
             <canvas class="canvas" width="50" height="100" style="border:1px solid #000;"></canvas>
             <canvas id="canvas" width="75" height="150" style="border:1px solid #000;"></canvas>
+    </table>
+</p><hr size="5">
         </article>
 
 
