@@ -79,7 +79,9 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
     </nav>
 
     <div id="interface">
-        <h1>Echo e Print em PHP</h1>
+
+     <article id="artigo">
+         <h1>Echo e Print em PHP</h1>
         <p>Echo e print tem são bem parecidas e servem para mostrar informações na tela.</p>
         <h3>Exemplo de Echo:</h3>
         <pre>&lt;?php
@@ -178,6 +180,7 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
 <footer id="page-footer">
             <?php include '../page-footer.html'; ?>
         </footer>
+     </article>
     </div>
 
 

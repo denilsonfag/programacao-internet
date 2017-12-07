@@ -111,6 +111,12 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
 
     <div id="interface">
 
+
+        <nav id="side-menu">
+            <?php include '../css3/side-menu-c.html'; ?>
+        </nav>
+
+
         <article id="artigo">
             <h1 class="laranja">Unidades de Medida em CSS</h1>
             <p>As unidades de medida CSS geralmente são dividadas em dois grupos:</p>

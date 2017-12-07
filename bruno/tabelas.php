@@ -121,13 +121,10 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
 
 
    <div id="interface">
-   <!--       <header id="page-header">
-            <?php include '../page-header.html'; ?>
-        </header>
 
         <nav id="side-menu">
             <?php include '../html5/side-menu-h.html'; ?>
-        </nav> -->
+        </nav>
 
         <article id="artigo">
             <h1 class="laranja">Tabelas em HTML</h1>
