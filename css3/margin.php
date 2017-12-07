@@ -1,12 +1,12 @@
-<!-- Por João Paulo Zorek--> 
-<!DOCTYPE html>             
-<html lang="pt-br">         
-  <head>                    
+<!-- Por João Paulo Zorek-->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/main.css">
-    <meta charset="utf-8">  
-    
+    <meta charset="utf-8">
+
     <link href="../styles/blog.css" rel="stylesheet" type="text/css">
     <title>Conteúdo Margens</title>
     <style>
@@ -23,17 +23,17 @@
         font-family: 'Averia Sans Libre';
     }
         #interface {
-          
+
           background-color:#212121;
           color: white;
-          padding: 30px;  
+          padding: 30px;
         }
     h2{
         color: white;
     }
       a:link {
-          color: green; 
-          background-color: transparent; 
+          color: green;
+          background-color: transparent;
           text-decoration: none;
       }
 
@@ -83,20 +83,20 @@
     </style>
   </head>
 
-  <body> 
+  <body>
   	<div id="interface">
       <header id="page-header">
       <?php include '../page-header.html'; ?>
     </header>
-    
+
     <nav id="side-menu">
       <?php include '../side-menu.html'; ?>
     </nav>
     <section>
-  	  <h1>Vamos aprender sobre Margens?</h1> 
+  	  <h1>Vamos aprender sobre Margens?</h1>
 	  	<h2>Margens</h2>
 	  	<p>As propriedades da margem CSS são usadas para gerar espaço em torno de elementos. Existem propriedades CSS para definir a margem para cada lado de um elemento (superior, direito, inferior e esquerdo).</p>
-      <p>O CSS possui propriedades para especificar a margem para cada lado de um elemento: 
+      <p>O CSS possui propriedades para especificar a margem para cada lado de um elemento:
         <code>
           <ul>
               <li>margin-top</li>
@@ -105,7 +105,7 @@
               <li>margin-left</li>
           </ul>
         </code>
-      </p>  
+      </p>
         <p>As propriedades de margens podem assumir os seguintes valores:
           <ul>
               <li><code>auto</code> - O navegador calcula a margem;</li>
@@ -126,10 +126,10 @@
               margin-left: 80px;<br />
             }
           </code>
-        </p> 
+        </p>
         <div id = "margin">
           <p>Paragrafo com a margim formatada.</p>
-        </div> 
+        </div>
         <p>A margem também pode ser definida de forma curta, respeitando a ordem margin-top, margin-right, margin-bottom, margin-left. Exemplo:</p>
         <p>
           <code>
@@ -137,15 +137,15 @@
               margin: 100px 150px 100px 80px;<br />
             }
           </code>
-        </p> 
+        </p>
         <p>Se a propriedade da margem tiver um valor só ele é aplicado a todos os lados, se tiver mais de um o estilo é aplicado seguindo a ordem citada acima.</p>
 
-      
-    </section> 
+
+    </section>
     <footer id="page-footer">
       <?php include '../page-footer.html'; ?>
     </footer>
   </div>
-  	
+
   </body>
 </html>

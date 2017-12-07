@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 
 <html>
-	
+
 <head>
 	<!--Autor: Silvio Miranda Junior
 	Data: 27/10/2017 -->
-	
+
 
 	<meta charset="UTF-8">
 	<title>Ordenação de Arrays PHP</title>
-	
+
 	<style type="text/css">
-		
+
 		p {
 			margin: auto;
 			margin-left: 25px;
@@ -39,7 +39,7 @@
 </head>
 
 <body>
-	
+
 	<header><h1>Programação para internet 1<h1></header>
 	<article>
 		<section>

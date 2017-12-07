@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css" >
@@ -38,7 +38,7 @@
 
             <div class="centro">
             <h1 style="color:white">Assista ao vídeo!</h1>
-    
+
             <video width="500" height="500" controls>
             <source src="../../videos/anaodagota.mp4" type="video/mp4">
             </video>

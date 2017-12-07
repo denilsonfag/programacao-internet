@@ -6,12 +6,12 @@
 		<link rel="stylesheet" href="../styles/main.css" >
 		<title id=titulo>HTML 5</title>
 		<style>
-  
+
 		  ul {
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
-			width: 200px;			  
+			width: 200px;
 			}
 
 		  li a {
@@ -29,53 +29,53 @@
 		  li a:hover:not(.active) {
 			 background-color: #555;
 			 color: white;
-			} 
-		  
+			}
+
 		  *{
 			 font-family: Consolas, "monospace";
 			 background-color: #8A8A8A;
 		     }
-		
+
 		   side-menu, main, article, header, section, aside, footer, .article-body {
              flex: 1 100%;
              }
-		  
+
 		   #interface{
 			 display: flex;
              flex-flow: row wrap;
 		     }
-		  
-		  
+
+
 		   #sidebar nav ul li{
               display: inline;
              }
-		  
+
 		  #interface > *, .article-container > * {
 			 border: 1px solid;
              flex: 2 100%;
             }
-		
+
 		  .centralizado{
 		     text-align: center;
-			} 
-		
+			}
+
 			h1,h4{
 			  color:#050039
 			}
-		
+
 			p,h3{
 			  color:#FBFBFB;
 			}
-	
+
 			main,audio{
 			  margin-top: 2em;
 			  flex: 1;
 		     }
-		
+
 		  	#side-menu{
-			   flex: 1;	  
+			   flex: 1;
 		    }
-		  
+
 		   @media all and (min-width: 800px) {
                 #artigo{
                     flex: 5;
@@ -89,11 +89,11 @@
                     order:2;
                	   }
             	}
-		  
-		  
+
+
 		</style>
 	</head>
-	
+
 
 		<body>
     		<div id="interface">
