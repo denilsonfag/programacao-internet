@@ -13,7 +13,7 @@
              <form class="login-form" action="cadastrar-usuario.php" method="post">
                 <form method="post" action="cadastrar-usuario.php" id="formCadastrarse">
                     <input type="text" id="usuario" name="usuario" placeholder="Usuário" required="requiored">                              <input type="password" id="senha" name="senha" placeholder="Senha" required="requiored">
-                    <input type="password" id="senha" name="confirmarsenha" placeholder="Repita a senha" required="requiored">            
+                    <input type="password" id="senha" name="confirmarsenha" placeholder="Repita a senha" required="requiored">
                     <button type="submit" class="btn btn-primary form-control">Inscreva-se</button>
                 </form>
                 <p class="message">Já possui uma conta? <a href="index.php">Logue agora!</a></p>

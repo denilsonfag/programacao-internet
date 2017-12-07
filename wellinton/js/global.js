@@ -18,17 +18,17 @@ function mensagemErroCadastroExistente(){
 }
 
 function validarSenhas(form) {
-	
+
 	senha = document.formNovoUsuario.senha.value;
 	senhaRepetida = document.formNovoUsuario.senhaRepetida.value;
-	
+
 	if (senha != senhaRepetida) {
-		document.formNovoUsuario.senhaRepetida.focus();	
+		document.formNovoUsuario.senhaRepetida.focus();
 		alert("Senhas não conferem.");
 		return false;
 	}
 }
 
 function imageSelect(obj, imagePath){
-	document.getElementById(obj).src = imagePath;  
+	document.getElementById(obj).src = imagePath;
 }

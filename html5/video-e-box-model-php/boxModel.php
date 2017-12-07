@@ -8,9 +8,9 @@
     <title>Programação para Internet</title>
 
     <style>
-    
+
         @import url('https://fonts.googleapis.com/css?family=Raleway');
-        
+
         p {
             color: white;
             border: 2px solid #561c1c;
@@ -28,7 +28,7 @@
             margin: auto;
             height: 100px;
             width: 50%;
-            
+
         }
 
         .corpomenu {
@@ -37,7 +37,7 @@
             margin: left    ;
             height: 100px;
             width: 50%;
-            
+
         }
 
         .titulo{
@@ -49,7 +49,7 @@
 
         .voltar{
             width: 300px;
-            border: 25px;   
+            border: 25px;
             margin: 10px;
             height: 100px;
         }
@@ -58,7 +58,7 @@
             margin: auto;
         }
 
-        
+
         .ex1{
             border-style: dotted dashed solid double;
             border-color: red green blue yellow;
@@ -127,7 +127,7 @@
 
     <section id="sidebar">
       <nav>
-        <ul>  
+        <ul>
           <li><a href="#conteudo">Conteúdo (content)</a><br/></li>
           <li><a href="#margens">Margens (margin)</a><br/></li>
           <li><a href="#bordas">Bordas (border)</a><br/></li>
@@ -137,7 +137,7 @@
     </section>
     </div>
 
-    
+
     <div class="titulo">
     <h1>Box Model com CSS<br/>Aprendendo o funcionamento dos elementos em HTML</h1>
     </div>
@@ -210,11 +210,11 @@
     <strong>TOPO, DIREITA, BAIXO e ESQUERDA.</strong></br></br>
     Para definir o tamanho do espaçamento utiliza-se a unidade de medida pixel (px), portanto, poderiamos definir da seguinte forma:</br></br>
     <strong>padding: 10px 20px 10px 20px</strong></br></br>
-    Dessa maneira teriamos o topo com 10 pixels, o lado direito com 20, a parte de baixo com 10 e o lado esquerdo com 20! 
+    Dessa maneira teriamos o topo com 10 pixels, o lado direito com 20, a parte de baixo com 10 e o lado esquerdo com 20!
     </p>
 
-    
-    
+
+
     </div>
 
         </article>

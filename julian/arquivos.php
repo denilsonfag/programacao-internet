@@ -20,7 +20,7 @@
             <h2>BEM VINDO <?= $_SESSION['usuario'] ?> !</h2>
             <a href="canvas.php">Canvas</a><br>
             <a href="EstruturasCondicionais.php">Estruturas Condicionais</a><br />
-            <a href="formatacao-texto.php">Formatações de Texto</a><br /><br />            
+            <a href="formatacao-texto.php">Formatações de Texto</a><br /><br />
             <p class="message"><a href="logout.php">Logout</a>
         </div>
     </div>

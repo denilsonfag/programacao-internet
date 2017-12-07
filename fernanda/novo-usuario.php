@@ -32,13 +32,13 @@
                         <h3 class="panel-title">Cadastro</h3>
                     </div>
                     <div class="panel-body">
-                        <?php 
-                        if(isset($erro)) 
+                        <?php
+                        if(isset($erro))
                             if(count($erro) > 0){ ?>
                                 <div class="alert alert-danger">
                                     <?php foreach($erro as $msg) echo "$msg <br>"; ?>
                                 </div>
-                            <?php 
+                            <?php
                             }
                             ?>
                         <form method="post" action="cadastrar-usuario.php" role="form">
@@ -49,9 +49,9 @@
                                 <div class="form-group">
                                     <input class="form-control" required placeholder="Senha" name="password" type="password" value="">
                                 </div>
-                                
+
                                 <button type="submit" name="login"  value="true" class="btn btn-warning btn-block">Cadastrar</button>
-                                
+
                                 <button id="voltar" class="btn btn-warning btn-block">Já tem conta?</button>
 
                                     <script type="text/javascript">

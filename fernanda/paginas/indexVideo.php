@@ -11,7 +11,7 @@ if((!isset ($_SESSION['nome']) == true))
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css" >
@@ -48,17 +48,17 @@ if((!isset ($_SESSION['nome']) == true))
             text-align: center;
             padding: 10px;
             }
-        
+
             body {
                 font-family: Georgia;
                 text-align: center;
             }
-        
+
             img {
                 z-index:5;
                 width:130px;
                 height:130px;
-                opacity:0.5; 
+                opacity:0.5;
                 border-radius:50%;
                 border:-1px solid #000;
                 background:#000;
@@ -75,7 +75,7 @@ if((!isset ($_SESSION['nome']) == true))
             a{
                 color: white;
             }
-    
+
         </style>
 
 </head>
@@ -91,17 +91,17 @@ if((!isset ($_SESSION['nome']) == true))
             </div>
 
             <div class="circulo">
-            
+
                 <img src="../img/anaodagota.jpg">
-        
+
             </div>
 
             <h1 style="color:white">Incluindo vídeo em HTML</h1>
-        
+
             <h2><a href="codigo.php" style="color:white">Aprenda a colocar um video no seu código HTML!</a></h2>
-        
+
             <h2><a href="paginaVideo.php" style="color:white">Assita um vídeo de exemplo!</a></h2>
-            
+
         </article>
 
 

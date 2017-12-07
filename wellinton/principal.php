@@ -1,8 +1,8 @@
-<!-- 
+<!--
 Wellinton Vieira
 Programação para Internet I
  -->
- 
+
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -11,7 +11,7 @@ Programação para Internet I
 	    <link rel="stylesheet" href="css/style.css" >
 	    <script type="text/javascript" src="js/global.js"></script>
 		<title>Principal</title>
-		<?php  
+		<?php
 			session_start();
 			if((!isset ($_SESSION['usuario']) == true)){
 				unset($_SESSION['usuario']);
@@ -39,7 +39,7 @@ Programação para Internet I
 					<a href="arquivos/tipos_de_dados_php.php" target="iframe">PHP</a>
 				</button>
 				<button class="mainPageHeaderButton">
-					<?php  
+					<?php
 					echo '<a href="logout.php?token='.md5(session_id()).'">SAIR</a>';
 					?>
 				</button>

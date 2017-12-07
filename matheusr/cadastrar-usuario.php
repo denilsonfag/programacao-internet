@@ -1,4 +1,4 @@
-<?php 
+<?php
 	require ("db.php");
 	$usuario = $_POST['inputUsuario'];
 	$senha = md5($_POST['inputPassword']);

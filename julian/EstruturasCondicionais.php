@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-	<head>	
+	<head>
 		<meta charset="utf-8"/>
 		<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
 		<title>CANVAS</title>
@@ -25,7 +25,7 @@
 			<p>Declarações condicionais são usadas para executar diferentes ações com base em condições diferentes.</p>
 			<p>Muitas vezes, quando você escreve código, você quer realizar diferentes ações para diferentes condições. Você pode usar declarações condicionais em seu código para fazer isso.<br><br>
 				<strong>Em PHP, temos as seguintes declarações condicionais:</strong><br><br>
-	
+
 				<strong>DECLARACAO IF</strong> - Executa algum código se uma condição for verdadeira.<br>
 				<strong>DECLARACAO ... ELSE</strong> - Executa algum código se uma condição for verdadeira e outro código se essa condição for falsa.<br>
 				<strong>DECLARACAO ... ELSEIF</strong> - Executa códigos diferentes por mais de duas condições.<br>

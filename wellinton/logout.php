@@ -1,8 +1,8 @@
-<!-- 
+<!--
 Wellinton Vieira
 Programação para Internet I
  -->
-<?php  
+<?php
 	session_start();
 	$token = md5(session_id());
 	if(isset($_GET['token']) && $_GET['token'] === $token) {

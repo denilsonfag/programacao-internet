@@ -1,10 +1,10 @@
-<!-- 
+<!--
 Wellinton Vieira
 Programação para Internet I
  -->
 
 <?php
-    session_start();		
+    session_start();
 ?>
 
 <!DOCTYPE html>
@@ -36,6 +36,6 @@ Programação para Internet I
 					unset($_SESSION['mensagemErro']);
 				}
 			?>
-		</form>		        
+		</form>
 	</body>
 </html>

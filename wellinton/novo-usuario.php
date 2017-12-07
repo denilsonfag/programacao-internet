@@ -1,4 +1,4 @@
-<!-- 
+<!--
 Wellinton Vieira
 Programação para Internet I
  -->
@@ -20,7 +20,7 @@ Programação para Internet I
 		<form method="post" action="cadastrar-usuario.php" name="formNovoUsuario" onsubmit="return validarSenhas(this);">
 			<fieldset class="fieldsetPage">
 					<figure>
-						<img src="images/user.png">		
+						<img src="images/user.png">
 					</figure>
 					<input type="usuario" name="usuario" placeholder="Usuario" required autofocus><br>
 					<input type="password" name="senha" placeholder="Senha" required><br>

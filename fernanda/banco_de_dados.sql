@@ -4,19 +4,19 @@
 -- All rights reserved to Fernanda Machado Belem. --
 
 --
--- Criando o banco 
+-- Criando o banco
 --
 
 CREATE DATABASE IF NOT EXISTS fernanda ;
 
 --
--- Iniciando a utilização do banco 
+-- Iniciando a utilização do banco
 --
 
 USE  fernanda;
 
 --
--- Criando um usuário 
+-- Criando um usuário
 --
 
 CREATE USER 'denilson'@'localhost' IDENTIFIED BY 'denishow';
@@ -31,10 +31,10 @@ CREATE TABLE usuarios (
 	senha_usuario VARCHAR(20) NOT NULL
 );
 
--- 
+--
 -- Concedendo permissões a um usuário
 --
- 
+
 GRANT INSERT, SELECT ON fernanda.usuarios TO 'denilson'@'localhost';
 
 

@@ -26,7 +26,7 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
 
 			<h2>Lista não ordenada:</h2>
 				<p>É a lista do tipo "Unordered List" (lista sem ordem), onde os itens da lista aparecem na ordem que você colocar no código HTML, e não tem nenhuma numeração ou lógica de ordenamento, apenas a ordem dita por você</p>
-					<ul> <!--Uma lista desordenada começa com a tag <ul>, e seus itens ficam dentro da tag <li>-->	
+					<ul> <!--Uma lista desordenada começa com a tag <ul>, e seus itens ficam dentro da tag <li>-->
 						<li>Miguel</li>
 						<li>Sophia</li>
 						<li>Davi</li>
@@ -40,7 +40,7 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
 			<h3>Listas Ordenadas: </h3>
 				<p>As listas ordenadas, como o próprio nome já diz, os itens serão listados de forma ordenada, seja por número, letra, algarismos romanos, entre outros.</p>
 				<p>Ordenadas por numeros:</p>
-					
+
 					<ol><!--Uma lista ordenada começa com a tag <ol>, e seus itens ficam dentro da tag <li>-->
 						<li>Miguel</li>
 						<li>Sophia</li>
@@ -53,7 +53,7 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
 					</ol>
 
 				<p>Ordenadas por letras: </p>
-				
+
 					<ol type="A">
 						<li>Miguel</li>
 						<li>Sophia</li>

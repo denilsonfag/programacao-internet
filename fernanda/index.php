@@ -33,13 +33,13 @@
                         <h3 class="panel-title">Login</h3>
                     </div>
                     <div class="panel-body">
-                        <?php 
-                        if(isset($erro)) 
+                        <?php
+                        if(isset($erro))
                             if(count($erro) > 0){ ?>
                                 <div class="alert alert-danger">
                                     <?php foreach($erro as $msg) echo "$msg <br>"; ?>
                                 </div>
-                            <?php 
+                            <?php
                             }
                             ?>
                         <form method="post" action="login.php"  role="form">
@@ -55,7 +55,7 @@
                                         <input name="remember" type="checkbox" value="Remember Me">Lembrar-me
                                     </label>
                                 </div>
-                                
+
                                 <button type="submit" name="login" value="true" class="btn btn-warning btn-block">Login</button>
 
                                 <button id="cadastro" class="btn btn-warning btn-block">Novo por aqui?</button>

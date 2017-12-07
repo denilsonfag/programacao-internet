@@ -33,7 +33,7 @@ if((!isset ($_SESSION['nome']) == true))
             <td align = left><top><a href="indexVideo.php" style="color:white">&lt;&lt; Página inicial!</a></top></td>
 
             <p ><h1 style="color:white" class="centro">Para inserir vídeo no HTML utilize o seguinte trecho de código dentro da seu código HTML:<h1></p>
-            
+
             <p >
             <h2 class="centro">Um arquivo de vídeo pode ser inserido em uma página HTML de duas maneiras. A primeira seria usando a tag &lt;embed/&gt; . Essa tag não significa tag de fechamento. Ela funciona, geralmente, da mesma forma que as tags para fotos.</h2>
 

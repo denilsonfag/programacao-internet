@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/main.css" >
     <title>HTML 5</title>
     <style>
-        
+
         #interface{
             display: flex;
             flex-flow: row wrap;
@@ -23,7 +23,7 @@
                 flex: 4;
             }
 
-            
+
         body {
             background-color: white;
         }

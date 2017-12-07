@@ -105,7 +105,7 @@ require '../init.php';
         } <br>
     </div>
 
-    
+
 
     <p>O efeito de transição terá início quando a propriedade CSS especificado (largura) altera o valor.
 
@@ -122,7 +122,7 @@ require '../init.php';
     do mouse dele, volta, gradualmente, ao tamanho padrão</p>
 
     <div id ="exemplo1">
-        
+
     </div>
     <h2>Alterar vários valores de propriedade</h2>
     <div class="code">
@@ -135,7 +135,7 @@ require '../init.php';
     </div>
     <br>
     <div id ="exemplo2">
-        
+
     </div>
 
     <h2>Especifique a curva de  velocidade da transição</h2>
@@ -162,23 +162,23 @@ require '../init.php';
     </div>
     <br>
     <div id ="exemplo3">
-        
+
     </div>
     <br>
     <div id ="exemplo4">
-        
+
     </div>
     <br>
     <div id ="exemplo5">
-        
+
     </div>
     <br>
     <div id ="exemplo6">
-        
+
     </div>
     <br>
     <div id ="exemplo7">
-        
+
     </div>
 
     <h2>Retardar o efeito de transição</h2>

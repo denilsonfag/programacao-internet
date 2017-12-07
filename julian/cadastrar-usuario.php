@@ -1,8 +1,8 @@
 <?php
-	
+
 	require_once('db.php');
 	$usuario = $_POST['usuario'];
-	$senha = $_POST['senha'];	
+	$senha = $_POST['senha'];
 	$confirmaSenha = $_POST['confirmarsenha'];
 
 	$objDB = new db();

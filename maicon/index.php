@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div class="barra-sup"></div>
-		
+
 	<div id="main-wropper">
 		<img src="imgs/avatar.png" class="avatar">
 			<form class="login-form" action="login.php" method="POST">
@@ -17,7 +17,7 @@
 				<input type="submit" class="button" value="Login"><br><br>
 				<a id="link" href="novo-usuario.php">Não está cadastrado? Clique Aqui.</a>
 			</form>
-	</div>	
+	</div>
 </body>
 
 </html>

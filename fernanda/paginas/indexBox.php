@@ -19,7 +19,7 @@ if((!isset ($_SESSION['nome']) == true))
     <style>
 
         @import url('https://fonts.googleapis.com/css?family=Raleway');
-        
+
         p {
             color: white;
             border: 2px solid #561c1c;
@@ -39,7 +39,7 @@ if((!isset ($_SESSION['nome']) == true))
             margin: auto;
             height: 100px;
             width: 50%;
-            
+
         }
         .voltar{
             width: 300px;
@@ -84,7 +84,7 @@ if((!isset ($_SESSION['nome']) == true))
                 <div class="voltar">
                     <p><a href="../homepage.php">Homepage</a></p>
                 </div>
-                
+
                 <div class="titulo">
                     <h1>Aprendendo CSS</h1>
                 </div>
@@ -92,6 +92,6 @@ if((!isset ($_SESSION['nome']) == true))
                 <div class="corpo">
                     <p><a href="boxModel.php">Box model</a></p>
 
-                
+
 </body>
 </html>

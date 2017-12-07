@@ -35,8 +35,8 @@
         </nav>
         <article id = "artigo">
             <table border="0" width="100%" align="center">
-            
-            <tr>             
+
+            <tr>
                 <td align="right">
                     <a href="formatacao-texto.php">Formatações de Texto</a> |
                     <a href="EstruturasCondicionais.php">Estruturas Condicionais</a> |

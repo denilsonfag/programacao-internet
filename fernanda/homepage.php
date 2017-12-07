@@ -35,31 +35,31 @@ if((!isset ($_SESSION['nome']) == true))
 </style>
 <body>
 
-    <div  class = "btn-warning"> 
-        <h3 style=" position: absolute; left: 100px; top: 10px; color: black; font-family: cursive;"> Seja bem vindo, <?php echo $_SESSION['nome'] ?>!</h3>       
+    <div  class = "btn-warning">
+        <h3 style=" position: absolute; left: 100px; top: 10px; color: black; font-family: cursive;"> Seja bem vindo, <?php echo $_SESSION['nome'] ?>!</h3>
         <figure >
             <img src="img/logo.png"  alt="Logo do Site" width="100" height="100" />
         </figure>
 
     </div>
-    
+
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-panel panel panel-default">
 
                     <div class="panel-body">
-                        <?php 
-                        if(isset($erro)) 
+                        <?php
+                        if(isset($erro))
                             if(count($erro) > 0){ ?>
                                 <div class="alert alert-danger">
                                     <?php foreach($erro as $msg) echo "$msg <br>"; ?>
                                 </div>
-                            <?php 
+                            <?php
                             }
                             ?>
                             <fieldset>
-                                
+
                                 <button  id="video" class="espaco btn btn-warning btn-block">Video com HTML</button>
 
                                     <script type="text/javascript">
@@ -67,7 +67,7 @@ if((!isset ($_SESSION['nome']) == true))
                                         location.href = "paginas/indexVideo.php";
                                         };
                                     </script>
-                                
+
                                 <button id="box" class="espaco btn btn-warning btn-block">Box Model</button>
 
                                     <script type="text/javascript">

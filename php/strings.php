@@ -10,7 +10,7 @@
     <title>PHPStrings</title>
     <style>
         /*--------------------------------------
-            PARTE1 - FAMILIA QUE DESEJAMOS USAR 
+            PARTE1 - FAMILIA QUE DESEJAMOS USAR
         --------------------------------------*/
 
         p.serif {
@@ -30,7 +30,7 @@
         }
 
         /*---------------------------------------------------
-            PARTE2 - ESTILO DO TEXTO QUE DESEJAMOS USAR. 
+            PARTE2 - ESTILO DO TEXTO QUE DESEJAMOS USAR.
         ---------------------------------------------------*/
 
         p.normal {
@@ -47,7 +47,7 @@
 
 
         /*---------------------------------------------------
-            PARTE3 - TAMANHO DA FONTE. 
+            PARTE3 - TAMANHO DA FONTE.
         ---------------------------------------------------*/
 
         p.t1 {
@@ -63,7 +63,7 @@
         }
 
         /*---------------------------------------------------
-            PARTE4 - PESO DA FONTE. 
+            PARTE4 - PESO DA FONTE.
         ---------------------------------------------------*/
 
         p.normal {
@@ -84,7 +84,7 @@
 
 
         /*---------------------------------------------------
-            PARTE5 - VARIANT. 
+            PARTE5 - VARIANT.
         ---------------------------------------------------*/
 
         p.normal {
@@ -321,15 +321,15 @@
                                 O comprimento de uma string é utilizado normalmente em loops e outras funções quando é importante saber por exemplo quando a string termina. Exemplo: quando queremos saber o momento que terminou uma string. Exemplo:</p>
 
                             <code style="COLOR:blue">
-                            <?php 
-                            
-                                echo "Este parágrafo está escrita em PHP. O comprimento de uma string é utilizado normalmente em loops e outras funções quando é importante saber por exemplo quando a string termina. Exemplo: quando queremos saber o momento que terminou uma string. A funcao 'srtlen' conta o numero de caracteres de uma string. Considerando a string 'Hello World' (12 letras),temos: 
-                                <br> 
+                            <?php
+
+                                echo "Este parágrafo está escrita em PHP. O comprimento de uma string é utilizado normalmente em loops e outras funções quando é importante saber por exemplo quando a string termina. Exemplo: quando queremos saber o momento que terminou uma string. A funcao 'srtlen' conta o numero de caracteres de uma string. Considerando a string 'Hello World' (12 letras),temos:
+                                <br>
                                 <br>
                                 - strleng('Hello World')= ";
                                 echo strlen("Hello world!");
                                 echo "."
-                                
+
                                 ?>
                                 </code>
 
@@ -341,16 +341,16 @@
                             <h3>2.2 Contando palavras: str_word_count()</h3>
 
                             <code style="COLOR:blue">
-                            <?php 
-                            
-                                echo "Este parágrafo está escrita em PHP. Utilizando a mesma frase Hello World, vamos utilizar esta função para ver o seu retorno. 
-                                <br> 
+                            <?php
+
+                                echo "Este parágrafo está escrita em PHP. Utilizando a mesma frase Hello World, vamos utilizar esta função para ver o seu retorno.
                                 <br>
-                                
+                                <br>
+
                                 - str_word_count('Hello World')= ";
                                 echo str_word_count("Hello world!");
                                 echo "."
-                                
+
                                 ?>
                                 </code>
 
@@ -360,16 +360,16 @@
                             <br>
                             <h3>2.3 Revertendo uma string: strrev()</h3>
                             <code style="COLOR:blue">
-                            <?php 
-                            
-                                echo "Este parágrafo está escrita em PHP. Vamos utilizar a função acima para reverter a frase padrão 'Hello World', qual seria seu retorno?. 
-                                <br> 
+                            <?php
+
+                                echo "Este parágrafo está escrita em PHP. Vamos utilizar a função acima para reverter a frase padrão 'Hello World', qual seria seu retorno?.
                                 <br>
-                                
+                                <br>
+
                                 - strrev('Hello World')= ";
                                 echo strrev("Hello world!");
                                 echo "."
-                                
+
                                 ?>
                                 </code>
 
@@ -380,16 +380,16 @@
                             <h3>2.4 Busca caractere: strpos() </h3>
 
                             <code style="COLOR:blue">
-                            <?php 
-                            
-                                echo "Este parágrafo está escrita em PHP. Vamos utilizar a função acima para buscar a palavra 'World' na string 'Hello World', qual seria seu retorno?. 
-                                <br> 
+                            <?php
+
+                                echo "Este parágrafo está escrita em PHP. Vamos utilizar a função acima para buscar a palavra 'World' na string 'Hello World', qual seria seu retorno?.
                                 <br>
-                                
+                                <br>
+
                                 - strpos('Hello world!', 'world')= ";
                                 echo strpos("Hello world!", "world");
                                 echo "."
-                                
+
                                 ?>
                                 </code>
 
@@ -400,16 +400,16 @@
                             <h3>2.5 Trocando caractere: str_replace() </h3>
 
                             <code style="COLOR:blue">
-                            <?php 
-                            
+                            <?php
+
                                 echo "Este parágrafo está escrita em PHP. Vamos utilizar a função acima para trocar a palavra  'World' por 'Dolly' na string 'Hello World'.
-                                <br> 
                                 <br>
-                                
+                                <br>
+
                                 - str_replace('world', 'Dolly', 'Hello world!')= ";
                                 echo str_replace("world", "Dolly", "Hello world!");
                                 echo "."
-                                
+
                                 ?>
                                 </code>
 
@@ -423,7 +423,7 @@
 
 
                             <li>W3Schools: PHP 5 Strings. Site: <a href="https://www.w3schools.com/php/php_string.asp">https://www.w3schools.com/php/php_string.asp&nbsp;</a>&nbsp;acessado em 02/11/2017</li>
-                         
+
 
 
                             <p class="pcenter">#CSTADS - 2017</p>

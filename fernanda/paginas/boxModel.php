@@ -18,9 +18,9 @@ if((!isset ($_SESSION['nome']) == true))
     <title>Programação para Internet</title>
 
     <style>
-    
+
         @import url('https://fonts.googleapis.com/css?family=Raleway');
-        
+
         p {
             color: white;
             border: 2px solid #561c1c;
@@ -40,7 +40,7 @@ if((!isset ($_SESSION['nome']) == true))
             margin: auto;
             height: 100px;
             width: 50%;
-            
+
         }
 
         .titulo{
@@ -63,7 +63,7 @@ if((!isset ($_SESSION['nome']) == true))
             margin: auto;
         }
 
-        
+
         .ex1{
             border-style: dotted dashed solid double;
             border-color: red green blue yellow;
@@ -195,7 +195,7 @@ if((!isset ($_SESSION['nome']) == true))
     <strong>TOPO, DIREITA, BAIXO e ESQUERDA.</strong></br></br>
     Para definir o tamanho do espaçamento utiliza-se a unidade de medida pixel (px), portanto, poderiamos definir da seguinte forma:</br></br>
     <strong>padding: 10px 20px 10px 20px</strong></br></br>
-    Dessa maneira teriamos o topo com 10 pixels, o lado direito com 20, a parte de baixo com 10 e o lado esquerdo com 20! 
+    Dessa maneira teriamos o topo com 10 pixels, o lado direito com 20, a parte de baixo com 10 e o lado esquerdo com 20!
     </p>
 
 </body>

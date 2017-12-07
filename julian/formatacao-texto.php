@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/main.css" >
     <title>HTML 5</title>
     <style>
-        
+
         #interface{
             display: flex;
             flex-flow: row wrap;
@@ -23,7 +23,7 @@
                 flex: 4;
             }
 
-            
+
         body {
             background-color: white;
         }
@@ -84,7 +84,7 @@
         <nav id="side-menu">
             <?php include '../side-menu-h.html'; ?>
         </nav>
-       
+
         <article id = "artigo">
             <table border="0" width="100%" align="center">
             <tr>
@@ -153,7 +153,7 @@
                 <p>Esta funcao insere automaticamente os hifens no texto, usando o "hyphens: auto;"</p>
         </article>
                 </td>
-                
+
             </tr>
             <tr>
                 <td align="center" colspan="2"><h4>Todos os direitos reservados</h4></td>

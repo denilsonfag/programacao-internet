@@ -1,4 +1,4 @@
-<!-- 
+<!--
 Wellinton Vieira
 Programação para Internet I
  -->
@@ -10,7 +10,7 @@ Programação para Internet I
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/stylePage.css">
     <title>Principal</title>
-		<?php  
+		<?php
 			session_start();
 			if((!isset ($_SESSION['usuario']) == true)){
 				unset($_SESSION['usuario']);
@@ -20,43 +20,43 @@ Programação para Internet I
 </head>
 	<body>
 		<div id="pagina">
-			<article>	
+			<article>
 				<img src="../images/ifsc.png" id="logo">
 				<h1 id="titulo"><u>Tipos de dados PHP</u></h1><br>
 				<hr>
 				<section>
 					<p>
-						As variáveis ​​podem armazenar dados de diferentes tipos e diferentes 
+						As variáveis ​​podem armazenar dados de diferentes tipos e diferentes
 						tipos de dados podem fazer coisas diferentes.
 					</p>
 					<p>O PHP suporta os seguintes tipos de dados:</p>
 					<li>String</li>
-					<li>Integer</li>	
-					<li>Float</li>	
-					<li>Boolean</li>	
-					<li>Array</li>	
-					<li>Object</li>	
-					<li>NULL</li>	
+					<li>Integer</li>
+					<li>Float</li>
+					<li>Boolean</li>
+					<li>Array</li>
+					<li>Object</li>
+					<li>NULL</li>
 					<li>Resource</li>
-					<hr>	
+					<hr>
 				</section>
-					
+
 				<section>
 					<h2>PHP String</h2>
 					<p>
 						Uma string é uma seqüência de caracteres, como "Hello world!".
-						Uma string pode ser qualquer texto dentro de aspas. 
+						Uma string pode ser qualquer texto dentro de aspas.
 						Você pode usar aspas simples ou duplas:
 					</p>
 
 					<p>Exemplo</p>
 
-					<?php 
+					<?php
 						$x = "Hello world!";
 						$y = 'Hello world!';
 
 						echo $x;
-						echo "<br>"; 
+						echo "<br>";
 						echo $y;
 					?>
 					<hr>
@@ -76,20 +76,20 @@ Programação para Internet I
 
 					<p>Exemplo</p>
 
-					<?php 
+					<?php
 						$x = 5985;
 						var_dump($x);
 					?>
 					<hr>
 				</section>
 					<h2>PHP Float</h2>
-					<p>				
+					<p>
 						Um flutuador (número de ponto flutuante) é um número com um ponto decimal ou um número em forma exponencial.
 						No exemplo a seguir, $ x é um flutuador. A função PHP var_dump () retorna o tipo de dados e o valor:
 					</p>
 					<p>Exemplo</p>
 
-					<?php 
+					<?php
 						$x = 10.365;
 						var_dump($x);
 					?>
@@ -101,7 +101,7 @@ Programação para Internet I
 						Os booleanos são freqüentemente usados ​​em testes condicionais. Você aprenderá mais sobre testes condicionais em um capítulo posterior deste tutorial.
 					</p>
 					<p>Exemplo</p>
-					<?php  
+					<?php
 						$x = true;
 						$y = false;
 						echo $x;
@@ -118,7 +118,7 @@ Programação para Internet I
 						No exemplo a seguir, $ cars é uma matriz. A função PHP var_dump () retorna o tipo de dados e o valor:
 					</p>
 					<p>Exemplo</p>
-					<?php 
+					<?php
 						$cars = array("Volvo","BMW","Toyota");
 						var_dump($cars);
 					?>
@@ -145,7 +145,7 @@ Programação para Internet I
 						echo $herbie->model;
 						?>
 					<hr>
-				
+
 				<section>
 					<h2>PHP NULL</h2>
 					<p>
@@ -153,7 +153,7 @@ Programação para Internet I
 						Uma variável do tipo de dados NULL é uma variável que não tem valor atribuído a ele.
 						Dica: se uma variável for criada sem um valor, é atribuído automaticamente um valor de NULL.
 						As variáveis ​​também podem ser esvaziadas definindo o valor para NULL:
-					</p>	
+					</p>
 					<p>Exemplo</p>
 
 					<?php

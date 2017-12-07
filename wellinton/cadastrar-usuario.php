@@ -1,4 +1,4 @@
-<!-- 
+<!--
 Wellinton Vieira
 Programação para Internet I
  -->
@@ -16,7 +16,7 @@ Programação para Internet I
 
 	if ($result->num_rows > 0) {
 		$_SESSION['mensagemErroCadastroExistente'] = "mensagemErroCadastroExistente";
-		header('location:novo-usuario.php');	
+		header('location:novo-usuario.php');
 	}else{
 		$sql = "INSERT INTO usuario (usuario, senha, dataCadastro) VALUES ('$usuario', '$senha', '$date')";
 		if ($conn->query($sql) === TRUE) {

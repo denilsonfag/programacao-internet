@@ -6,7 +6,7 @@ if(!isset($_SESSION))
 if(isset($_POST['login'])){
 
   include('class/conexao.php');
-  
+
   $erro = array();
 
   // Captação de dados
@@ -24,8 +24,8 @@ if(isset($_POST['login'])){
 
     if(count($erro) == 0){
 
-        $sql = "SELECT senha_usuario as senha, id_usuario as valor 
-        FROM usuarios 
+        $sql = "SELECT senha_usuario as senha, id_usuario as valor
+        FROM usuarios
         WHERE nome_usuario = '$_SESSION[nome]'";
         $que = $mysqli->query($sql) or die($mysqli->error);
         $dado = $que->fetch_assoc();

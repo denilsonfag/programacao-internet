@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/main.css">
-  <meta charset="utf-8">  
-    
+  <meta charset="utf-8">
+
     <link href="../styles/blog.css" rel="stylesheet" type="text/css">
     <title>Conteúdo Links </title>
     <style>
@@ -15,17 +15,17 @@
         font-family: 'Averia Sans Libre';
     }
         #interface {
-          
+
           background-color:#212121;
           color: white;
-          padding: 30px;  
+          padding: 30px;
         }
     h2{
         color: white;
     }
       a:link {
-          color: green; 
-          background-color: transparent; 
+          color: green;
+          background-color: transparent;
           text-decoration: none;
       }
 
@@ -79,16 +79,16 @@
     <header id="page-header">
       <?php include '../page-header.html'; ?>
     </header>
-    
+
     <nav id="side-menu">
       <?php include '../side-menu.html'; ?>
     </nav>
     <section>
       <div id="artigo">
-      <h1>Vamos aprender sobre links?</h1> 
+      <h1>Vamos aprender sobre links?</h1>
         <a id="home" href="../index.php">Voltar ao Início</a>
         <h2>Links</h2>
-        <p>Os links são encontrados em quase todas as páginas da web. Quando um usuário clica em um link ele é redirecionado a uma nova página. Curiosidade: porque a tag <code>&lt;a&gt;</code> se chama 'a' e nao <code>&lt;link&gt;</code>? Resposta no fim da página.</p>  
+        <p>Os links são encontrados em quase todas as páginas da web. Quando um usuário clica em um link ele é redirecionado a uma nova página. Curiosidade: porque a tag <code>&lt;a&gt;</code> se chama 'a' e nao <code>&lt;link&gt;</code>? Resposta no fim da página.</p>
 
         <p>Este é um exemplo de link: <a href="http://aminoapps.com/page/memes-hu3-br/1109290/meu-cachorro-pediu-o-link">Link</a></p>
 
@@ -104,7 +104,7 @@
         <h2>Abrir link em uma nova guia</h2>
         <p>Um link pode ser aberto em uma nova guia do navegador, para isto basta apenas adicionar o atributo target e seta-lo como "_blank" <code>target="_blank"</code></p>
         <p><a href="https://www.google.com" target="_blank">Google</a></p>
-        
+
         <h2>Utilizar uma imagem como link</h2>
         <p>Podemos utilizar imagens para representar links adicionando a tag <code>&lt;img /&gt;</code></p>
         <a href="https://www.google.com">
@@ -118,7 +118,7 @@
         <h3>Resposta:</h3>
         <p>Porque o 'a' representa 'action' quando clicado desencadeia uma ação.</p>
       </div>
-    </section> 
+    </section>
     <footer id="page-footer">
       <?php include '../page-footer.html'; ?>
     </footer>

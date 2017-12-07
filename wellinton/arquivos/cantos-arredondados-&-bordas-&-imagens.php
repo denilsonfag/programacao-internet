@@ -1,4 +1,4 @@
-<!-- 
+<!--
 Wellinton Vieira
 Programação para Internet I
  -->
@@ -11,7 +11,7 @@ Programação para Internet I
 	    <link rel="stylesheet" href="../css/stylePage.css">
 		<title>Principal</title>
 		<title>Principal</title>
-		<?php  
+		<?php
 			session_start();
 			if((!isset ($_SESSION['usuario']) == true)){
 				unset($_SESSION['usuario']);
@@ -25,18 +25,18 @@ Programação para Internet I
 				<article>
 					<img src="../images/ifsc.png" id="logo">
 					<h1 id="titulo"><u>Cantos Arredondados e bordas com imagens</u></h1>
-					<hr>	
+					<hr>
 					<p>
 						Antes do CSS3, para se criar bordas arredondadas era preciso escrever bastante código CSS e usar diversas imagens, mas com a chegava do novo CSS esse trabalho ficou muito mais fácil, em apenas três linhas é possível fazer um Box com cantos arredondados aparecer em todos os principais navegadores e ainda poder definir o quanto arredondado ficará a borda.
 					</p>
 					<h1 id="subtitulo"><u>Exemplo de código</u></h1>
 					<img src="../images/html_img3.png" id="exemplo">
 				</article>
-				<hr>	
-				
+				<hr>
+
 				<article>
 					<h1 id="subtitulo"><u>Lista com prefixo de cada navegador</u></h1>
-						<p>	
+						<p>
 							Mozilla Firefox: -moz-<br>
 							Google Chrome e Safari: -webkit-<br>
 							Opera: -o-<br>
@@ -46,10 +46,10 @@ Programação para Internet I
 
 						<div id="botao">
 							<button class="botao" onclick="clique()" title="Clique aqui para ver um javascript em ação">
-								Clique aqui!	
+								Clique aqui!
 							</button>
 						</div><br>
-					
+
 					<fieldset class="exemploCodigo">
 						<u>Código utilizado no botão</u><br><br>
 						cursor: pointer;<br>
@@ -67,7 +67,7 @@ Programação para Internet I
 					<div class="zoom">
 						<img src="../images/paisagem.jpg" title="Saiba mais em w3schools.com">
 					</div>
-				
+
 					<script>
 						function clique(){
 							alert("Fui clicado :)");

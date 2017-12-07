@@ -1,11 +1,11 @@
 <?php
 	session_start();
-	require_once('db.php');	
+	require_once('db.php');
 
 	$usuario = $_POST['usuario'];
 	$senha = $_POST['senha'];
 
-	$sql = "SELECT * FROM usuarios WHERE usuario = '$usuario' AND senha = '$senha' "; 
+	$sql = "SELECT * FROM usuarios WHERE usuario = '$usuario' AND senha = '$senha' ";
 	$objDB = new db();
 	$link = $objDB->conecta_mysql();
 
@@ -18,7 +18,7 @@
 					header('Location: arquivos.php');
 				}else {
 					header('Location: index.php?erro=1');
-				}	
+				}
 	}else{
 			echo 'Erro na execução da consulta, favor entrar em contato com o admin do site.';
 	}

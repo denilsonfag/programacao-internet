@@ -15,7 +15,7 @@
         <article>
                <h1>Exemplo de codigo.</h1>
 
-                
+
                     <div id = code>&lt;html&gt;</br>
                     &lt;body&gt;</br>
 
@@ -51,7 +51,7 @@
                   Quando o usuário preenche o formulário acima e clica no botão enviar, os dados do formulário são enviados para processamento para um arquivo PHP chamado "welcome.php". Os dados do formulário são enviados com o método HTTP POST.
 
                  Para exibir os dados enviados, você pode simplesmente repetir todas as variáveis. O "welcome.php" parece assim:
-                
+
                 </h5>
                     <div id = code>
                     &lt;html&gt;</br>
@@ -93,7 +93,7 @@
 
 
             <h5>
-            </br></br>   
+            </br></br>
             E podendo ser exibido dessa maneira!
 
             </h5>
@@ -120,7 +120,7 @@
                     Your email address is: <?php echo $_GET["email"]; ?>
 
                     </body>
-                    </html> 
+                    </html>
                     </div>
 
 
@@ -136,12 +136,12 @@
                     Name: <input type="text" name="name"></br>
                      E-mail: <input type="text" name="email"></br>
                      Website: <input type="text" name="website"></br>
-                     Comment: <textarea name="comment" rows="5" cols="40"></textarea> 
+                     Comment: <textarea name="comment" rows="5" cols="40"></textarea>
                     </br>
-                    
+
                     </form>
 
-               
+
 
             </br></br>
             Codigo exemplo! </h5>
@@ -169,10 +169,10 @@
                     <input type="radio" name="genero" value="feminino">Feminino
                     <input type="radio" name="genero" value="masculino">Masculino
                     </br>
-                    
+
                     </form>
 
-               
+
 
             </br></br>
             Codigo exemplo! </h5>
@@ -185,7 +185,7 @@
                     &lt;input type="radio" name="genero" value="feminino"&gt;Feminino</br>
                     &lt;input type="radio" name="genero" value="masculino"&gt;Masculino
                     </br>
-                    
+
                     </form>
             </div>
 
@@ -208,10 +208,10 @@
                     <input type="radio" name="gender"
                     <?php if (isset($gender) && $gender=="male") echo "checked";?>
                     value="male">Male
-                    
-                    
 
-               
+
+
+
 
             </br></br>
             Codigo exemplo! </h5>
@@ -238,7 +238,7 @@
                     &lt;?php if (isset($gender) && $gender=="male") echo "checked";&gt;?>
                     value="male">Male
                     </br>
-                    
+
                     </form>
             </div>
 
@@ -252,7 +252,7 @@
 
 
 
-           
+
 
 
 

@@ -7,7 +7,7 @@ if(isset($_POST['login'])){
 
   include('class/conexao.php');
 
-  
+
   $erro = array();
 
   // Captação de dados

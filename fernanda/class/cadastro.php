@@ -6,7 +6,7 @@ if(!isset($_SESSION))
 if(isset($_POST['login'])){
 
   include('class/conexao.php');
-  
+
   $erro = array();
 
   // Captação de dados
@@ -26,12 +26,12 @@ if(isset($_POST['login'])){
 
     if(count($erro) == 0){
 
-        $sql = "SELECT senha_usuario as senha, id_usuario as valor 
-        FROM usuarios 
+        $sql = "SELECT senha_usuario as senha, id_usuario as valor
+        FROM usuarios
         WHERE nome_usuario = '$_SESSION[nome]'";
         $que = $mysqli->query($sql) or die($mysqli->error);
         $dado = $que->fetch_assoc();
-        
+
         if($que->num_rows == 0)
             $erro[] = "Nenhum usuário possui o <strong>nome</strong> informado.";
 
@@ -90,13 +90,13 @@ if(isset($_POST['login'])){
                         <h3 class="panel-title">Cadastro</h3>
                     </div>
                     <div class="panel-body">
-                        <?php 
-                        if(isset($erro)) 
+                        <?php
+                        if(isset($erro))
                             if(count($erro) > 0){ ?>
                                 <div class="alert alert-danger">
                                     <?php foreach($erro as $msg) echo "$msg <br>"; ?>
                                 </div>
-                            <?php 
+                            <?php
                             }
                             ?>
                         <form method="post" action="" role="form">
@@ -107,7 +107,7 @@ if(isset($_POST['login'])){
                                 <div class="form-group">
                                     <input class="form-control" required placeholder="Senha" name="password" type="password" value="">
                                 </div>
-                                
+
                                 <button type="submit" name="login" value="true" class="btn btn-success btn-block">Cadastrar</button>
 
 

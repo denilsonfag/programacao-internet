@@ -24,7 +24,7 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
 			<p>As propriedades de <strong>Background em CSS</strong> são utilizadas para definir efeitos para os elementos.</p>
 
 		<h2>Propriedades de background do CSS: </h2>
- 		
+
  		<h2>Cor</h2>
 
 			<p>A propriedade background-color especifica a cor de fundo de um elemento, conforme exemplo abaixo: </p>
@@ -64,7 +64,7 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
 		<p>Os trechos de códigos abaixo representam como utilizar as propriedades repeat-x, repeat-y e position:</p>
 
 			<p><strong>repeat-x:</strong></p>
-				
+
 				<div class="repeat">
 				&lt;head&gt; <br/>
 				&lt;style rel=&quot;stylesheet&quot;&gt;/&gt;<br/>
@@ -85,7 +85,7 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
 			<div class="repeat" style="background-image: url(imgs/cssimage.png); height: 200px"></div>
 
 			<p><strong>repeat-y:</strong></p>
-	
+
 				&lt;head&gt; <br/>
 				&lt;style rel=&quot;stylesheet&quot;&gt;/&gt;<br/>
 				body { <br/>
@@ -104,7 +104,7 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
 			<div class="repeat" style="background-image: url(imgs/iconcss2.png);background-repeat: repeat-y; height: 200px"></div>
 
 			<p><strong>position:</strong></p>
-	
+
 				&lt;head&gt; <br/>
 				&lt;style rel=&quot;stylesheet&quot;&gt;/&gt;<br/>
 				body { <br/>
