@@ -11,7 +11,7 @@ if (!isset($_SESSION['agent']) OR ($_SESSION['agent'] != md5($_SERVER['HTTP_USER
 }
 
 // Set the page title and include the HTML header:
-$page_title = 'Bem vindo';
+$page_title = 'Bem vindo!';
 include ('includes/header.html');
 include ('includes/navigation.html');
 
