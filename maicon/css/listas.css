@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,600');
+@media screen and (min-width:600px){
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+	background-image: url(../imgs/imagem1.jpg);
+	text-align: justify;
+}
+p{
+	text-align: justify;
+	color: #3F403F;
+}
+h1{
+	color: #3F403F;
+}
+h2{
+	color: #3F403F;
+}
+h3{
+	color: #3F403F;
+}
+.main{
+	color: #fff;
+  background-color: rgba(76, 229, 134, 0.5);
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+  max-width: 960px;
+  margin: auto;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+.main ul{
+    color: black;
+}
+.main ol{
+    color: black;
+}
+.btn {
+  display: inline-block;
+  padding: .7em 1.7em;
+  background: #4ce586;
+  color: #444;
+  font-weight: 600;
+  text-decoration: none;
+  
+  &:hover {
+    background: #4ce586;
+  }
+}
+}

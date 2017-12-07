@@ -1,0 +1,355 @@
+@charset "UTF-8";
+
+
+.header-menu{
+    background-color: #1ab188;
+}
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #dddddd;
+}
+
+p {
+    text-align: justify;
+    text-indent: 20px;
+    margin: 10px 0 10px 0;
+    padding: 0 10px 0 10px;
+}
+
+code {
+    font-weight: bold;
+    font-family: Consolas, "monospace";
+}
+
+#interface {
+    max-width: 960px;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+#page-header, .pcenter {
+    text-align: center;
+}
+#page-footer > * {
+    text-align: center;
+}
+
+#page-footer nav ul li {
+    display: inline;
+    margin: 0 10px 0 10px;
+}
+
+#header-menu ul{
+    padding:0px;
+    margin:0px;
+    background-color: #32fd43;
+    list-style: none;
+}
+
+#header-menu ul li{
+    display: inline;
+}
+#header-menu ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+    background-color:#EDEDED;
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+}
+
+.left-item{
+    float:left;
+}
+.right-item{
+    float:right;
+}
+
+/************* LOGIN */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background: #c1bdba;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #1ab188;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+a:hover {
+  color: #179b77;
+}
+
+.form {
+  background: rgba(19, 35, 47, 0.9);
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+.tab-group li a:hover {
+  background: #179b77;
+  color: #ffffff;
+}
+.tab-group .active a {
+  background: #1ab188;
+  color: #ffffff;
+}
+
+.tab-content > div:last-child {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+label {
+  position: absolute;
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+  left: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 22px;
+}
+label .req {
+  margin: 2px;
+  color: #1ab188;
+}
+
+label.active {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}
+label.active .req {
+  opacity: 0;
+}
+
+label.highlight {
+  color: #ffffff;
+}
+
+input, textarea {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+input:focus, textarea:focus {
+  outline: 0;
+  border-color: #1ab188;
+}
+
+textarea {
+  border: 2px solid #a0b3b0;
+  resize: vertical;
+}
+
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.top-row > div:last-child {
+  margin: 0;
+}
+
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #1ab188;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+.button:hover, .button:focus {
+  background: #179b77;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+}
+
+/* transtions */
+#interface h1, h2{
+    font-size: 28px;
+    text-align: center;
+    color: black;
+
+}
+#interface .code{
+    border: 1px solid #000;
+    background-color: whitesmoke;
+    padding: 10px;
+
+}
+#interface .code .titleCode{
+    border: 1px solid #000;
+    background-color: whitesmoke;
+    padding: 20px;
+
+}
+
+
+#interface table {
+    border: black 1px solid;
+}
+#interface table tr td{
+    border: black 1px solid;
+}
+
+#interface #exemplo1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+
+}
+
+
+#interface #exemplo1:hover{
+    width: 100%;
+}
+#interface #exemplo3:hover {
+    width: 100%;
+}
+#interface #exemplo4:hover {
+    width: 100%;
+}
+#interface #exemplo5:hover {
+    width: 100%;
+}
+#interface #exemplo6:hover {
+    width: 100%;
+}
+#interface #exemplo7:hover {
+    width: 100%;
+}
+
+
+
+#interface #exemplo3{
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+    transition-timing-function: linear;
+}
+#interface #exemplo4{
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+    transition-timing-function: ease
+}
+
+#interface #exemplo5{
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+    transition-timing-function: ease-in
+}
+#interface #exemplo6{
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+    transition-timing-function: ease-out
+}
+#interface #exemplo7{
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+    transition-timing-function: ease-in-out
+
+
+

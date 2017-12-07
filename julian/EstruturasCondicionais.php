@@ -10,9 +10,18 @@
 
 	</head>
 		<body style = "background-color: #F6F6F6">
- 			<h1 align="center">ESTRUTURAS CONDICIONAIS</h1>
-
-			<h2>O que são?</h2>
+ 			<table border="0" width="80%" align="center">
+			<tr>
+					<td align="right">
+					<a href="canvas.php">Canvas</a> |
+                    <a href="formatacao-texto.php">Formatações de Texto</a> |
+                    <a href="arquivos.php">Home</a> |
+                    <a href="logout.php">Sair</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<h2>O que são?</h2>
 			<p>Declarações condicionais são usadas para executar diferentes ações com base em condições diferentes.</p>
 			<p>Muitas vezes, quando você escreve código, você quer realizar diferentes ações para diferentes condições. Você pode usar declarações condicionais em seu código para fazer isso.<br><br>
 				<strong>Em PHP, temos as seguintes declarações condicionais:</strong><br><br>
@@ -81,6 +90,5 @@
 		</tr>
 	</table>
 </p><hr size="5">
-
 </body>
 </html>

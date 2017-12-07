@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Blog de exemplo</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../../styles/main.css" >
+        <link rel="stylesheet" href="../../styles/layouts.css" >
+        <style>
+
+            header, section, aside, footer, .article-body {
+                border: 1px solid;
+            }
+
+            h1, h2, h2 {
+
+                border: 2px solid #561c1c;
+                border-radius: 10px;
+
+                padding: 10px;
+            }
+
+            #interface, .article-container{
+                display: flex;
+                flex-flow: row wrap;
+            }
+
+            #interface > *, .article-container > * {     /* regra aplicada a todos os subelementos dos seletores  */
+                flex: 1 100%;
+            }
+
+            #sidebar nav ul li{
+                display: inline;
+            }
+
+            @media all and (min-width: 600px) {
+                #sidebar {
+                    flex: 1;
+                }
+                #posts {
+                    flex: 4;
+                }
+                #sidebar nav ul li{
+                    display: block;
+                }
+            }
+
+            @media all and (min-width: 800px) {
+                .article-aside {
+                    flex: 1;
+                    order: 2;
+                }
+                .article-body {
+                    flex: 4;
+                    order: 1;
+                }
+                .article-footer {
+                    order:3;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body style="background-color:rgb(94, 19, 19);">
+
+    <div id="interface">
+
+        <header id="page-header">
+            <h1>HTML E CSS - Dicas sobre Box Model e Videos!</h1>
+
+        </header>
+
+        <section id="posts">
+
+            <article class="article-container">
+                <header>
+                    <h2>Video com HTML</h2>
+                    <h3>Aprenda a colocar vídeos em seus códigos HTML!</h3>
+                </header>
+
+
+
+                <div class="article-body">
+
+                </div>
+
+
+            </article>
+
+            <article class="article-container">
+                <header>
+                    <h2>CSS - Box Model</h2>
+                    <h3>Aprenda a utilizar o Box Model</h3>
+                </header>
+
+
+                <div class="article-body">
+                       
+                </div>
+
+            </article>
+
+        </section>
+
+        <footer id="page-footer">
+            <p>&copy; 2017 IFSC</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Termos de serviço</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+    </div>
+    </body>
+</html>
