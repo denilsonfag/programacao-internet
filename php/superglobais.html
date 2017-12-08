@@ -1,0 +1,339 @@
+<!-- Fernanda Machado Belem-->
+
+<!DOCTYPE HTML>
+
+
+
+<html>
+
+
+
+<head>
+
+
+
+	<title>PHP</title>
+
+	<meta charset="UTF-8">
+
+
+
+	<style>
+
+
+
+		@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+
+        p {
+
+            color: white;
+
+            border: 2px solid #561c1c;
+
+            border-radius: 10px;
+
+            text-align: center;
+
+            padding: 10px;
+
+        }
+
+
+
+    	h1 {
+
+    		color: white;
+
+    		text-align: center;
+
+    	}
+
+
+
+    	.corpo {
+
+    		border: 25px;
+
+    		padding: 25px;
+
+   		    margin: auto;
+
+   		    height: 100px;
+
+    		width: 50%;
+
+
+
+		}
+
+
+
+		.titulo{
+
+    		border: 25px;
+
+    		padding: 90px;
+
+   		    margin: auto;
+
+   		    height: 50px;
+
+    		width: 50%;
+
+		}
+
+		code{
+			color: white;
+		}
+
+
+
+		body{
+
+			background-color: black;
+
+			font-family: Raleway;
+
+		}
+
+
+
+		a:hover {
+
+    		color: black;
+
+		}
+
+
+
+		a:active {
+
+   			color: #561c1c;
+
+		}
+
+
+
+		a{
+
+			color: white;
+
+		}
+
+
+
+	</style>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+	<div class="titulo">
+	<h1>Superglobais</h1>
+	</div>
+
+	<div class="corpo">
+
+	<p>
+	Muitas variáveis predefinidas em PHP são  "superglobais", o que significa que estão sempre acessíveis,
+	independentemente do escopo. Você pode acessá-los a partir de qualquer função, classe ou arquivo sem ter que
+	fazer nada de especial.
+	</p>
+
+	<p>
+	As variáveis superglobais disponíveis em PHP são as seguintes:</br>
+	</p>
+
+	<p>
+	<strong>
+		<a href="#globais">$GLOBALS</br></a>
+		<a href="#server">$_SERVER</br></a>
+		<a href="#request">$_REQUEST</br></a>
+		<a href="#post">$_POST</br></a>
+		<a href="#get">$_GET</br></a>
+		<a href="#files">$_FILES</br></a>
+		<a href="#env">$_ENV</br></a>
+		<a href="#cookie">$_COOKIE</br></a>
+		<a href="#session">$_SESSION</br></a>
+	</strong>
+
+	</p>
+
+	<p>
+	Agora iremos falar sobre alguams delas!
+	</p>
+
+
+	<h1><a name="#globais">PHP $GLOBALS</h1></a>
+
+	<p>
+	$GLOBALS é uma variável superglobal do PHP que é usada para acessar variáveis globais de qualquer lugar no script PHP (também dentro de funções ou métodos).
+	O PHP armazena todas as variáveis globais em uma matriz chamada $GLOBALS[index]. O index contém o nome da variável. O exemplo abaixo mostra como usar a variável superglobal $GLOBALS:
+	</p>
+
+	<code>
+
+			&lt;?php </br>
+			$x = 75;</br>
+			$y = 25;</br>
+
+			function addition() {</br>
+    			$GLOBALS['z'] = $GLOBALS['x'] + $GLOBALS['y'];</br>
+			}</br>
+
+			addition();</br>
+			echo $z; </br>
+	?></br>
+
+	</code>
+
+	<h1><a name="#server">PHP $_SERVER</h1></a>
+
+
+	<p>
+	$_SERVER é uma variável superglobal do PHP que contém informações sobre cabeçalhos, caminhos e locais de script. O exemplo abaixo mostra como usar alguns dos elementos em $_SERVER:
+	</p>
+
+	<code>
+
+	&lt;?php </br>
+		echo $_SERVER['PHP_SELF'];</br>
+			echo &lt;br>";</br>
+			echo $_SERVER['SERVER_NAME'];</br>
+			echo "&lt;br>";</br>
+			echo $_SERVER['HTTP_HOST'];</br>
+			echo &lt;br>";</br>
+			echo $_SERVER['HTTP_REFERER'];</br>
+			echo &lt;br>";</br>
+			echo $_SERVER['HTTP_USER_AGENT'];</br>
+			echo &lt;br>";</br>
+			echo $_SERVER['SCRIPT_NAME'];</br>
+	?> </br>
+
+	</code>
+
+	<p>
+	Existem alguns elemntos que são mais importantes que podem entrar dentro do $_SERVER, você os encontra
+	<a href="https://www.w3schools.com/PHP/php_superglobals.asp">aqui</a>.
+	</p>
+
+	<h1><a name="#request">PHP $_REQUEST</h1></a>
+
+	<p>
+	PHP $_REQUEST é usado para coletar dados depois de enviar um formulário HTML. O exemplo abaixo mostra um formulário com um campo de entrada e um botão de envio. Quando um usuário envia os dados clicando em "Enviar", os dados do formulário são enviados para o arquivo especificado no atributo de ação da marca &lt;form>. Neste exemplo, apontamos este arquivo para o processamento de dados do formulário. Se você deseja usar outro arquivo PHP para processar os dados do formulário, substitua-o pelo nome do arquivo escolhido. Então, podemos usar a variável superglobal $_REQUEST para coletar o valor do campo de entrada:
+	</p>
+
+		<code>
+
+		&lt;html></br>
+		&lt;body></br>
+
+		&lt;form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>"></br>
+  			Name: &lt;input type="text" name="fname"></br>
+  		&lt;input type="submit"></br>
+		&lt;/form></br>
+
+		&lt;?php</br>
+			if ($_SERVER["REQUEST_METHOD"] == "POST") {</br>
+    			// collect value of input field</br>
+    		$name = $_REQUEST['fname'];</br>
+    		if (empty($name)) {</br>
+        		echo "Name is empty";</br>
+    		} else {</br>
+        		echo $name;</br>
+    			}</br>
+			}</br>
+		?></br>
+
+		&lt;/body></br>
+		&lt;/html> </br>
+
+	</code>
+
+	<h1><a name="#post">PHP $_POST</h1></a>
+
+	<p>
+	PHP $_POST é amplamente utilizado para coletar dados do formulário depois de enviar um formulário HTML com method="post". $_POST também é amplamente utilizado para passar variáveis. O exemplo abaixo mostra um formulário com um campo de entrada e um botão de envio. Quando um usuário envia os dados clicando em "Enviar", os dados do formulário são enviados para o arquivo especificado no atributo de ação da marca &lt;form>. Neste exemplo, apontamos para o próprio arquivo para processar os dados do formulário. Se você deseja usar outro arquivo PHP para processar os dados do formulário, substitua-o pelo nome do arquivo escolhido. Então, podemos usar a variável superglobal $_POST para coletar o valor do campo de entrada:
+	</p>
+
+	<code>
+
+		&lt;html></br>
+		&lt;body></br>
+
+			&lt;form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>"></br>
+    				Name: &lt;input type="text" name="fname"></br>
+  				&lt;input type="submit"></br>
+			&lt;/form></br>
+
+			&lt;?php</br>
+				if ($_SERVER["REQUEST_METHOD"] == "POST") {</br>
+        			// collect value of input field</br>
+    			$name = $_POST['fname'];</br>
+    		if (empty($name)) {</br>
+       			echo "Name is empty";</br>
+    		} else {</br>
+        		echo $name;</br>
+   				}</br>
+			}</br>
+			?></br>
+
+		&lt;/body></br>
+		&lt;/html> </br>
+
+	</code>
+
+	<h1><a name="#get">PHP $_GET</h1></a>
+
+	<p>
+	PHP $_GET também pode ser usado para coletar dados do formulário depois de enviar um formulário HTML com method = "get".</br>
+	$_GET também pode coletar dados enviados no URL. Suponha que temos uma página HTML que contenha um hiperlink com parâmetros:
+	</p>
+
+	<code>
+
+		&lt;html></br>
+		&lt;body></br>
+
+		&lt;a href="test_get.php?subject=PHP&amp;web=W3schools.com">Test $GET&lt;/a></br>
+
+		&lt;/body></br>
+		&lt;/html> </br>
+
+	</code>
+
+	<p>
+	Quando um usuário clica no link "Testar $ GET", os parâmetros "assunto" e "web" são enviados para "test_get.php" e você pode acessar seus valores em "test_get.php" com $_GET.
+	O exemplo abaixo mostra o código em "test_get.php":
+	</p>
+
+
+	<code>
+
+		&lt;html></br>
+		&lt;body></br>
+
+			&lt;?php</br>
+				echo "Study " . $_GET['subject'] . " at " . $_GET['web'];{</br>
+			?></br>
+		&lt;/body></br>
+		&lt;/html> </br>
+
+	</code>
+
+	<p>
+	</p>
+
+</body>
+
+
+
+</html>
