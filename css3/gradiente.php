@@ -2,10 +2,11 @@
 
 session_start();
 if(!isset($_SESSION["login"]) || !isset($_SESSION["senha"])){
-	echo"<script language='javascript' type='text/javascript'>alert('Erro: Esse login ja está em uso');window.location.href='index.php';</script>";
-	header('Location: index.php');
+    echo"<script language='javascript' type='text/javascript'>alert('Erro: Esse login ja está em uso');window.location.href='index.php';</script>";
+    header('Location: index.php');
 
 }
+
 
 
 
@@ -25,7 +26,7 @@ if(!isset($_SESSION["login"]) || !isset($_SESSION["senha"])){
                 <?php 
                 echo "Bem Vindo " . $_SESSION['login'];
                  ?>
-                <form action="logout.php" method="post" class="form-logout"> 
+                <form action="../mateusm/logout.php" method="post" class="form-logout"> 
                 <button type="submit" class="btn btn-lg btn-primary btn-block">Logout</button> 
              </form>
             <?php include '../page-header.html'; ?>
