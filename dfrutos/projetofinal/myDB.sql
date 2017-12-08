@@ -1,0 +1,12 @@
+CREATE DATABASE  IF NOT EXISTS danielf;
+use danielf;
+
+CREATE USER 'danielf'@'localhost' IDENTIFIED BY '12345';
+GRANT SELECT, INSERT ON danielf.login to 'danielf'@'localhost';
+
+CREATE TABLE login(
+id int(10) NOT NULL AUTO_INCREMENT,
+username varchar(255) NOT NULL UNIQUE,
+password varchar(255) NOT NULL,
+PRIMARY KEY (id)
+)
