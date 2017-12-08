@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+*{
+  max-width: 100%;
+}
+
+#interface div{
+  overflow: auto;
+}
+
+body{
+  background-color: #dddddd;
+}
+
+p{
+  text-align: justify;
+  text-indent: 20px;
+  margin: 10px 0 10px 0;
+  padding: 0 10px 0 10px;
+}
+
+code{
+  font-weight: bold;
+  font-family: Consolas, "monospace";
+}
+
+#interface{
+  max-width: 960px;
+  margin: auto;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+#page-header, .pcenter{
+  text-align: center;
+}
+
+#page-footer > *{
+  text-align: center;
+}
+
+#page-footer nav ul li{
+  display: inline;
+  margin: 0 10px 0 10px;
+}
+
+li{
+  text-indent: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+div[class] a{
+  display: block;
+}
+
+#interface{
+  font-size: 20px;
+}
+
+#page-header *, #page-footer *{
+  font-family: 'Mandali', sans-serif;
+}
+
+#artigo *:not(code){
+  font-family: 'Muli', sans-serif;
+}
+
+.linha-bloco{
+  display: inline-block;
+}
+
+/* Imagens */
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Iframes */
+
+iframe{
+  border: none;
+}
+
+.iframes{
+  width: 100%;
+  height: 340px;
+}
+
+.celular1{
+  width: 360px;
+  height: 640px;
+}
+
+.celular2{
+  width: 444px;
+  height: 400px;
+}
+
+/* Tabelas */
+
+table{
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+td, th{
+  padding: 8px;
+  border-bottom: 1px solid #cccccc;
+}
+
+th{
+  background-color: #999999;
+}
+
+tr:hover{
+  background-color:#cccccc;
+}
+
+/* Códigos */
+
+.codigo{
+  background-color: #272822;
+  padding: 10px;
+}
+
+.amarelo{
+  color: #e6d95c;
+}
+
+.azul{
+  color: #66d9ef;
+}
+
+.branco{
+  color: #ffffff;
+}
+
+.cinza{
+  color: #757150;
+}
+
+.rosa{
+  color: #f90056;
+}
+
+.verde{
+  color: #95dd07;
+}
