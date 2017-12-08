@@ -10,9 +10,6 @@
                             <div class="alert alert-success">
                                 <a href="index.php" class="close" data-dismiss="alert">&times</a>
                                 Usuário cadastrado com sucesso.
-                                <?php
-                                header("location:index.php");
-                                ?>
                             </div>
                         </div>
                     <?php
@@ -21,7 +18,16 @@
                     ?>
                     <div class="message">
                         <div class="alert alert-danger">
-                            Algo inesperado aconteceu. :(
+                            Verifique se o banco de dados está online ou se o usuário informado já existe
+                        </div>
+                    </div>
+                    <?php
+                    break;
+                case 3:
+                    ?>
+                    <div class="message">
+                        <div class="alert alert-danger">
+                            As senhas informadas não são iguais...
                         </div>
                     </div>
                     <?php
@@ -47,7 +53,10 @@
 			<input type="usuario" id="inputUsuario" name="inputUsuario" class="form-control" placeholder="Usuario" required>
 			<label for="inputPassword">Senha</label>
 			<input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Senha" required>
+            <label for="inputPassword2">Informe novamente sua senha</label>
+            <input type="password" id="inputPassword2" name="inputPassword2" class="form-control" placeholder="Senha" required>
 			<button type="submit" class="btn btn-lg btn-primary btn-block">Cadastrar</button>
+            <a href="index.php  ">Voltar para página de login</a>
 		</form>
 	</div>
 </body>
