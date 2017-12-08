@@ -10,7 +10,7 @@
 
 <head>
 
-	
+
 
 	<title>PHP</title>
 
@@ -24,7 +24,7 @@
 
 		@import url('https://fonts.googleapis.com/css?family=Raleway');
 
-    	
+
 
         p {
 
@@ -64,7 +64,7 @@
 
     		width: 50%;
 
-    		
+
 
 		}
 
@@ -141,13 +141,13 @@
 	</div>
 
 	<div class="corpo">
-	
+
 	<p>
 	Muitas variáveis predefinidas em PHP são  "superglobais", o que significa que estão sempre acessíveis,
 	independentemente do escopo. Você pode acessá-los a partir de qualquer função, classe ou arquivo sem ter que
 	fazer nada de especial.
 	</p>
-	
+
 	<p>
 	As variáveis superglobais disponíveis em PHP são as seguintes:</br>
 	</p>
@@ -173,7 +173,7 @@
 
 
 	<h1><a name="#globais">PHP $GLOBALS</h1></a>
-	
+
 	<p>
 	$GLOBALS é uma variável superglobal do PHP que é usada para acessar variáveis globais de qualquer lugar no script PHP (também dentro de funções ou métodos).
 	O PHP armazena todas as variáveis globais em uma matriz chamada $GLOBALS[index]. O index contém o nome da variável. O exemplo abaixo mostra como usar a variável superglobal $GLOBALS:
@@ -182,17 +182,17 @@
 	<code>
 
 			&lt;?php </br>
-			$x = 75;</br> 
+			$x = 75;</br>
 			$y = 25;</br>
- 
-			function addition() {</br> 
-    			$GLOBALS['z'] = $GLOBALS['x'] + $GLOBALS['y'];</br> 
+
+			function addition() {</br>
+    			$GLOBALS['z'] = $GLOBALS['x'] + $GLOBALS['y'];</br>
 			}</br>
- 
-			addition();</br> 
+
+			addition();</br>
 			echo $z; </br>
 	?></br>
-	
+
 	</code>
 
 	<h1><a name="#server">PHP $_SERVER</h1></a>
@@ -203,7 +203,7 @@
 	</p>
 
 	<code>
-	
+
 	&lt;?php </br>
 		echo $_SERVER['PHP_SELF'];</br>
 			echo &lt;br>";</br>
@@ -217,11 +217,11 @@
 			echo &lt;br>";</br>
 			echo $_SERVER['SCRIPT_NAME'];</br>
 	?> </br>
-	
+
 	</code>
 
 	<p>
-	Existem alguns elemntos que são mais importantes que podem entrar dentro do $_SERVER, você os encontra 
+	Existem alguns elemntos que são mais importantes que podem entrar dentro do $_SERVER, você os encontra
 	<a href="https://www.w3schools.com/PHP/php_superglobals.asp">aqui</a>.
 	</p>
 
@@ -232,7 +232,7 @@
 	</p>
 
 		<code>
-	
+
 		&lt;html></br>
 		&lt;body></br>
 
@@ -255,7 +255,7 @@
 
 		&lt;/body></br>
 		&lt;/html> </br>
-	
+
 	</code>
 
 	<h1><a name="#post">PHP $_POST</h1></a>
@@ -265,7 +265,7 @@
 	</p>
 
 	<code>
-	
+
 		&lt;html></br>
 		&lt;body></br>
 
@@ -288,18 +288,18 @@
 
 		&lt;/body></br>
 		&lt;/html> </br>
-	
+
 	</code>
 
 	<h1><a name="#get">PHP $_GET</h1></a>
 
 	<p>
 	PHP $_GET também pode ser usado para coletar dados do formulário depois de enviar um formulário HTML com method = "get".</br>
-	$_GET também pode coletar dados enviados no URL. Suponha que temos uma página HTML que contenha um hiperlink com parâmetros:	
+	$_GET também pode coletar dados enviados no URL. Suponha que temos uma página HTML que contenha um hiperlink com parâmetros:
 	</p>
 
 	<code>
-	
+
 		&lt;html></br>
 		&lt;body></br>
 
@@ -307,7 +307,7 @@
 
 		&lt;/body></br>
 		&lt;/html> </br>
-	
+
 	</code>
 
 	<p>
@@ -317,7 +317,7 @@
 
 
 	<code>
-	
+
 		&lt;html></br>
 		&lt;body></br>
 
@@ -326,7 +326,7 @@
 			?></br>
 		&lt;/body></br>
 		&lt;/html> </br>
-	
+
 	</code>
 
 	<p>

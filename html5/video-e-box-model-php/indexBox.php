@@ -9,7 +9,7 @@
     <style>
 
         @import url('https://fonts.googleapis.com/css?family=Raleway');
-        
+
         p {
             color: white;
             border: 2px solid #561c1c;
@@ -29,7 +29,7 @@
             margin: auto;
             height: 100px;
             width: 50%;
-            
+
         }
 
         .titulo{
@@ -71,7 +71,7 @@
         </nav>
 
         <article>
-                
+
                 <div class="titulo">
                     <h1>Aprendendo CSS</h1>
                 </div>

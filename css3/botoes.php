@@ -13,9 +13,9 @@
      }
      #interface > * {
          flex: 1 100%;
-         
+
      }
-     
+
      @media all and (min-width: 800px){
          #side-menu{
              flex: 1;
@@ -25,12 +25,12 @@
          #artigo{
              flex: 4;
              order: 3;
-             
+
          }
          #page-footer{
              order: 3;
          }
-         
+
      }
      code {
          display:block;
@@ -92,7 +92,7 @@
         <header id="page-header">
             <?php include '../page-header.html'; ?>
         </header>
-        
+
         <nav id="side-menu">
             <?php include 'side-menu-c.html'; ?>
         </nav>
@@ -184,7 +184,7 @@
             </div>
         </article>
 
-        
+
 
         <footer id="page-footer">
             <?php include '../page-footer.html'; ?>

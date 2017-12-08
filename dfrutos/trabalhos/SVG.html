@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Página desenvolvida por DANIEL FRUTOS em 22/09 -->
+
+<html>
+
+<head>
+    <title>SVG</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="meuStilo.css" />
+</head>
+
+<body>
+    <div class="flex-container">
+        <header>
+            <h1>SVG: Scalable Vetor Graphics</h1>
+        </header>
+
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Introdução</a></li>
+                <li><a href="Exemplos.html">Exemplos</a></li>
+                <li><a href="cssFonts3.html">Css Fontes</a></li>
+                <li><a href="Referencias.html">Referências</a></li>
+
+            </ul>
+        </nav>
+
+        <article class="article">
+            <p><strong>INTRODUÇÃO: O que s&atilde;o vetores gr&aacute;ficos escal&aacute;veis?</strong></p>
+            <p><strong>SVG</strong>&nbsp;&eacute; a abreviatura de Scalable Vector Graphics que pode ser traduzido do ingl&ecirc;s como gr&aacute;ficos vetoriais escal&aacute;veis. Trata-se de uma linguagem XML para descrever de forma vetorial desenhos e gr&aacute;ficos bidimensionais, quer de forma est&aacute;tica, quer din&acirc;mica ou animada.</p>
+
+            <p>A cria&ccedil;&atilde;o deste formato foi baseada noutros j&aacute; existentes: CSS, DOM, JPEG, PNG, SMIL e XML. &Eacute; um padr&atilde;o aberto desenvolvido desde 1999 por um grupo de trabalho do W3C com base nos formatos PGML, da Adobe, e VML, da Microsoft, submetidos ao W3C por essas empresas em 1998.</p>
+
+            <p>SVG &eacute; suportado por todos os navegadores Web modernos de forma nativa ou atrav&eacute;s de bibliotecas JavaScript. O suporte nativo no Microsoft Internet Explorer s&oacute; &eacute; poss&iacute;vel a partir da vers&atilde;o 9. Bibliotecas permitem suporte limitado em navegadores mais antigos.</p>
+        </article>
+
+        <footer>@webmaster design</footer>
+    </div>
+
+</body>
+
+</html>

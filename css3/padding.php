@@ -1,12 +1,12 @@
-<!-- Por João Paulo Zorek--> 
-<!DOCTYPE html>             
-<html lang="pt-br"> 
-<head>        
+<!-- Por João Paulo Zorek-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/main.css">
-  <meta charset="utf-8">  
-    
+  <meta charset="utf-8">
+
     <link href="../styles/blog.css" rel="stylesheet" type="text/css">
     <title>Conteúdo Padding </title>
     <style>
@@ -16,17 +16,17 @@
         font-family: 'Averia Sans Libre';
     }
         #interface {
-          
+
           background-color:#212121;
           color: white;
-          padding: 30px;  
+          padding: 30px;
         }
     h2{
         color: white;
     }
       a:link {
-          color: green; 
-          background-color: transparent; 
+          color: green;
+          background-color: transparent;
           text-decoration: none;
       }
 
@@ -81,16 +81,16 @@
     <header id="page-header">
       <?php include '../page-header.html'; ?>
     </header>
-    
+
     <nav id="side-menu">
       <?php include '../side-menu.html'; ?>
     </nav>
     <section>
       <div id="artigo">
-        <h1>Vamos aprender sobre Padding?</h1> 
+        <h1>Vamos aprender sobre Padding?</h1>
         <h2>Padding</h2>
         <p>As propriedades de padding CSS são usadas para gerar espaço em torno do conteúdo. O padding limpa uma área ao redor do conteúdo (dentro da borda) de um elemento. Com CSS, você tem controle total sobre o padding. Existem propriedades CSS para configurar o padding para cada lado de um elemento (superior, direito, inferior e esquerdo).</p>
-        <p>O CSS possui propriedades para especificar o padding para cada lado de um elemento: 
+        <p>O CSS possui propriedades para especificar o padding para cada lado de um elemento:
           <code>
             <ul>
                 <li>padding-top</li>
@@ -99,7 +99,7 @@
                 <li>padding-left</li>
             </ul>
           </code>
-        </p>  
+        </p>
           <p>As propriedades de padding podem assumir os seguintes valores:
             <ul>
                 <li><code>length</code> - Especifica o padding em px, pt, cm, etc;</li>
@@ -118,10 +118,10 @@
                    padding-left: 80px;<br />
               }
             </code>
-          </p> 
+          </p>
           <div id = "padding">
             <p>Paragrafo com o padding formatado.</p>
-          </div> 
+          </div>
           <p>O padding também pode ser definido de forma curta, respeitando a ordem padding-top, padding-right, padding-bottom, padding-left. Exemplo:</p>
           <p>
             <code>
@@ -129,11 +129,11 @@
                 padding: 50px 30px 50px 80px;<br />
               }
             </code>
-          </p> 
+          </p>
           <p>Se a propriedade de padding tiver um valor só ele é aplicado a todos os lados, se tiver mais de um o estilo é aplicado seguindo a ordem citada acima.</p>
           <br />
       </div>
-    </section> 
+    </section>
     <footer id="page-footer">
       <?php include '../page-footer.html'; ?>
     </footer>

@@ -1,13 +1,38 @@
-<!DOCTYPE html>
+<?php 
+
+session_start();
+if(!isset($_SESSION["login"]) || !isset($_SESSION["senha"])){
+	echo"<script language='javascript' type='text/javascript'>alert('Erro: Esse login ja está em uso');window.location.href='index.php';</script>";
+	header('Location: index.php');
+
+}
+
+
+
+ ?>
+
+ <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
 <head>
-<<<<<<< HEAD
-	<link href="AvaliacaoCSS" rel="stylesheet">
-=======
-	
- <link rel="stylesheet" href="AvaliacaoCSS.css" class="AvaliacaoCSS">
->>>>>>> fefbafed274feae48c032e27bcf08442899b8008
+
+
+	<link rel="stylesheet" href="../mateusm/css/logout.css" >
+	<link rel="stylesheet" href="AvaliacaoCSS.css" class="AvaliacaoCSS">
+
+	<div id="interface">
+        <header id="page-header"><div id="logout">
+                <?php 
+                echo "Bem Vindo " . $_SESSION['login'];
+                 ?>
+                <form action="logout.php" method="post" class="form-logout"> 
+                <button type="submit" class="btn btn-lg btn-primary btn-block">Logout</button> 
+             </form>
+            <?php include '../page-header.html'; ?>
+
+
+            </div>
+
 	<title>Efeito Gradiente em CSS</title>
 </head>
 <body>

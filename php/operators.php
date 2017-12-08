@@ -99,7 +99,7 @@
     .amarelo{
       color: #e6d95c;
     }
-    
+
     .azul{
       color: #66d9ef;
     }
@@ -126,7 +126,7 @@
     <header id="page-header">
       <?php include '../page-header.html'; ?>
     </header>
-    
+
     <section>
     	<div id="artigo">
   	    <header class="pcenter">
@@ -135,9 +135,9 @@
   	        Fazendo aritmética, atribuições e comparações.
   	      </h4>
   	    </header>
-  	    
+
   	    <hr>
-  	    
+
   	    <section>
   	      <article>
   	        <h2>1. Sintaxe</h2>
@@ -148,9 +148,9 @@
               <code class="branco">?></code>
   	        </div>
   	      </article>
-  	      
+
   	      <hr>
-  	      
+
   	      <article>
   	        <h2>2. Operadores</h2>
   	          <p>
@@ -338,7 +338,7 @@
                 <p>
                   Exemplos:
                 </p>
-                  
+
   			        <div class="codigo">
                   <code class="branco">&lt;?php</code>
                   <br>
@@ -379,7 +379,7 @@
                   <code class="branco">&nbsp;&nbsp;$x</code>
                   <code class="rosa">*=</code>
                   <code class="branco">$y;</code>
-                  <br> 
+                  <br>
                   <code class="azul">&nbsp;&nbsp;echo</code>
                   <code class="branco">$z</code>
                   <code class="rosa">.</code>
@@ -434,7 +434,7 @@
               </div>
 
               <hr>
-  			      
+
   			      <article>
   			        <h3>2.3 Operadores de Comparação</h3>
   			        <p>
@@ -589,7 +589,7 @@
 
                 <article>
                   <h4>2.3.2 Operadores de Comparação Lógica</h4>
-                  
+
                   <table>
                     <tr>
                       <th>Operador</th>
@@ -1103,7 +1103,7 @@
   	    </footer>
   	  </div>
   	</section>
-    
+
     <footer id="page-footer">
       <?php include '../page-footer.html'; ?>
     </footer>
