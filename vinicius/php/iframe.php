@@ -1,121 +1,25 @@
+<?php
+  session_start();
+  if(!isset($_SESSION['user'])) {
+    header('location:../');
+    die();
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Mandali" rel="stylesheet">
+  <link rel="stylesheet" href="../css/iframe.css">
   <title>Iframes</title>
-  <style>
-    *{
-      max-width: 100%;
-    }
-
-    li{
-      text-indent: 20px;
-    }
-
-    a{
-      text-decoration: none;
-    }
-
-    div[class] a{
-      display: block;
-    }
-
-    #interface{
-      font-size: 20px;
-    }
-
-    .linha-bloco{
-      display: inline-block;
-    }
-
-    /* Imagens */
-
-    img{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    /* Iframes */
-
-    iframe{
-      border: none;
-    }
-
-    .iframes{
-      width: 100%;
-      height: 340px;
-    }
-
-    .celular1{
-      width: 360px;
-      height: 640px;
-    }
-
-    .celular2{
-      width: 444px;
-      height: 400px;
-    }
-
-    /* Tabelas */
-
-    table{
-    	width: 100%;
-      text-align: left;
-      border-collapse: collapse;
-    }
-
-    td, th{
-      padding: 8px;
-      border-bottom: 1px solid #cccccc;
-    }
-
-    th{
-      background-color: #999999;
-    }
-
-    tr:hover{
-      background-color:#cccccc;
-    }
-
-    /* Códigos */
-
-    .codigo{
-      background-color: #272822;
-      padding: 10px;
-    }
-
-    .amarelo{
-      color: #e6d95c;
-    }
-    
-    .azul{
-      color: #66d9ef;
-    }
-
-    .branco{
-      color: #ffffff;
-    }
-
-    .cinza{
-      color: #757150;
-    }
-
-    .rosa{
-      color: #f90056;
-    }
-
-    .verde{
-      color: #95dd07;
-    }
-  </style>
 </head>
 <body>
 
   <div id="interface">
-    <header class="pcenter">
+    <header id="page-header" class="pcenter">
       <h1 class="pcenter">A tag &lt;<code class="rosa">iframe</code>&gt;</h1>
       <h4 class="pcenter cinza">
         Reproduzindo um website ou mídia dentro de um website através de um link.
@@ -124,7 +28,7 @@
     
     <hr>
     
-    <section>
+    <section id="artigo">
       <article>
         <h2>Sintaxe</h2>
         <p>A sintaxe principal é definida por:</p>    
@@ -166,7 +70,7 @@
           <code class="branco">&lt;/</code><code class="rosa">style</code><code class="branco">&gt;</code>
         </div>
         
-        <iframe class="iframes" src="iframe.html">
+        <iframe class="iframes" src="#">
           <p>Este navegador não suporta a tag &lt;iframe&gt;.</p>
         </iframe>
 
@@ -265,7 +169,7 @@
             <code class="branco">&lt;/</code><code class="rosa">p</code><code class="branco">&gt;</code>
           </div>
 
-          <iframe class="iframes" src="page.html">
+          <iframe class="iframes" src="page.php">
             <p>Este navegador não suporta a tag &lt;iframe&gt;.</p>
           </iframe>
         </article>
@@ -287,40 +191,42 @@
             Os valores para o atributo são pré definidos, sendo eles:
           </p>
 
-          <table>
-            <tr>
-              <th>Valor</th>
-              <th>Definição</th>
-            </tr>
-            <tr>
-              <td>(Sem valor)</td>
-              <td>Aplica todas as restrições.</td>
-            </tr>
-            <tr>
-              <td>allow-forms</td>
-              <td>Reabilita envio de formulários.</td>
-            </tr>
-            <tr>
-              <td>allow-pointer-lock</td>
-              <td>Reabilita APIs.</td>
-            </tr>
-            <tr>
-              <td>allow-popups</td>
-              <td>Reabilita popups.</td>
-            </tr>
-            <tr>
-              <td>allow-same-origin</td>
-              <td>Permite que o conteúdo do iframe seja tratado como sendo da mesma origem.</td>
-            </tr>
-            <tr>
-              <td>allow-scripts</td>
-              <td>Reabilita scripts.</td>
-            </tr>
-            <tr>
-              <td>allow-top-navigation</td>
-              <td>Permite que o conteúdo do iframe navegue no contexto de navegação de nível superior do usuário.</td>
-            </tr>
-          </table>
+          <div>
+            <table>
+              <tr>
+                <th>Valor</th>
+                <th>Definição</th>
+              </tr>
+              <tr>
+                <td>(Sem valor)</td>
+                <td>Aplica todas as restrições.</td>
+              </tr>
+              <tr>
+                <td>allow-forms</td>
+                <td>Reabilita envio de formulários.</td>
+              </tr>
+              <tr>
+                <td>allow-pointer-lock</td>
+                <td>Reabilita APIs.</td>
+              </tr>
+              <tr>
+                <td>allow-popups</td>
+                <td>Reabilita popups.</td>
+              </tr>
+              <tr>
+                <td>allow-same-origin</td>
+                <td>Permite que o conteúdo do iframe seja tratado como sendo da mesma origem.</td>
+              </tr>
+              <tr>
+                <td>allow-scripts</td>
+                <td>Reabilita scripts.</td>
+              </tr>
+              <tr>
+                <td>allow-top-navigation</td>
+                <td>Permite que o conteúdo do iframe navegue no contexto de navegação de nível superior do usuário.</td>
+              </tr>
+            </table>
+          </div>
 
           <p>
             Exemplos:
@@ -342,13 +248,13 @@
 
           <div class="linha-bloco">
             <p>sandbox</p>
-            <iframe class="celular2" src="calculadora-js.html" sandbox>
+            <iframe class="celular2" src="calculadora-js.php" sandbox>
               <p>Este navegador não suporta a tag &lt;iframe&gt;.</p>
             </iframe>
           </div>
           <div class="linha-bloco">
             <p>sandbox="allow-scripts"</p>
-            <iframe class="celular2" src="calculadora-js.html" sandbox="allow-scripts">
+            <iframe class="celular2" src="calculadora-js.php" sandbox="allow-scripts">
               <p>Este navegador não suporta a tag &lt;iframe&gt;.</p>
             </iframe>
           </div>
@@ -397,42 +303,44 @@
           Há vários atributos que não são mais suportados, porém ainda são utilizados. São eles:
         </p>
 
-        <table>
-          <tr>
-            <th>Valor</th>
-            <th>Definição</th>
-          </tr>
-          <tr>
-            <td>align</td>
-            <td>Especifica o alinhamento de um frame.</td>
-          </tr>
-          <tr>
-            <td>frame&shy;border</td>
-            <td>Especifica exibição ou não de uma borda em volta do frame.</td>
-          </tr>
-          <tr>
-            <td>longdesc</td>
-            <td>Especifica uma página que contém uma longa descrição do conteúdo de um frame.</td>
-          </tr>
-          <tr>
-            <td>margin&shy;height</td>
-            <td>Especifica as margens de cima e de baixo de um frame.</td>
-          </tr>
-          <tr>
-            <td>margin&shy;width</td>
-            <td>Especifica as margens da esquerda e da direita de um frame.</td>
-          </tr>
-          <tr>
-            <td>scrolling</td>
-            <td>Especifica exibição ou não de uma barra de rolagem.</td>
-          </tr>
-        </table>
+        <div>
+          <table>
+            <tr>
+              <th>Valor</th>
+              <th>Definição</th>
+            </tr>
+            <tr>
+              <td>align</td>
+              <td>Especifica o alinhamento de um frame.</td>
+            </tr>
+            <tr>
+              <td>frame&shy;border</td>
+              <td>Especifica exibição ou não de uma borda em volta do frame.</td>
+            </tr>
+            <tr>
+              <td>longdesc</td>
+              <td>Especifica uma página que contém uma longa descrição do conteúdo de um frame.</td>
+            </tr>
+            <tr>
+              <td>margin&shy;height</td>
+              <td>Especifica as margens de cima e de baixo de um frame.</td>
+            </tr>
+            <tr>
+              <td>margin&shy;width</td>
+              <td>Especifica as margens da esquerda e da direita de um frame.</td>
+            </tr>
+            <tr>
+              <td>scrolling</td>
+              <td>Especifica exibição ou não de uma barra de rolagem.</td>
+            </tr>
+          </table>
+        </div>
       </article>
     </section>
 
     <hr>
 
-    <footer>
+    <footer id="page-footer">
       <div class="pcenter">
         <h2 class="pcenter rosa">Fontes:</h2>
         <a href="https://www.w3schools.com/">

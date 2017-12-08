@@ -1,0 +1,12 @@
+<figure>
+  <img src="../images/user.png" alt="Fazer cadastro">
+</figure>
+<form name="register" action="../php/cadastrar-usuario.php" method="post" onsubmit="return validateRegisterUserPassword();">
+  <input type="text" name="inputName" placeholder="Usuário" required autofocus>
+  <input type="password" name="inputPassword" placeholder="Senha" required>
+  <input type="password" name="inputPasswordRetry" placeholder="Repita a senha" required>
+  <p id="errorMessage"></p>
+  <input type="submit" value="Próximo">
+</form>
+<hr>
+<a href="../">Login</a>

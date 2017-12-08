@@ -1,3 +1,11 @@
+<?php
+  session_start();
+  if(!isset($_SESSION['user'])) {
+    header('location:../');
+    die();
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
