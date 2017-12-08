@@ -1,7 +1,7 @@
 <?php
   session_start();
   if(!isset($_SESSION['user'])) {
-    header('location:silent.php');
+    header('location:../');
     die();
   }
 ?>
@@ -191,40 +191,42 @@
             Os valores para o atributo são pré definidos, sendo eles:
           </p>
 
-          <table>
-            <tr>
-              <th>Valor</th>
-              <th>Definição</th>
-            </tr>
-            <tr>
-              <td>(Sem valor)</td>
-              <td>Aplica todas as restrições.</td>
-            </tr>
-            <tr>
-              <td>allow-forms</td>
-              <td>Reabilita envio de formulários.</td>
-            </tr>
-            <tr>
-              <td>allow-pointer-lock</td>
-              <td>Reabilita APIs.</td>
-            </tr>
-            <tr>
-              <td>allow-popups</td>
-              <td>Reabilita popups.</td>
-            </tr>
-            <tr>
-              <td>allow-same-origin</td>
-              <td>Permite que o conteúdo do iframe seja tratado como sendo da mesma origem.</td>
-            </tr>
-            <tr>
-              <td>allow-scripts</td>
-              <td>Reabilita scripts.</td>
-            </tr>
-            <tr>
-              <td>allow-top-navigation</td>
-              <td>Permite que o conteúdo do iframe navegue no contexto de navegação de nível superior do usuário.</td>
-            </tr>
-          </table>
+          <div>
+            <table>
+              <tr>
+                <th>Valor</th>
+                <th>Definição</th>
+              </tr>
+              <tr>
+                <td>(Sem valor)</td>
+                <td>Aplica todas as restrições.</td>
+              </tr>
+              <tr>
+                <td>allow-forms</td>
+                <td>Reabilita envio de formulários.</td>
+              </tr>
+              <tr>
+                <td>allow-pointer-lock</td>
+                <td>Reabilita APIs.</td>
+              </tr>
+              <tr>
+                <td>allow-popups</td>
+                <td>Reabilita popups.</td>
+              </tr>
+              <tr>
+                <td>allow-same-origin</td>
+                <td>Permite que o conteúdo do iframe seja tratado como sendo da mesma origem.</td>
+              </tr>
+              <tr>
+                <td>allow-scripts</td>
+                <td>Reabilita scripts.</td>
+              </tr>
+              <tr>
+                <td>allow-top-navigation</td>
+                <td>Permite que o conteúdo do iframe navegue no contexto de navegação de nível superior do usuário.</td>
+              </tr>
+            </table>
+          </div>
 
           <p>
             Exemplos:
@@ -301,36 +303,38 @@
           Há vários atributos que não são mais suportados, porém ainda são utilizados. São eles:
         </p>
 
-        <table>
-          <tr>
-            <th>Valor</th>
-            <th>Definição</th>
-          </tr>
-          <tr>
-            <td>align</td>
-            <td>Especifica o alinhamento de um frame.</td>
-          </tr>
-          <tr>
-            <td>frame&shy;border</td>
-            <td>Especifica exibição ou não de uma borda em volta do frame.</td>
-          </tr>
-          <tr>
-            <td>longdesc</td>
-            <td>Especifica uma página que contém uma longa descrição do conteúdo de um frame.</td>
-          </tr>
-          <tr>
-            <td>margin&shy;height</td>
-            <td>Especifica as margens de cima e de baixo de um frame.</td>
-          </tr>
-          <tr>
-            <td>margin&shy;width</td>
-            <td>Especifica as margens da esquerda e da direita de um frame.</td>
-          </tr>
-          <tr>
-            <td>scrolling</td>
-            <td>Especifica exibição ou não de uma barra de rolagem.</td>
-          </tr>
-        </table>
+        <div>
+          <table>
+            <tr>
+              <th>Valor</th>
+              <th>Definição</th>
+            </tr>
+            <tr>
+              <td>align</td>
+              <td>Especifica o alinhamento de um frame.</td>
+            </tr>
+            <tr>
+              <td>frame&shy;border</td>
+              <td>Especifica exibição ou não de uma borda em volta do frame.</td>
+            </tr>
+            <tr>
+              <td>longdesc</td>
+              <td>Especifica uma página que contém uma longa descrição do conteúdo de um frame.</td>
+            </tr>
+            <tr>
+              <td>margin&shy;height</td>
+              <td>Especifica as margens de cima e de baixo de um frame.</td>
+            </tr>
+            <tr>
+              <td>margin&shy;width</td>
+              <td>Especifica as margens da esquerda e da direita de um frame.</td>
+            </tr>
+            <tr>
+              <td>scrolling</td>
+              <td>Especifica exibição ou não de uma barra de rolagem.</td>
+            </tr>
+          </table>
+        </div>
       </article>
     </section>
 

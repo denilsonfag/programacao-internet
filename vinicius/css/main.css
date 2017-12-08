@@ -5,6 +5,10 @@
   font-size: 20px;
 }
 
+*, header, footer, section{
+  overflow: auto;
+}
+
 body{
   background-color: #ddd;
 }
@@ -23,17 +27,12 @@ body > div > div> iframe{
 
 body > div > nav{
   padding: 8px;
-  background-image: linear-gradient(to right, #a4a4a4, white);
   font-family: 'Muli', sans-serif;
 }
 
 body > div > nav > ul{
   margin-top: 0;
   margin-bottom: 0;
-}
-
-body > div > nav > ul > p{
-  margin: 0;
 }
 
 a{
@@ -50,7 +49,7 @@ header{
   background-image: linear-gradient(to bottom, #a4a4a4, white);
 }
 
-header > *{
+header *{
   display: inline;
 }
 
@@ -169,11 +168,65 @@ footer > div > div{
 }
 
 @media all and (min-width: 800px) {
+  body > div > nav{
+    background-image: linear-gradient(to right, #a4a4a4, white);
+  }
+
+  body > div > nav{
+    max-width: 15%;
+  }
+
+  body > div > nav > ul{
+    list-style-type: none;
+    padding-left: 10px;
+  }
+
+  body > div > nav > ul a:hover{
+    font-size: 20px;
+    color: #f90056;
+  }
+
   footer > div > figure, body > div > nav{
     flex: 1;
   }
   footer > div > div, body > div > div{
     flex: 4;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 800px){
+  body > div > nav > ul > *{
+    padding-left: 50px;
+  }
+}
+
+@media all and (min-width: 325px) and (max-width: 380px){
+  body > div > nav > ul > *{
+    padding-left: 10px;
+  }
+}
+
+@media all and (min-width: 380px) and (max-width: 500px){
+  body > div > nav > ul > *{
+    padding-left: 30px;
+  }
+}
+
+@media all and (min-width: 200px) and (max-width: 800px){
+  body > div > nav{
+    background-image: linear-gradient(to top, #a4a4a4, white);
+  }
+
+  body > div > nav > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  body > div > nav > ul > *{
+    vertical-align: top;
+    display: inline-block;
   }
 }
 
@@ -186,57 +239,3 @@ footer > div > div{
   text-align: center;
   color: #95dd07;
 }
-
-/*
-cinza claro: a4a4a4;
-cinza escuro: 4a4a4a;
-*/
-
-/*
-table{
-  width: 100%;
-  text-align: left;
-  border-collapse: collapse;
-}
-
-td, th{
-  padding: 8px;
-  border-bottom: 1px solid #cccccc;
-}
-
-th{
-  background-color: #999999;
-}
-
-tr:hover{
-  background-color:#cccccc;
-}
-
-.codigo{
-  background-color: #272822;
-  padding: 10px;
-}
-
-.amarelo{
-  color: #e6d95c;
-}
-
-.azul{
-  color: #66d9ef;
-}
-
-.branco{
-  color: #ffffff;
-}
-
-h1 + h4, #interface > header > h1, #interface > footer > p{
-  color: #757150;
-}
-
-.rosa, p > strong, #artigo > header > h1{
-  color: #f90056;
-}
-
-.roxo{
-  color: #ae81ff;
-}*/

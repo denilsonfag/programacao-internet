@@ -1,4 +1,6 @@
 <?php
+  session_start();
+
   if (!isset($_POST['inputName'])) {
     header('location:../');
     die();
@@ -19,20 +21,14 @@
 
   $row = $dataBase->selectRowFromDb($inputName);
 
-  if ($row == null) {
+  if ($row == null || $inputPassword != $row[0]['userPassword']) {
     exception("Usuário ou senha inválida.");
   }
 
-  if ($inputPassword == $row[0]['userPassword']) {
-    session_start();
-    unset($_SESSION['status']);
-    $_SESSION['user'] = $inputName;
-    $dataBase->closeConnection();
-    header('location:welcome.php');
-    die();
-  } else {
-    exception("Usuário ou senha inválida.");
-  }
+  unset($_SESSION['status']);
+  $_SESSION['user'] = $inputName;
+  $dataBase->closeConnection();
+  header('location:welcome.php');
   
   function exception($message) {
     session_start();

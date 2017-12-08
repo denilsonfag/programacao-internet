@@ -2,7 +2,10 @@
 
 *{
   max-width: 100%;
+}
 
+#interface div{
+  overflow: auto;
 }
 
 body{

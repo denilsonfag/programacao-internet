@@ -1,7 +1,7 @@
 <?php
   session_start();
   if(!isset($_SESSION['user'])) {
-    header('location:silent.php');
+    header('location:../');
     die();
   }
 ?>
@@ -58,52 +58,54 @@
   	              São utilizados para operações <strong>matemáticas</strong> com números, assim como <strong>incremento</strong> e <strong>decremento</strong> de variáveis:
                 </p>
 
-                <table>
-                  <tr>
-                    <th>Operador</th>
-                    <th>Nome</th>
-                  </tr>
-                  <tr>
-                    <td>+</td>
-                    <td>Adição</td>
-                  </tr>
-                  <tr>
-                    <td>-</td>
-                    <td>Subtração</td>
-                  </tr>
-                  <tr>
-                    <td>*</td>
-                    <td>Multiplicação</td>
-                  </tr>
-                  <tr>
-                    <td>/</td>
-                    <td>Divisão</td>
-                  </tr>
-                  <tr>
-                    <td>%</td>
-                    <td>Módulo</td>
-                  </tr>
-                  <tr>
-                    <td>**</td>
-                    <td>Exponenciação</td>
-                  </tr>
-                  <tr>
-                    <td>++$x</td>
-                    <td>Pré-incremento</td>
-                  </tr>
-                  <tr>
-                    <td>$x++</td>
-                    <td>Pós-incremento</td>
-                  </tr>
-                 <tr>
-                    <td>--$x</td>
-                    <td>Pré-decremento</td>
-                  </tr>
-                  <tr>
-                    <td>$x--</td>
-                    <td>Pós-decremento</td>
-                  </tr>
-                </table>
+                <div>
+                  <table>
+                    <tr>
+                      <th>Operador</th>
+                      <th>Nome</th>
+                    </tr>
+                    <tr>
+                      <td>+</td>
+                      <td>Adição</td>
+                    </tr>
+                    <tr>
+                      <td>-</td>
+                      <td>Subtração</td>
+                    </tr>
+                    <tr>
+                      <td>*</td>
+                      <td>Multiplicação</td>
+                    </tr>
+                    <tr>
+                      <td>/</td>
+                      <td>Divisão</td>
+                    </tr>
+                    <tr>
+                      <td>%</td>
+                      <td>Módulo</td>
+                    </tr>
+                    <tr>
+                      <td>**</td>
+                      <td>Exponenciação</td>
+                    </tr>
+                    <tr>
+                      <td>++$x</td>
+                      <td>Pré-incremento</td>
+                    </tr>
+                    <tr>
+                      <td>$x++</td>
+                      <td>Pós-incremento</td>
+                    </tr>
+                   <tr>
+                      <td>--$x</td>
+                      <td>Pré-decremento</td>
+                    </tr>
+                    <tr>
+                      <td>$x--</td>
+                      <td>Pós-decremento</td>
+                    </tr>
+                  </table>
+                </div>
 
                 <p>
                   Exemplos:
@@ -199,36 +201,38 @@
   	              Utilizados para modificar valores de variaveis, através do operador <strong>"="</strong>:
                 </p>
 
-                <table>
-                  <tr>
-                    <th>Operador</th>
-                    <th>Nome</th>
-                  </tr>
-                  <tr>
-                    <td>=</td>
-                    <td>Atribuição</td>
-                  </tr>
-                  <tr>
-                    <td>+=</td>
-                    <td>Adição</td>
-                  </tr>
-                  <tr>
-                    <td>-=</td>
-                    <td>Subtração</td>
-                  </tr>
-                  <tr>
-                    <td>*=</td>
-                    <td>Multiplicação</td>
-                  </tr>
-                  <tr>
-                    <td>/=</td>
-                    <td>Divisão</td>
-                  </tr>
-                  <tr>
-                    <td>%=</td>
-                    <td>Módulo</td>
-                  </tr>
-                </table>
+                <div>
+                  <table>
+                    <tr>
+                      <th>Operador</th>
+                      <th>Nome</th>
+                    </tr>
+                    <tr>
+                      <td>=</td>
+                      <td>Atribuição</td>
+                    </tr>
+                    <tr>
+                      <td>+=</td>
+                      <td>Adição</td>
+                    </tr>
+                    <tr>
+                      <td>-=</td>
+                      <td>Subtração</td>
+                    </tr>
+                    <tr>
+                      <td>*=</td>
+                      <td>Multiplicação</td>
+                    </tr>
+                    <tr>
+                      <td>/=</td>
+                      <td>Divisão</td>
+                    </tr>
+                    <tr>
+                      <td>%=</td>
+                      <td>Módulo</td>
+                    </tr>
+                  </table>
+                </div>
 
                 <p>
                   Exemplos:
@@ -338,44 +342,46 @@
 
                 <article>
                   <h4>2.3.1 Operadores de Comparação Comuns</h4>
-                  <table>
-                    <tr>
-                      <th>Operador</th>
-                      <th>Nome</th>
-                    </tr>
-                    <tr>
-                      <td>==</td>
-                      <td>Igual</td>
-                    </tr>
-                    <tr>
-                      <td>===</td>
-                      <td>Idêntico</td>
-                    </tr>
-                    <tr>
-                      <td>!= , &lt;&gt;</td>
-                      <td>Não igual</td>
-                    </tr>
-                    <tr>
-                      <td>!==</td>
-                      <td>Não idêntico</td>
-                    </tr>
-                    <tr>
-                      <td>></td>
-                      <td>Maior que</td>
-                    </tr>
-                    <tr>
-                      <td><</td>
-                      <td>Menor que</td>
-                    </tr>
-                    <tr>
-                      <td>>=</td>
-                      <td>Maior ou igual que</td>
-                    </tr>
-                    <tr>
-                      <td><=</td>
-                      <td>Menor ou igual que</td>
-                    </tr>
-                  </table>
+                  <div>
+                    <table>
+                      <tr>
+                        <th>Operador</th>
+                        <th>Nome</th>
+                      </tr>
+                      <tr>
+                        <td>==</td>
+                        <td>Igual</td>
+                      </tr>
+                      <tr>
+                        <td>===</td>
+                        <td>Idêntico</td>
+                      </tr>
+                      <tr>
+                        <td>!= , &lt;&gt;</td>
+                        <td>Não igual</td>
+                      </tr>
+                      <tr>
+                        <td>!==</td>
+                        <td>Não idêntico</td>
+                      </tr>
+                      <tr>
+                        <td>></td>
+                        <td>Maior que</td>
+                      </tr>
+                      <tr>
+                        <td><</td>
+                        <td>Menor que</td>
+                      </tr>
+                      <tr>
+                        <td>>=</td>
+                        <td>Maior ou igual que</td>
+                      </tr>
+                      <tr>
+                        <td><=</td>
+                        <td>Menor ou igual que</td>
+                      </tr>
+                    </table>
+                  </div>
 
                   <p>
                     A diferença entre a comparação igual e a idêntica dá-se nos tipos de dados das variáveis, sendo verificado, na última, se os tipos de dados das variáveis comparadas são idênticos (vaja o exemplo na comparação da variável $y com $z). Exemplos:
@@ -485,33 +491,35 @@
                 <article>
                   <h4>2.3.2 Operadores de Comparação Lógica</h4>
                   
-                  <table>
-                    <tr>
-                      <th>Operador</th>
-                      <th>Nome</th>
-                      <th>Condição para saída true</th>
-                    </tr>
-                    <tr>
-                      <td>and , &amp;&amp;</td>
-                      <td>And</td>
-                      <td>Dois lados verdadeiros</td>
-                    </tr>
-                    <tr>
-                      <td>or , ||</td>
-                      <td>Or</td>
-                      <td>Um dos lados verdadeiro</td>
-                    </tr>
-                    <tr>
-                      <td>xor</td>
-                      <td>Xor</td>
-                      <td>Um dos lados verdadeiro, mas não os dois</td>
-                    </tr>
-                    <tr>
-                      <td>!</td>
-                      <td>Not</td>
-                      <td>Negação de um estado</td>
-                    </tr>
-                  </table>
+                  <div>
+                    <table>
+                      <tr>
+                        <th>Operador</th>
+                        <th>Nome</th>
+                        <th>Condição para saída true</th>
+                      </tr>
+                      <tr>
+                        <td>and , &amp;&amp;</td>
+                        <td>And</td>
+                        <td>Dois lados verdadeiros</td>
+                      </tr>
+                      <tr>
+                        <td>or , ||</td>
+                        <td>Or</td>
+                        <td>Um dos lados verdadeiro</td>
+                      </tr>
+                      <tr>
+                        <td>xor</td>
+                        <td>Xor</td>
+                        <td>Um dos lados verdadeiro, mas não os dois</td>
+                      </tr>
+                      <tr>
+                        <td>!</td>
+                        <td>Not</td>
+                        <td>Negação de um estado</td>
+                      </tr>
+                    </table>
+                  </div>
 
                   <p>Exemplos:</p>
 
@@ -598,7 +606,8 @@
   	            <p>
   	              Necessário quando trabalha-se com strings. Usa-se o operador <strong>"."</strong> chamado <strong>concatenador</strong>.
   	            </p>
-                <table>
+                <div>
+                  <table>
                     <tr>
                       <th>Operador</th>
                       <th>Nome</th>
@@ -615,6 +624,7 @@
                       <td>Concatena duas strings e atribui em uma string</td>
                     </tr>
                   </table>
+                </div>
                 <p>Exemplos:</p>
 
                 <div class="codigo">
@@ -670,7 +680,8 @@
                 <p>
                   Útil quando utilizam-se <strong>arrays</strong>.
                 </p>
-                <table>
+                <div>
+                  <table>
                     <tr>
                       <th>Operador</th>
                       <th>Nome</th>
@@ -704,6 +715,7 @@
                       <td>Compara se dois arrays não são idênticos</td>
                     </tr>
                   </table>
+                </div>
 
                 <p>Exemplos:</p>
 
@@ -800,188 +812,190 @@
   	        <article>
   	          <h2>5. Lista de operadores deste artigo</h2>
 
-  	          <table>
-  	            <tr>
-  	              <th>Operador</th>
-  	              <th>Grupo</th>
-                  <th>Nome</th>
-  	            </tr>
-  	            <tr>
-  	              <td>+</td>
-                  <td>Operador aritmético</td>
-                  <td>Adição</td>
-  	            </tr>
-  	            <tr>
-                  <td>-</td>
-                  <td>Operador aritmético</td>
-                  <td>Subtração</td>
-  	            </tr>
-  	            <tr>
-                  <td>*</td>
-                  <td>Operador aritmético</td>
-                  <td>Multiplicação</td>
-  	            </tr>
-  	            <tr>
-                  <td>/</td>
-                  <td>Operador aritmético</td>
-                  <td>Divisão</td>
-  	            </tr>
-  	            <tr>
-                  <td>%</td>
-                  <td>Operador aritmético</td>
-                  <td>Módulo</td>
-  	            </tr>
-  	            <tr>
-                  <td>**</td>
-                  <td>Operador aritmético</td>
-                  <td>Exponenciação</td>
-  	            </tr>
-  	            <tr>
-                  <td>++$x</td>
-                  <td>Operador de incremento</td>
-                  <td>Pré-incremento</td>
-  	            </tr>
-  	            <tr>
-                  <td>$x++</td>
-                  <td>Operador de incremento</td>
-                  <td>Pós-incremento</td>
-  	            </tr>
-  	            <tr>
-                  <td>--$x</td>
-                  <td>Operador de decremento</td>
-                  <td>Pré-decremento</td>
-  	            </tr>
-  	            <tr>
-                  <td>$x--</td>
-                  <td>Operador de decremento</td>
-                  <td>Pós-decremento</td>
-  	            </tr>
-  	            <tr>
-                  <td>=</td>
-                  <td>Operador de atribuição</td>
-                  <td>Atribuição</td>
-  	            </tr>
-  	            <tr>
-                  <td>+=</td>
-                  <td>Operador de atribuição</td>
-                  <td>Adição</td>
-  	            </tr>
-  	            <tr>
-                  <td>-=</td>
-                  <td>Operador de atribuição</td>
-                  <td>Subtração</td>
-  	            </tr>
-  	            <tr>
-                  <td>*=</td>
-                  <td>Operador de atribuição</td>
-                  <td>Multiplicação</td>
-  	            </tr>
-  	            <tr>
-                  <td>/=</td>
-                  <td>Operador de atribuição</td>
-                  <td>Divisão</td>
-  	            </tr>
-                <tr>
-                  <td>%=</td>
-                  <td>Operador de atribuição</td>
-                  <td>Módulo</td>
-                </tr>
-                <tr>
-                  <td>==</td>
-                  <td>Operador de comparação</td>
-                  <td>Igual</td>
-                </tr>
-                <tr>
-                  <td>===</td>
-                  <td>Operador de comparação</td>
-                  <td>Idêntico</td>
-                </tr>
-                <tr>
-                  <td>!=, &lt;&gt;></td>
-                  <td>Operador de comparação</td>
-                  <td>Não igual</td>
-                </tr>
-                <tr>
-                  <td>!==</td>
-                  <td>Operador de comparação</td>
-                  <td>Não idêntico</td>
-                </tr>
-                <tr>
-                  <td>></td>
-                  <td>Operador de comparação</td>
-                  <td>Maior que</td>
-                </tr>
-                <tr>
-                  <td><</td>
-                  <td>Operador de comparação</td>
-                  <td>Menor que</td>
-                </tr>
-                <tr>
-                  <td>>=</td>
-                  <td>Operador de comparação</td>
-                  <td>Maior ou igual que</td>
-                </tr>
-                <tr>
-                  <td><=</td>
-                  <td>Operador de comparação</td>
-                  <td>Menor ou igual que</td>
-                </tr>
-                <tr>
-                  <td>and, &amp;&amp;</td>
-                  <td>Operador lógico</td>
-                  <td>And</td>
-                </tr>
-                <tr>
-                  <td>or, ||</td>
-                  <td>Operador lógico</td>
-                  <td>Or</td>
-                </tr>
-                <tr>
-                  <td>xor</td>
-                  <td>Operador lógico</td>
-                  <td>Xor</td>
-                </tr>
-                <tr>
-                  <td>!</td>
-                  <td>Operador lógico</td>
-                  <td>Not</td>
-                </tr>
-                <tr>
-                  <td>.</td>
-                  <td>Operador de string</td>
-                  <td>Concatenação</td>
-                </tr>
-                <tr>
-                  <td>.=</td>
-                  <td>Operador de string</td>
-                  <td>Atribuição de Concatenação</td>
-                </tr>
-                <tr>
-                  <td>+</td>
-                  <td>Operador de array</td>
-                  <td>União</td>
-                </tr>
-                <tr>
-                  <td>==</td>
-                  <td>Operador de array</td>
-                  <td>Igualdade</td>
-                </tr>
-                <tr>
-                  <td>===</td>
-                  <td>Operador de array</td>
-                  <td>Identidade</td>
-                </tr>
-                <tr>
-                  <td>!=, &lt;&gt;</td>
-                  <td>Operador de array</td>
-                  <td>Desigualdade</td>
-                </tr>
-                <tr>
-                  <td>!==</td>
-                  <td>Operador de array</td>
-                  <td>Sem identidade</td>
-                </tr>
-  	          </table>
+              <div>
+    	          <table>
+    	            <tr>
+    	              <th>Operador</th>
+    	              <th>Grupo</th>
+                    <th>Nome</th>
+    	            </tr>
+    	            <tr>
+    	              <td>+</td>
+                    <td>Operador aritmético</td>
+                    <td>Adição</td>
+    	            </tr>
+    	            <tr>
+                    <td>-</td>
+                    <td>Operador aritmético</td>
+                    <td>Subtração</td>
+    	            </tr>
+    	            <tr>
+                    <td>*</td>
+                    <td>Operador aritmético</td>
+                    <td>Multiplicação</td>
+    	            </tr>
+    	            <tr>
+                    <td>/</td>
+                    <td>Operador aritmético</td>
+                    <td>Divisão</td>
+    	            </tr>
+    	            <tr>
+                    <td>%</td>
+                    <td>Operador aritmético</td>
+                    <td>Módulo</td>
+    	            </tr>
+    	            <tr>
+                    <td>**</td>
+                    <td>Operador aritmético</td>
+                    <td>Exponenciação</td>
+    	            </tr>
+    	            <tr>
+                    <td>++$x</td>
+                    <td>Operador de incremento</td>
+                    <td>Pré-incremento</td>
+    	            </tr>
+    	            <tr>
+                    <td>$x++</td>
+                    <td>Operador de incremento</td>
+                    <td>Pós-incremento</td>
+    	            </tr>
+    	            <tr>
+                    <td>--$x</td>
+                    <td>Operador de decremento</td>
+                    <td>Pré-decremento</td>
+    	            </tr>
+    	            <tr>
+                    <td>$x--</td>
+                    <td>Operador de decremento</td>
+                    <td>Pós-decremento</td>
+    	            </tr>
+    	            <tr>
+                    <td>=</td>
+                    <td>Operador de atribuição</td>
+                    <td>Atribuição</td>
+    	            </tr>
+    	            <tr>
+                    <td>+=</td>
+                    <td>Operador de atribuição</td>
+                    <td>Adição</td>
+    	            </tr>
+    	            <tr>
+                    <td>-=</td>
+                    <td>Operador de atribuição</td>
+                    <td>Subtração</td>
+    	            </tr>
+    	            <tr>
+                    <td>*=</td>
+                    <td>Operador de atribuição</td>
+                    <td>Multiplicação</td>
+    	            </tr>
+    	            <tr>
+                    <td>/=</td>
+                    <td>Operador de atribuição</td>
+                    <td>Divisão</td>
+    	            </tr>
+                  <tr>
+                    <td>%=</td>
+                    <td>Operador de atribuição</td>
+                    <td>Módulo</td>
+                  </tr>
+                  <tr>
+                    <td>==</td>
+                    <td>Operador de comparação</td>
+                    <td>Igual</td>
+                  </tr>
+                  <tr>
+                    <td>===</td>
+                    <td>Operador de comparação</td>
+                    <td>Idêntico</td>
+                  </tr>
+                  <tr>
+                    <td>!=, &lt;&gt;></td>
+                    <td>Operador de comparação</td>
+                    <td>Não igual</td>
+                  </tr>
+                  <tr>
+                    <td>!==</td>
+                    <td>Operador de comparação</td>
+                    <td>Não idêntico</td>
+                  </tr>
+                  <tr>
+                    <td>></td>
+                    <td>Operador de comparação</td>
+                    <td>Maior que</td>
+                  </tr>
+                  <tr>
+                    <td><</td>
+                    <td>Operador de comparação</td>
+                    <td>Menor que</td>
+                  </tr>
+                  <tr>
+                    <td>>=</td>
+                    <td>Operador de comparação</td>
+                    <td>Maior ou igual que</td>
+                  </tr>
+                  <tr>
+                    <td><=</td>
+                    <td>Operador de comparação</td>
+                    <td>Menor ou igual que</td>
+                  </tr>
+                  <tr>
+                    <td>and, &amp;&amp;</td>
+                    <td>Operador lógico</td>
+                    <td>And</td>
+                  </tr>
+                  <tr>
+                    <td>or, ||</td>
+                    <td>Operador lógico</td>
+                    <td>Or</td>
+                  </tr>
+                  <tr>
+                    <td>xor</td>
+                    <td>Operador lógico</td>
+                    <td>Xor</td>
+                  </tr>
+                  <tr>
+                    <td>!</td>
+                    <td>Operador lógico</td>
+                    <td>Not</td>
+                  </tr>
+                  <tr>
+                    <td>.</td>
+                    <td>Operador de string</td>
+                    <td>Concatenação</td>
+                  </tr>
+                  <tr>
+                    <td>.=</td>
+                    <td>Operador de string</td>
+                    <td>Atribuição de Concatenação</td>
+                  </tr>
+                  <tr>
+                    <td>+</td>
+                    <td>Operador de array</td>
+                    <td>União</td>
+                  </tr>
+                  <tr>
+                    <td>==</td>
+                    <td>Operador de array</td>
+                    <td>Igualdade</td>
+                  </tr>
+                  <tr>
+                    <td>===</td>
+                    <td>Operador de array</td>
+                    <td>Identidade</td>
+                  </tr>
+                  <tr>
+                    <td>!=, &lt;&gt;</td>
+                    <td>Operador de array</td>
+                    <td>Desigualdade</td>
+                  </tr>
+                  <tr>
+                    <td>!==</td>
+                    <td>Operador de array</td>
+                    <td>Sem identidade</td>
+                  </tr>
+    	          </table>
+              </div>
   	        </article>
   			  </section>
 

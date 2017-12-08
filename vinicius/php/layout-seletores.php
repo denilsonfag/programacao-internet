@@ -1,7 +1,7 @@
 <?php
   session_start();
   if(!isset($_SESSION['user'])) {
-    header('location:silent.php');
+    header('location:../');
     die();
   }
 ?>
@@ -517,74 +517,76 @@
   	        <article>
   	          <h2>5. Lista de seletores deste artigo</h2>
 
-  	          <table>
-  	            <tr>
-  	              <th>Seletor</th>
-  	              <th>Nome</th>
-  	            </tr>
-  	            <tr>
-  	              <td>*</td>
-  	              <td>Seletor universal</td>
-  	            </tr>
-  	            <tr>
-  	              <td>e</td>
-  	              <td>Seletor tipo</td>
-  	            </tr>
-  	            <tr>
-  	              <td>#e</td>
-  	              <td>Seletor de ID</td>
-  	            </tr>
-  	            <tr>
-  	              <td>.e</td>
-  	              <td>Seletor de classe</td>
-  	            </tr>
-  	            <tr>
-  	              <td>e > e</td>
-  	              <td>Seletor filho</td>
-  	            </tr>
-  	            <tr>
-  	              <td>e e</td>
-  	              <td>Seletor descendente</td>
-  	            </tr>
-  	            <tr>
-  	              <td>e + e</td>
-  	              <td>Seletor irmão adjacente</td>
-  	            </tr>
-  	            <tr>
-  	              <td>e ~ e</td>
-  	              <td>Seletor irmão geral</td>
-  	            </tr>
-  	            <tr>
-  	              <td>e[a]</td>
-  	              <td>Seletor de atributo: presença de um atributo</td>
-  	            </tr>
-  	            <tr>
-  	              <td>e[a="v"]</td>
-  	              <td>Seletor de atributo: valor de um atributo</td>
-  	            </tr>
-  	            <tr>
-  	              <td>e[a~=]</td>
-  	              <td>
-  	                Seletor de atributo: valor de um atributo contido em uma lista de valores separados por espaço
-  	              </td>
-  	            </tr>
-  	            <tr>
-  	              <td>e[a^="v"]</td>
-  	              <td>Seletor de atributo: valor de um atributo inicia com string</td>
-  	            </tr>
-  	            <tr>
-  	              <td>e[a$="v"]</td>
-  	              <td>Seletor de atributo: valor de um atributo termina com string</td>
-  	            </tr>
-  	            <tr>
-  	              <td>e[a|="v"]</td>
-  	              <td>Seletor de atributo: valor de um atributo termina com string mais hífen</td>
-  	            </tr>
-  	            <tr>
-  	              <td>e[a*="v"]</td>
-  	              <td>Seletor de atributo: valor de um atributo contém string</td>
-  	            </tr>
-  	          </table>
+              <div>
+    	          <table>
+    	            <tr>
+    	              <th>Seletor</th>
+    	              <th>Nome</th>
+    	            </tr>
+    	            <tr>
+    	              <td>*</td>
+    	              <td>Seletor universal</td>
+    	            </tr>
+    	            <tr>
+    	              <td>e</td>
+    	              <td>Seletor tipo</td>
+    	            </tr>
+    	            <tr>
+    	              <td>#e</td>
+    	              <td>Seletor de ID</td>
+    	            </tr>
+    	            <tr>
+    	              <td>.e</td>
+    	              <td>Seletor de classe</td>
+    	            </tr>
+    	            <tr>
+    	              <td>e > e</td>
+    	              <td>Seletor filho</td>
+    	            </tr>
+    	            <tr>
+    	              <td>e e</td>
+    	              <td>Seletor descendente</td>
+    	            </tr>
+    	            <tr>
+    	              <td>e + e</td>
+    	              <td>Seletor irmão adjacente</td>
+    	            </tr>
+    	            <tr>
+    	              <td>e ~ e</td>
+    	              <td>Seletor irmão geral</td>
+    	            </tr>
+    	            <tr>
+    	              <td>e[a]</td>
+    	              <td>Seletor de atributo: presença de um atributo</td>
+    	            </tr>
+    	            <tr>
+    	              <td>e[a="v"]</td>
+    	              <td>Seletor de atributo: valor de um atributo</td>
+    	            </tr>
+    	            <tr>
+    	              <td>e[a~=]</td>
+    	              <td>
+    	                Seletor de atributo: valor de um atributo contido em uma lista de valores separados por espaço
+    	              </td>
+    	            </tr>
+    	            <tr>
+    	              <td>e[a^="v"]</td>
+    	              <td>Seletor de atributo: valor de um atributo inicia com string</td>
+    	            </tr>
+    	            <tr>
+    	              <td>e[a$="v"]</td>
+    	              <td>Seletor de atributo: valor de um atributo termina com string</td>
+    	            </tr>
+    	            <tr>
+    	              <td>e[a|="v"]</td>
+    	              <td>Seletor de atributo: valor de um atributo termina com string mais hífen</td>
+    	            </tr>
+    	            <tr>
+    	              <td>e[a*="v"]</td>
+    	              <td>Seletor de atributo: valor de um atributo contém string</td>
+    	            </tr>
+    	          </table>
+              </div>
   	          <p>
   	            <strong>e</strong>: elemento;
   	            <strong>a</strong>: atributo;

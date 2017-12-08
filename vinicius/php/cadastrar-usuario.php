@@ -23,15 +23,12 @@
 
   if ($search != null) {
     exception('Nome de usuário indisponível.');
-    header('location:novo-usuario.php');
-  } else {
-    $dataBase->insertIntoTheDb($inputName, sha1($inputPassword));
-    $dataBase->closeConnection();
-    
-    $_SESSION['status'] = 'Cadastrado com sucesso!';
-    header('location:../');
-    die();
   }
+
+  $dataBase->insertIntoTheDb($inputName, sha1($inputPassword));
+  $dataBase->closeConnection();  
+  $_SESSION['status'] = 'Cadastrado com sucesso!';
+  header('location:../');
 
   function exception($message) {
     $_SESSION['status'] = $message;

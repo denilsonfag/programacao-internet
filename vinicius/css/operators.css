@@ -4,6 +4,10 @@
   max-width: 100%;
 }
 
+#interface div{
+  overflow: auto;
+}
+
 body{
   background-color: #dddddd;
 }
@@ -18,6 +22,15 @@ p{
 code{
   font-weight: bold;
   font-family: Consolas, "monospace";
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  margin: 0;
 }
 
 #interface{

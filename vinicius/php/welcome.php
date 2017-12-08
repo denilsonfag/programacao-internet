@@ -1,3 +1,10 @@
+<?php
+  session_start();
+  if(!isset($_SESSION['user'])) {
+    header('location:../');
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,7 +13,6 @@
   <link rel="icon" type="image/png" href="../images/icon.png">
   <link rel="stylesheet" href="../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Mandali" rel="stylesheet">
   <title>Pacific Atlantic</title>
 </head>
 <body>
@@ -15,7 +21,6 @@
       <img src="../images/user.png" alt="Fazer login">
     </figure>
   	<?php
-      session_start();
       echo '<p id="welcome">Bem vindo, ' . $_SESSION['user'] . '!</p>';
       echo '<meta http-equiv="Refresh" content="2;url=silent.php">';
     ?>

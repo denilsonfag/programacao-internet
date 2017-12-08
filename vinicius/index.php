@@ -15,23 +15,32 @@
   <link rel="icon" type="image/png" href="images/icon.png">
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Mandali" rel="stylesheet">
   <script type="text/javascript" src="script/main.js"></script>
   <title>Pacific Atlantic</title>
 </head>
 <body>
   <section>
+    <figure>
+      <img src="images/user.png" alt="Fazer login">
+    </figure>
+    <form action="php/login.php" method="post">
+      <input type="text" name="inputName" placeholder="Usuário" required autofocus>
+      <input type="password" name="inputPassword" placeholder="Senha" required>
+      <p id="errorMessage"></p>
+      <input type="submit" value="Entrar">
+    </form>
+    <hr>
+    <a href="php/novo-usuario.php">Cadastrar-se</a>
+    
     <?php
-      include 'html/login.html';
-
       if(!isset($_SESSION['status'])) {
         $_SESSION['status'] = " ";
       }
 
       echo
-      '<script type="text/javascript">
-        showMessage("errorMessage", "' . $_SESSION['status'] . '");
-      </script>';
+        '<script type="text/javascript">
+          showMessage("errorMessage", "' . $_SESSION['status'] . '");
+        </script>';
 
       if ($_SESSION['status'] == 'Cadastrado com sucesso!') {
         echo
