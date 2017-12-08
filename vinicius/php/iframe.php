@@ -1,121 +1,25 @@
+<?php
+  session_start();
+  if(!isset($_SESSION['user'])) {
+    header('location:silent.php');
+    die();
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Mandali" rel="stylesheet">
+  <link rel="stylesheet" href="../css/iframe.css">
   <title>Iframes</title>
-  <style>
-    *{
-      max-width: 100%;
-    }
-
-    li{
-      text-indent: 20px;
-    }
-
-    a{
-      text-decoration: none;
-    }
-
-    div[class] a{
-      display: block;
-    }
-
-    #interface{
-      font-size: 20px;
-    }
-
-    .linha-bloco{
-      display: inline-block;
-    }
-
-    /* Imagens */
-
-    img{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    /* Iframes */
-
-    iframe{
-      border: none;
-    }
-
-    .iframes{
-      width: 100%;
-      height: 340px;
-    }
-
-    .celular1{
-      width: 360px;
-      height: 640px;
-    }
-
-    .celular2{
-      width: 444px;
-      height: 400px;
-    }
-
-    /* Tabelas */
-
-    table{
-    	width: 100%;
-      text-align: left;
-      border-collapse: collapse;
-    }
-
-    td, th{
-      padding: 8px;
-      border-bottom: 1px solid #cccccc;
-    }
-
-    th{
-      background-color: #999999;
-    }
-
-    tr:hover{
-      background-color:#cccccc;
-    }
-
-    /* Códigos */
-
-    .codigo{
-      background-color: #272822;
-      padding: 10px;
-    }
-
-    .amarelo{
-      color: #e6d95c;
-    }
-    
-    .azul{
-      color: #66d9ef;
-    }
-
-    .branco{
-      color: #ffffff;
-    }
-
-    .cinza{
-      color: #757150;
-    }
-
-    .rosa{
-      color: #f90056;
-    }
-
-    .verde{
-      color: #95dd07;
-    }
-  </style>
 </head>
 <body>
 
   <div id="interface">
-    <header class="pcenter">
+    <header id="page-header" class="pcenter">
       <h1 class="pcenter">A tag &lt;<code class="rosa">iframe</code>&gt;</h1>
       <h4 class="pcenter cinza">
         Reproduzindo um website ou mídia dentro de um website através de um link.
@@ -124,7 +28,7 @@
     
     <hr>
     
-    <section>
+    <section id="artigo">
       <article>
         <h2>Sintaxe</h2>
         <p>A sintaxe principal é definida por:</p>    
@@ -166,7 +70,7 @@
           <code class="branco">&lt;/</code><code class="rosa">style</code><code class="branco">&gt;</code>
         </div>
         
-        <iframe class="iframes" src="iframe.html">
+        <iframe class="iframes" src="#">
           <p>Este navegador não suporta a tag &lt;iframe&gt;.</p>
         </iframe>
 
@@ -265,7 +169,7 @@
             <code class="branco">&lt;/</code><code class="rosa">p</code><code class="branco">&gt;</code>
           </div>
 
-          <iframe class="iframes" src="page.html">
+          <iframe class="iframes" src="page.php">
             <p>Este navegador não suporta a tag &lt;iframe&gt;.</p>
           </iframe>
         </article>
@@ -342,13 +246,13 @@
 
           <div class="linha-bloco">
             <p>sandbox</p>
-            <iframe class="celular2" src="calculadora-js.html" sandbox>
+            <iframe class="celular2" src="calculadora-js.php" sandbox>
               <p>Este navegador não suporta a tag &lt;iframe&gt;.</p>
             </iframe>
           </div>
           <div class="linha-bloco">
             <p>sandbox="allow-scripts"</p>
-            <iframe class="celular2" src="calculadora-js.html" sandbox="allow-scripts">
+            <iframe class="celular2" src="calculadora-js.php" sandbox="allow-scripts">
               <p>Este navegador não suporta a tag &lt;iframe&gt;.</p>
             </iframe>
           </div>
@@ -432,7 +336,7 @@
 
     <hr>
 
-    <footer>
+    <footer id="page-footer">
       <div class="pcenter">
         <h2 class="pcenter rosa">Fontes:</h2>
         <a href="https://www.w3schools.com/">

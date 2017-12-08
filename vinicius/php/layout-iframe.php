@@ -1,167 +1,40 @@
+<?php
+  session_start();
+  if(!isset($_SESSION['user'])) {
+    header('location:silent.php');
+    die();
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" type="image/png" href="../../images/favicon.png">
-  <link rel="stylesheet" href="../../styles/main.css" >
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Mandali" rel="stylesheet">
+  <link rel="stylesheet" href="../css/layout-iframe.css">
   <title>Iframes</title>
-  <style>
-    *{
-      max-width: 100%;
-    }
-
-    a{
-      text-decoration: none;
-    }
-
-    ul li a:hover{
-      font-size: 20px;
-      color: #f90056;
-    }
-
-    div[class] a{
-      display: block;
-    }
-
-    #interface{
-      display: flex;
-      flex-flow: row wrap;
-    }
-
-    #interface > *{
-      flex: 1 100%;
-    }
-
-    #artigo{
-      padding: 8px;
-    }
-
-    #page-header, #artigo, #page-footer{
-      font-size: 20px;
-    }
-
-    #page-header{
-      background-image: linear-gradient(to bottom, #b3b3b3, white);
-    }
-
-    #side-menu{
-      background-image: linear-gradient(to right, #b3b3b3, white);
-    }
-
-    #page-footer{
-      background-image: linear-gradient(to top, #999999, white);
-    }
-
-    .linha-bloco{
-      display: inline-block;
-    }
-
-    @media all and (min-width: 100px){
-      #interface > *{
-        flex: 100%;
-      }
-    }
-
-    @media all and (min-width: 800px) {
-      #side-menu{
-        flex: 1;
-      }
-      #interface > section{
-        flex: 4;
-      }
-    }
-
-    /* Imagens */
-
-    img{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    /* Iframes */
-
-    iframe{
-      border: none;
-    }
-
-    .iframes{
-      width: 100%;
-      height: 340px;
-    }
-
-    .celular1{
-      width: 360px;
-      height: 640px;
-    }
-
-    .celular2{
-      width: 370px;
-      height: 400px;
-    }
-
-    /* Tabelas */
-
-    table{
-      width: 100%;
-      text-align: left;
-      border-collapse: collapse;
-    }
-
-    td, th{
-      padding: 8px;
-      border-bottom: 1px solid #cccccc;
-    }
-
-    th{
-      background-color: #999999;
-    }
-
-    tr:hover{
-      background-color:#cccccc;
-    }
-
-    /* Códigos */
-
-    .codigo{
-      background-color: #272822;
-      padding: 10px;
-    }
-
-    .amarelo{
-      color: #e6d95c;
-    }
-    
-    .azul{
-      color: #66d9ef;
-    }
-
-    .branco{
-      color: #ffffff;
-    }
-
-    .cinza, #interface > header > h1, #interface > nav > h2, #interface > nav > h3, #interface > footer > p{
-      color: #757150;
-    }
-
-    .rosa{
-      color: #f90056;
-    }
-
-    .verde{
-      color: #95dd07;
-    }
-  </style>
 </head>
 <body>
   <div id="interface">
     <header id="page-header">
-      <?php include '../../page-header.html'; ?>
+      <h1>Programação para Internet</h1>
     </header>
     
     <nav id="side-menu">
-      <?php include '../../side-menu.html'; ?>
+      <h2>Git</h2>
+      <ul>
+        <li>
+          <a href="../../git/func-basico.html">Funcionamento básico</a>
+        </li>
+        <li>
+          <a href="../../git/ambiente-desenvolvimento.html">Ambiente de desenvolvimento</a>
+        </li>
+        <li>
+          <a href="../../git/atualizacao-repositorio.html">Passos para atualização do repositório original (entrega dos trabalhos)</a>
+        </li>
+      </ul>
     </nav>
     
     <section>
@@ -217,7 +90,7 @@
               <code class="branco">&lt;/</code><code class="rosa">style</code><code class="branco">&gt;</code>
             </div>
             
-            <iframe class="iframes" src="iframe.html">
+            <iframe class="iframes" src="iframe.php">
               <p>Este navegador não suporta a tag &lt;iframe&gt;.</p>
             </iframe>
 
@@ -316,7 +189,7 @@
                 <code class="branco">&lt;/</code><code class="rosa">p</code><code class="branco">&gt;</code>
               </div>
 
-              <iframe class="iframes" src="page.html">
+              <iframe class="iframes" src="page.php">
                 <p>Este navegador não suporta a tag &lt;iframe&gt;.</p>
               </iframe>
             </article>
@@ -393,13 +266,13 @@
 
               <div class="linha-bloco">
                 <p>sandbox</p>
-                <iframe class="celular2" src="calculadora-js.html" sandbox>
+                <iframe class="celular2" src="calculadora-js.php" sandbox>
                   <p>Este navegador não suporta a tag &lt;iframe&gt;.</p>
                 </iframe>
               </div>
               <div class="linha-bloco">
                 <p>sandbox="allow-scripts"</p>
-                <iframe class="celular2" src="calculadora-js.html" sandbox="allow-scripts">
+                <iframe class="celular2" src="calculadora-js.php" sandbox="allow-scripts">
                   <p>Este navegador não suporta a tag &lt;iframe&gt;.</p>
                 </iframe>
               </div>
