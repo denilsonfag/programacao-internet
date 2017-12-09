@@ -4,7 +4,9 @@
     font-family: Arial, sans-serif;
 }
 
-
+body {
+    background-color: #dddddd;
+}
 
 p {
     text-align: justify;

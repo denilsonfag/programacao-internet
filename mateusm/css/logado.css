@@ -1,0 +1,75 @@
+font-family: sans-serif;
+
+        body {
+          height:900px; 
+           width:900px;
+           margin: 0 auto;
+          background: 
+         
+
+        }
+
+        
+
+        pre {
+            background-color: #F0FFF0;
+            padding-top: 30px;
+            align-content: center;
+        }
+
+        h1.titulo,
+        h2.titulo {
+            text-align: center;
+            background-color: #2F4F4F;
+            color: white;
+            padding: 4px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        #interface{
+            display: flex;
+            flex-flow: row wrap;
+
+        }
+
+        #interface > * {
+            flex: 1 100%;
+
+        }
+        #side-menu ul li{
+            display: inline;
+            padding: 5px;
+
+        }
+        #side-menu ul{
+           list-style-type: none;
+            padding:0;
+        }
+
+
+         @media all and (min-width: 800px) {
+
+             #side-menu {
+                 flex: 1;
+             }
+             article#conteudo{
+                 flex: 2 25%;
+             }
+
+
+        #side-menu  ul li{
+            display: list-item;
+            padding: 5px;
+        }
+        
+               }
+    

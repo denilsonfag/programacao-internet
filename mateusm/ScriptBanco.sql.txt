@@ -1,0 +1,9 @@
+CREATE DATABASE mateusm;
+CREATE TABLE pessoa(
+    id int NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+    nome VARCHAR(20), 
+    login VARCHAR(20), 
+    senha VARCHAR(50));
+
+CREATE USER 'mateusm'@'localhost' IDENTIFIED BY 'mateus123';
+                    

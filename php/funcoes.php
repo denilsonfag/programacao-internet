@@ -1,12 +1,12 @@
 <!-- Por João Paulo Zorek-->
-<!DOCTYPE html>             
-<html lang="pt-br">         
-	<head>                      
-	  	<meta charset="utf-8">    
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	  	<meta charset="utf-8">
 	  	<title>Funções</title>
 	</head>
-	<body>   
-		<h1>Funções em PHP</h1>                   
+	<body>
+		<h1>Funções em PHP</h1>
 		<p>O verdadeiro poder do PHP vem de suas funções.</p>
 		<p>Podemos criar nossas próprias funções.</p>
 		<p>Uma função é um bloco de instruções que podem ser usadas repetidamente em um programa.</p>
@@ -92,7 +92,7 @@
 			?&gt;</code>
 		</p>
 
-		
+
 
 	</body>
 </html>
