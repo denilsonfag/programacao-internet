@@ -7,22 +7,27 @@
     $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
 
     if(! $conn ) {
-        echo 'Connected NOT successfully';
-        die('Could not connect: ' . mysqli_error());
+        echo 'Conexão sem sucesso';
+        die('Sem conexão: ' . mysqli_error());
     }
     echo ' Conexão estabelecida com SUCESSO.';
     echo '<br><br> Testando conexão com tabela:';
     
-    $db = mysqli_select_db( $conn, "company");
+    $db = mysqli_select_db( $conn, "danielf");
             
     $sql ='\n". "$sql  = \'SELECT * FROM `login`"';
-    $result = mysqli_query($conn, "select * from login");    
+    $result = mysqli_query($conn, "select * from login");   
+
+    var_dump ($result);
+    var_dump ($sql);
+
+    
     //var_dump ($result)
     
     if(($db)){
-        echo 'Tabela "company" foi encontrada.';
+        echo 'Tabela "dfrutos" foi encontrada.';
     } else {
-        echo ' Tabela "company" NÃO foi encontrada.';
+        echo ' Tabela "dfrutos" NÃO foi encontrada.';
     }
         
     mysqli_close($conn);

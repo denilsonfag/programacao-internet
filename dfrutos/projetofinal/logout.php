@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if(session_destroy()) { // Destroying All Sessions 
-	   header("Location: ../../dfrutos/projetofinal/index.php"); // Redirecting To Home Page
+    if(session_destroy()) { // Destrói todas as sessões
+	   header("Location: ../../dfrutos/projetofinal/index.php"); // Redireciona para a Home Page
     }
 ?>

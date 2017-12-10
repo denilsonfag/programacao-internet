@@ -3,7 +3,7 @@
     $connection = mysqli_connect("localhost", "root", "");
 
 // Selecting Database
-    $db = mysqli_select_db($connection,"company");
+    $db = mysqli_select_db($connection,"danielf");
     session_start();// Starting Session
 
 // Storing Session
