@@ -1,15 +1,40 @@
-<!DOCTYPE html>
+<?php 
+
+session_start();
+if(!isset($_SESSION["login"]) || !isset($_SESSION["senha"])){
+    echo"<script language='javascript' type='text/javascript'>alert('Erro: Esse login ja está em uso');window.location.href='index.php';</script>";
+    header('Location: index.php');
+
+}
+
+
+
+ ?>
+
+
+ <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/main.css" >
+    <link rel="stylesheet" href="../mateusm/css/logout.css" >
     <title>MANIPULAÇÃO DE FORMULARIO PHP</title>
 </head>
 <body>
     <div id="interface">
-        <header id="page-header">
+        <header id="page-header"><div id="logout">
+                <?php 
+                echo "Bem Vindo " . $_SESSION['login'];
+                 ?>
+                <form action="../mateusm/logout.php" method="post" class="form-logout"> 
+                <button type="submit" class="btn btn-lg btn-primary btn-block">Logout</button> 
+             </form>
             <?php include '../page-header.html'; ?>
+
+
+            </div>
+
         </header>
 
         <article>

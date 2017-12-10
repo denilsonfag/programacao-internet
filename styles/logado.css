@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+* {
+    font-family: "verdana";
+}
+
+body {
+
+	background-color: rgb(0,0,0);
+
+}
+
+h1#titulo {
+
+	margin: auto;
+	font-size: 20px;
+	margin-top: 30px;
+	text-align: center;
+
+}
+
+p {	
+	margin-left: 30px;
+	margin-right: 30px;
+	text-align: justify;
+	font-size: 16px;
+}
+
+p#paragrafo {
+
+	text-indent: 30px;
+}
+
+pre {
+
+	margin: 30px;
+
+}
+
+p#rodape {
+
+	text-align: center;
+
+}
+
+p#referencia {
+
+	text-align: center;
+
+}
+
+img#logo {
+
+	width: 200px;
+	height: 70px;
+	margin-left: 30px;
+
+}
+
+img#logo_html_css {
+
+	margin: 20px;
+	float: right;
+	width: 150px;
+	height: 150px;
+
+}
+
+img#logo_html_html {
+
+	margin: 10px;
+	float: right;
+	width: 200px;
+	height: 200px;
+
+}
+
+img#logo_html5 {
+
+	margin: 10px;
+	float: left;
+	width: 200px;
+	height: 200px;
+
+}
+
+#exemploh1ah6 {
+
+	margin: auto;
+	margin-left: 30px;
+	margin-right: 30px;
+	text-align: justify;
+
+}
+
+#pagina {
+
+    padding: 40px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 900px;
+    background-color: white;
+}

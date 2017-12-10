@@ -5,9 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../styles/main.css" >
 		<title id=titulo>HTML 5</title>
-		<style>
-
-		  ul {
+		<link href="../gabriel/bootstrap.min.css" rel="stylesheet">
+    	<link href="../gabriel/navbar-top-fixed.css" rel="stylesheet">
+	<style>
+  
+    ul {
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
@@ -19,7 +21,7 @@
 			color: #000;
 			padding: 8px 16px;
 			text-decoration: none;
-			}
+		    }
 
 		  li a.active {
 		   	 background-color: #000600;
@@ -49,8 +51,8 @@
 		   #sidebar nav ul li{
               display: inline;
              }
-
 		  #interface > *, .article-container > * {
+
 			 border: 1px solid;
              flex: 2 100%;
             }
@@ -75,7 +77,6 @@
 		  	#side-menu{
 			   flex: 1;
 		    }
-
 		   @media all and (min-width: 800px) {
                 #artigo{
                     flex: 5;
@@ -89,13 +90,29 @@
                     order:2;
                	   }
             	}
-
-
 		</style>
+		
 	</head>
-
-
 		<body>
+
+			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			  <a class="navbar-brand" href="#">Audio</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+				  <li class="nav-item active">
+					<a class="nav-link" href="../gabriel/csss.php">Cores <span class="sr-only">(current)</span></a>
+				  </li>
+				  <li class="nav-item"><a class="nav-link" href="../gabriel/logado.php">Início</a></li>
+				  <li class="nav-item">
+				  <a class="nav-link" href="../gabriel/index.php">Voltar</a>
+				  </li>
+				</ul>
+			  </div>
+			</nav>
+
     		<div id="interface">
 				<header id="page-header" >
 					<?php include '../page-header.html'; ?>
@@ -134,5 +151,11 @@
             		<?php include '../page-footer.html'; ?>
         		</footer>
     		</div>
+			
+			<script src="../gabriel/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script>window.jQuery || document.write('<script src="../gabriel/jquery.min.js"><\/script>')</script>
+			<script src="popper.min.js"></script>
+			<script src="bootstrap.min.js"></script>
+			
 		</body>
 </html>
