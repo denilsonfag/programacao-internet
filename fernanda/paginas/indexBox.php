@@ -41,13 +41,7 @@ if((!isset ($_SESSION['nome']) == true))
             width: 50%;
 
         }
-        .voltar{
-            width: 300px;
-            border: 25px;
-            padding: 25px;
-            margin: 10px;
-            height: 100px;
-        }
+
 
         .titulo{
             border: 25px;
@@ -74,16 +68,52 @@ if((!isset ($_SESSION['nome']) == true))
             color: white;
         }
 
+        #interface{
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        #interface > * {     /* regra aplicada a todos os subelementos dos seletores  */
+
+            flex: 1 100%;
+        }
+
+        #sidebar nav ul li{
+            display: inline;
+        }
+
+        @media all and (min-width: 800px) {
+            #side-menu {
+                flex: 1;
+            }
+            #article {
+                flex: 4;
+            }
+            #sidebar nav ul li{
+                display: block;
+            }
+        }
+
     </style>
 
 </head>
 <body>
     <div id="interface">
 
-        <article>
-                <div class="voltar">
-                    <p><a href="../homepage.php">Homepage</a></p>
-                </div>
+        <header id="page-header">
+            <?php include '../../page-header.html'; ?>
+        </header>
+
+        <nav id="side-menu">
+            <ul>
+                <li><a href="html5/html-main.php">HTML 5</a></li>
+                <li><a href="css3/css-main.php">CSS 3</a></li>
+            </ul>
+
+            <?php include 'side-menu.html'; ?>
+        </nav>
+
+        <article id="article">
 
                 <div class="titulo">
                     <h1>Aprendendo CSS</h1>
@@ -91,7 +121,15 @@ if((!isset ($_SESSION['nome']) == true))
 
                 <div class="corpo">
                     <p><a href="boxModel.php">Box model</a></p>
+                </div>
 
+        </article>
+
+        <footer id="page-footer">
+            <?php include '../../page-footer.html'; ?>
+        </footer>
+
+    </div>
 
 </body>
 </html>
