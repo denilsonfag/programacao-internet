@@ -1,7 +1,7 @@
 <?php
-session_start(); // Starting Session
+session_start(); // Inicia sessão
 
-    $error=''; // Variable To Store Error Message
+    $error=''; // Variável para armazenar mensagem de erro
     if (isset($_POST['submit'])) {
         if (empty($_POST['username']) || empty($_POST['password']) || empty($_POST['password2']) ) {
             $error = "Favor preencher todos os campos.";
@@ -11,29 +11,27 @@ session_start(); // Starting Session
         } 
         
         else {
-            // Define $username and $password
+            // Definimos usuario e password
             $username=$_POST['username'];
             $password=$_POST['password'];
             
 
-            // Establishing Connection with Server by passing server_name, user_id and password as a parameter
+            // estabelecendo conexão com o servidor passado os dados inseridos
             $connection = mysqli_connect("localhost:3306", "root", "");
 
-            // To protect MySQL injection for Security purpose
             $username = stripslashes($username);
             $password = stripslashes($password);
             $username = mysqli_real_escape_string($connection,$username);
             $password = mysqli_real_escape_string($connection,$password);
                 
-            // Selecting Database
-            //$db = mysqli_select_db( "company", $connection);
-            $db = mysqli_select_db( $connection, "company");
+            // Selecionando DB
+            $db = mysqli_select_db( $connection, "danielf");
             
-            // SQL query to fetch information of registerd users and finds user match.
+            // buscando informações no banco
             $query = mysqli_query($connection, "insert into login  (username, password) values ('$username','$password')"); 
             $error = "Cadastro Realizado!";
             
-            mysqli_close($connection); // Closing Connection
+            mysqli_close($connection); // fechar conexão
         }
     }
 

@@ -1,5 +1,6 @@
 <?php
-include('/login.php'); // Inclui o script da telad e login
+include('login.php'); // Inclui o script da tela de login
+
     if(isset($_SESSION['login_user'])){
         header("location: profile.php");
     }
@@ -30,9 +31,7 @@ include('/login.php'); // Inclui o script da telad e login
 
                     
                         <button type="button" onclick="window.location.href='tela_cadastro.php'"> Quero me cadastrar!</button>
-                    
-                    
-                    
+
                     <span><?php echo $error; ?></span>
                 </form>
             </div>

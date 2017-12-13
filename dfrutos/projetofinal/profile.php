@@ -1,7 +1,8 @@
 <?php
+    //Página sarna de contagem regressiva
     include('session.php');
 ?>
-
+    
     <!DOCTYPE html>
     <html>
 
@@ -20,6 +21,7 @@
 
         </div>
     
+        <!-- script de contagem regressiva-->
         <script type="text/javascript">
             function countdown() {
                 var i = document.getElementById('counter');

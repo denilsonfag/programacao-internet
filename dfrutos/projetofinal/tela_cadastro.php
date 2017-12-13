@@ -1,5 +1,5 @@
 <?php
-include('/cadastro.php'); // Inclui o script da telad e login
+include('cadastro.php'); // Inclui o script da telad e login
     if(isset($_SESSION['login_user'])){
         header("location: profile.php");
     }
@@ -32,8 +32,7 @@ include('/cadastro.php'); // Inclui o script da telad e login
                     <input name="submit" type="submit" value="Enviar Dados">
                     
                     <button type="button" onclick="window.location.href='index.php'"> Voltar p/ Login</button>
-
-                                        
+                                 
                     
                     <span><?php echo $error; ?></span>
                 </form>
