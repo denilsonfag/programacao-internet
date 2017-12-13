@@ -40,9 +40,8 @@
 					<h3>Cadastre-se</h3>
 					<form action="" method="POST" enctype="multipart/form-data">
 						<p><label>Nome</label></br> <input type="text" name="nome" id="nome" placeholder="Meu nome" class="form form-control"/></p>
-						<p><label>Usuário</label></br> <input type="text" name="usuario" id="usuario" placeholder="Meuusuário" class="form form-control"/></p>
+						<p><label>Usuário</label></br> <input type="text" name="usuario" id="usuario" placeholder="Usuário" class="form form-control"/></p>
 						<p><label>Senha</label></br> <input type="password" name="senha" id="senha" placeholder="**********" class="form form-control"/></p>
-						<p><label>Confirme a senha</label></br> <input type="password" name="senha" id="senha" placeholder="confrime a senha" class="form form-control"/></p>
 						<p><input type="submit" value="Cadastrar" class="btn btn-success" style="width: 120px;" /></p>
 						<input type="hidden" name="cadastrar" value="register"/>
 					</form>
@@ -73,6 +72,7 @@
 					if(mysqli_query($con, $cadastrar)){
 						$_SESSION['nome'] = $nome;
 						$_SESSION['usuario'] = $usuario;
+						
 						echo "Cadastro efetuado com sucesso!<br></br>";	
 					}else{
 						echo "Erro ao cadastrar, contate um administrador!";

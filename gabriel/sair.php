@@ -1,5 +1,4 @@
 <?php
-		//Removendo dados da sessão
 		@session_start();
 		session_destroy();
 		unset($_SESSION);
