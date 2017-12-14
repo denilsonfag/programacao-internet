@@ -1,9 +1,9 @@
 <?php 
 	
 
-DEFINE ('BD_USUARIO','root');
+DEFINE ('BD_USUARIO','gabriel');
 
-DEFINE ('BD_SENHA','');
+DEFINE ('BD_SENHA','0898');
 
 DEFINE ('BD_HOST','localhost');
 

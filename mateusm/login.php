@@ -5,7 +5,7 @@ $login = $_POST['inputLogin'];
 $senha = MD5($_POST['inputPassword']);
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "123";
 $dbname = "cadasto";
 
 

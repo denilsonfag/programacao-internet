@@ -2,8 +2,8 @@
 
 // constantes com as credenciais de acesso ao banco MySQL
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_USER', 'danielb');
+define('DB_PASS', 'password');
 define('DB_NAME', 'danielb');
 
 // habilita todas as exibições de erros

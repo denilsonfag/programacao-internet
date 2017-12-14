@@ -2,7 +2,7 @@
 
 	//Este arquivo estabelece a uma conexão com o banco de dados
 
-	DEFINE ('BD_USUARIO', 'denilson');
+	DEFINE ('BD_USUARIO', 'joao');
 	DEFINE ('BD_SENHA', 'bandaDjavu');
 	DEFINE ('BD_HOST', 'localhost');
 	DEFINE ('BD_NOME', 'joaopaulo');

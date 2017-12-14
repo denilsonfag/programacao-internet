@@ -2,7 +2,7 @@
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-	require ('/includes/mysqli_connect.php'); 
+	require ('includes/mysqli_connect.php');
 		
 	$errors = array(); 
 	

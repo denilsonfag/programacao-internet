@@ -21,7 +21,6 @@
 
 
 
-<<<<<<< HEAD
 	if ($conn->query($sql)==TRUE){
 		header('Location: novo-usuario.php?msg=1');
 	}else{
@@ -30,6 +29,3 @@
 	}
 	$conn->close();
  ?>
-=======
- ?>
->>>>>>> b22f486d18626c8eb963caa96b5f6a6c0324651e
